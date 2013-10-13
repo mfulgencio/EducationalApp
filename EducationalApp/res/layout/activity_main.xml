@@ -1,16 +1,93 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" >
+    android:orientation="vertical"
+    android:background="#330022" >
 
-    <TextView
+    <TextView 
+        android:id="@+id/welcome"
+        android:text="@string/welcome_message"
+        android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:textSize="30sp"
+        android:textColor="#BBBBBB" />
 
-</RelativeLayout>
+    <ScrollView 
+        android:id="@+id/subjects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <LinearLayout android:id="@+id/subject_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+	        <LinearLayout
+		        android:id="@+id/buttons1"
+		        android:orientation="horizontal"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="40dp"
+		        android:layout_gravity="center_horizontal" >
+		        
+		        <Button
+			        android:id="@+id/calc1_button"
+			        android:text="@string/calculus1"
+			        style="?android:attr/buttonStyleSmall"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:paddingLeft="150dp"
+			        android:paddingRight="150dp"
+			        android:paddingTop="60dp"
+			        android:paddingBottom="60dp"
+			        android:textSize="40sp"
+			        android:textColor="#BBBBBB" />
+		    
+		    	<Button 
+			        android:id="@+id/info1_button"
+			        android:text="@string/info"
+			        style="?android:attr/buttonStyleSmall"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="50dp"
+			        android:textColor="#BBBBBB" />
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout
+		        android:id="@+id/buttons2"
+		        android:orientation="horizontal"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="40dp"
+		        android:layout_gravity="center_horizontal" >
+		        
+		        <Button
+			        android:id="@+id/calc2_button"
+			        android:text="@string/calculus2"
+			        style="?android:attr/buttonStyleSmall"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:paddingLeft="150dp"
+			        android:paddingRight="150dp"
+			        android:paddingTop="60dp"
+			        android:paddingBottom="60dp"
+			        android:textSize="40sp" />
+		    
+		    	<Button 
+			        android:id="@+id/info2_button"
+			        android:text="@string/info"
+			        style="?android:attr/buttonStyleSmall"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="50dp" />
+		        
+		    </LinearLayout>
+            
+        </LinearLayout>
+        
+    </ScrollView>
+   
+</LinearLayout>
