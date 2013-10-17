@@ -2,18 +2,58 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:background="#330022" >
     
-    <RelativeLayout >
-        
+    <RelativeLayout android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".33" >
+        <TextView android:id="@+id/limits_tv"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/limits"
+        	android:textSize="40sp"
+        	android:layout_centerHorizontal="true"
+        	android:layout_marginTop="40dp" />
+    
+    	<Spinner android:id="@+id/limit_spinner"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_centerInParent="true" />
     </RelativeLayout>
     
-    <TextView android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/limits" />
+    <RelativeLayout android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".33" >
+        <TextView android:id="@+id/derivaties_tv"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/derivatives"
+        	android:textSize="40sp"
+        	android:layout_centerHorizontal="true"
+        	android:layout_marginTop="40dp" />
     
-    <Spinner android:id="@+id/limit_spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    	<Spinner android:id="@+id/derivatives_spinner"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_centerInParent="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".33" >
+        <TextView android:id="@+id/integrals_tv"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/integrals"
+        	android:textSize="40sp"
+        	android:layout_centerHorizontal="true"
+        	android:layout_marginTop="40dp" />
+    
+    	<Spinner android:id="@+id/integrals_spinner"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_centerInParent="true" />
+    </RelativeLayout>
     
 </LinearLayout>

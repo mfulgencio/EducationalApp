@@ -17,5 +17,20 @@
         <item>Limits at Infinity</item>
         <item>Continuity </item>
     </string-array>
+    <string-array name="derivatives_array">
+        <item>Intro to Derivatives</item>
+        <item>One-Sided Limits</item>
+        <item>Limits at Infinity</item>
+        <item>Continuity </item>
+    </string-array>
+    <string-array name="integrals_array">
+        <item>Intro to Integrals</item>
+        <item>One-Sided Limits</item>
+        <item>Limits at Infinity</item>
+        <item>Continuity </item>
+    </string-array>
+    
+    <color name="purple">#330022</color>
+    <color name="gray">#BBBBBB</color>
 
 </resources>
