@@ -30,12 +30,12 @@ public class Topics  extends Activity {
 		derivatives_spinner.setAdapter(derivatives_adapter);
 		
 		//integrals spinner
-				Spinner integrals_spinner = (Spinner) findViewById(R.id.integrals_spinner);
-				
-				ArrayAdapter<CharSequence> integrals_adapter = ArrayAdapter.createFromResource(this, R.array.integrals_array, android.R.layout.simple_spinner_item);
-				
-				integrals_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-				
-				integrals_spinner.setAdapter(integrals_adapter);
+		Spinner integrals_spinner = (Spinner) findViewById(R.id.integrals_spinner);
+		
+		ArrayAdapter<CharSequence> integrals_adapter = ArrayAdapter.createFromResource(this, R.array.integrals_array, android.R.layout.simple_spinner_item);
+		
+		integrals_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		
+		integrals_spinner.setAdapter(integrals_adapter);
 	}
 }

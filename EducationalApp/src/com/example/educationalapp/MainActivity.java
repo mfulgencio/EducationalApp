@@ -25,6 +25,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		Intent i = new Intent(this, Topics.class);
 		
 		this.startActivity(i);
+		
 	}
 
 	@Override
