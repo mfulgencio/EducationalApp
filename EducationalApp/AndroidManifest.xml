@@ -26,6 +26,10 @@
             android:name="com.example.educationalapp.Topics"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name="com.example.educationalapp.Quiz"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>

@@ -1,11 +1,16 @@
 package com.example.educationalapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-public class Topics  extends Activity {
+public class Topics  extends Activity implements OnClickListener {
+	android.widget.Button quizButton;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -37,5 +42,17 @@ public class Topics  extends Activity {
 		integrals_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		
 		integrals_spinner.setAdapter(integrals_adapter);
+		
+		quizButton = (android.widget.Button)findViewById(R.id.quiz_button);
+		
+		quizButton.setOnClickListener(this);
+	}
+	
+	@Override
+	public void onClick(View v) {
+		Intent i = new Intent(this, Quiz.class);
+		
+		this.startActivity(i);
+		
 	}
 }

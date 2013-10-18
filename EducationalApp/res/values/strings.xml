@@ -8,29 +8,33 @@
     <string name="calculus2">Calculus 2</string>
     <string name="info">i</string>
     <string name="welcome_message">Welcome to the Educational App!! \n   Please select a class below:</string>
-    <string name="limits">Limits</string>
-    <string name="derivatives">Derivatives</string>
-    <string name="integrals">Integrals</string>
+    <string name="limits">LIMITS</string>
+    <string name="derivatives">DERIVATIVES</string>
+    <string name="integrals">INTEGRALS</string>
     <string-array name="limits_array">
         <item>Intro to Limits</item>
         <item>One-Sided Limits</item>
         <item>Limits at Infinity</item>
-        <item>Continuity </item>
+        <item>Continuity</item>
     </string-array>
     <string-array name="derivatives_array">
         <item>Intro to Derivatives</item>
-        <item>One-Sided Limits</item>
-        <item>Limits at Infinity</item>
-        <item>Continuity </item>
+        <item>Limit Definitions</item>
+        <item>Rules</item>
+        <item>Implicit Differentiation</item>
+        <item>Optimization</item>
+        <item>Relates Rates</item>
     </string-array>
     <string-array name="integrals_array">
         <item>Intro to Integrals</item>
-        <item>One-Sided Limits</item>
-        <item>Limits at Infinity</item>
-        <item>Continuity </item>
+        <item>Indefinite Integrals</item>
+        <item>Definite Integrals</item>
+        <item>Area Under the Curve</item>
+        <item>U Substitution</item>
     </string-array>
     
     <color name="purple">#330022</color>
     <color name="gray">#BBBBBB</color>
+    <color name="black">#000000</color>
 
 </resources>
