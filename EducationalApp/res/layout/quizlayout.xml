@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <TextView
+      android:id="@+id/quiz_welome"
+      android:text="Quiz"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="50sp"
+      />   
+    <ScrollView 
+        android:id="@+id/questions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout android:id="@+id/questions_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+               android:id="@+id/quiz_question1"
+               android:text="question1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="20sp" />
+            <RadioGroup 
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+                 <RadioButton android:id="@+id/q1a1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a"/>
+                 <RadioButton android:id="@+id/q1a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="b"/>
+                 <RadioButton android:id="@+id/q1a3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="c"/>
+                 <RadioButton android:id="@+id/q1a4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="d"/>
+            </RadioGroup>
+            <TextView
+               android:id="@+id/quiz_question2"
+               android:text="question2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="20sp" />
+            <RadioGroup 
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+                 <RadioButton android:id="@+id/q2a1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a"/>
+                 <RadioButton android:id="@+id/q2a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="b"/>
+                 <RadioButton android:id="@+id/q2a3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="c"/>
+                 <RadioButton android:id="@+id/q2a4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="d"/>
+            </RadioGroup>
+            <TextView
+               android:id="@+id/quiz_question3"
+               android:text="question3"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="20sp" />
+            <RadioGroup 
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+                 <RadioButton android:id="@+id/q3a1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a"/>
+                 <RadioButton android:id="@+id/q3a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="b"/>
+                 <RadioButton android:id="@+id/q3a3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="c"/>
+                 <RadioButton android:id="@+id/q3a4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="d"/>
+            </RadioGroup>
+            <TextView
+               android:id="@+id/quiz_question4"
+               android:text="question4"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="20sp" />
+            <RadioGroup 
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+                 <RadioButton android:id="@+id/q4a1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a"/>
+                 <RadioButton android:id="@+id/q4a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="b"/>
+                 <RadioButton android:id="@+id/q4a3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="c"/>
+                 <RadioButton android:id="@+id/q4a4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="d"/>
+            </RadioGroup>
+            <TextView
+               android:id="@+id/quiz_question5"
+               android:text="question5"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="20sp" />
+            <RadioGroup 
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+                 <RadioButton android:id="@+id/q5a1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a"/>
+                 <RadioButton android:id="@+id/q5a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="b"/>
+                 <RadioButton android:id="@+id/q5a3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="c"/>
+                 <RadioButton android:id="@+id/q5a4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="d"/>
+            </RadioGroup>
+            <TextView
+               android:id="@+id/quiz_question6"
+               android:text="question6"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="20sp" />
+            <RadioGroup 
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+                 <RadioButton android:id="@+id/q6a1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a"/>
+                 <RadioButton android:id="@+id/q6a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="b"/>
+                 <RadioButton android:id="@+id/q6a3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="c"/>
+                 <RadioButton android:id="@+id/q6a4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="d"/>
+            </RadioGroup>
+            <TextView
+               android:id="@+id/quiz_question7"
+               android:text="question7"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="20sp" />
+            <RadioGroup 
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+                 <RadioButton android:id="@+id/q7a1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a"/>
+                 <RadioButton android:id="@+id/q7a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="b"/>
+                 <RadioButton android:id="@+id/q7a3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="c"/>
+                 <RadioButton android:id="@+id/q7a4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="d"/>
+            </RadioGroup>
+            <TextView
+               android:id="@+id/quiz_question8"
+               android:text="question8"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="20sp" />
+            <RadioGroup 
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+                 <RadioButton android:id="@+id/q8a1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a"/>
+                 <RadioButton android:id="@+id/q8a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="b"/>
+                 <RadioButton android:id="@+id/q8a3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="c"/>
+                 <RadioButton android:id="@+id/q8a4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="d"/>
+            </RadioGroup>
+            <TextView
+               android:id="@+id/quiz_question9"
+               android:text="question9"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="20sp" />
+            <RadioGroup 
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+                 <RadioButton android:id="@+id/q9a1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a"/>
+                 <RadioButton android:id="@+id/q9a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="b"/>
+                 <RadioButton android:id="@+id/q9a3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="c"/>
+                 <RadioButton android:id="@+id/q9a4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="d"/>
+            </RadioGroup>
+            <TextView
+               android:id="@+id/quiz_question10"
+               android:text="question10"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="20sp" />
+            <RadioGroup 
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+                 <RadioButton android:id="@+id/q10a1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a"/>
+                 <RadioButton android:id="@+id/q10a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="b"/>
+                 <RadioButton android:id="@+id/q10a3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="c"/>
+                 <RadioButton android:id="@+id/q10a4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="d"/>
+            </RadioGroup>
+          <Button android:id="@+id/submit"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" 
+             android:text="Submit"/>
+          </LinearLayout>        
+     </ScrollView>
+</LinearLayout>
