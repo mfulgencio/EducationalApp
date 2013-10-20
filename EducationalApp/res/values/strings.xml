@@ -11,6 +11,7 @@
     <string name="limits">LIMITS</string>
     <string name="derivatives">DERIVATIVES</string>
     <string name="integrals">INTEGRALS</string>
+    <string name="quiz_page_title">Quiz</string>
     <string-array name="limits_array">
         <item>Intro to Limits</item>
         <item>One-Sided Limits</item>
