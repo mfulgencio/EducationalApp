@@ -37,5 +37,6 @@
     <color name="purple">#330022</color>
     <color name="gray">#BBBBBB</color>
     <color name="black">#000000</color>
+    <string name="goButton">GO</string>
 
 </resources>
