@@ -3,7 +3,7 @@
     android:id="@+id/TextView01"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:textSize="30sp"
+    android:textSize="25sp"
     android:textColor="#FFFFFFFF"
     android:height="42dp"
     android:gravity="center_vertical"
