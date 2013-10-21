@@ -55,4 +55,5 @@ public class Topics  extends Activity implements OnClickListener {
 		this.startActivity(i);
 		
 	}
+	
 }
