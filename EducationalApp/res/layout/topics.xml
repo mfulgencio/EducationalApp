@@ -17,11 +17,24 @@
         	android:layout_marginTop="90dp"
         	android:textColor="@color/black"
         	android:typeface="monospace" />
-    
-    	<Spinner android:id="@+id/limit_spinner"
-        	android:layout_width="wrap_content"
-        	android:layout_height="wrap_content"
-        	android:layout_centerInParent="true" />
+
+    	<Button
+    	    android:id="@+id/button1"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentBottom="true"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_marginBottom="49dp"
+    	    android:text="@string/goButton" />
+
+    	<Spinner
+    	    android:id="@+id/limit_spinner"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_below="@+id/limits_tv"
+    	    android:layout_marginTop="18dp" />
+
     </RelativeLayout>
     
     <RelativeLayout android:layout_width="0dp"
@@ -35,11 +48,24 @@
         	android:layout_centerHorizontal="true"
         	android:layout_marginTop="90dp"
         	android:textColor="@color/black" />
-    
-    	<Spinner android:id="@+id/derivatives_spinner"
-        	android:layout_width="wrap_content"
-        	android:layout_height="wrap_content"
-        	android:layout_centerInParent="true" />
+
+    	<Button
+    	    android:id="@+id/button2"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentBottom="true"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_marginBottom="49dp"
+    	    android:text="@string/goButton" />
+
+    	<Spinner
+    	    android:id="@+id/derivatives_spinner"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_below="@+id/derivaties_tv"
+    	    android:layout_marginTop="18dp" />
+
     </RelativeLayout>
     
     <RelativeLayout android:layout_width="0dp"
@@ -53,11 +79,6 @@
         	android:layout_centerHorizontal="true"
         	android:layout_marginTop="90dp"
         	android:textColor="@color/black" />
-    
-    	<Spinner android:id="@+id/integrals_spinner"
-        	android:layout_width="wrap_content"
-        	android:layout_height="wrap_content"
-        	android:layout_centerInParent="true" />
     	
     	<Button 
 	        android:id="@+id/quiz_button"
@@ -67,6 +88,24 @@
 	        android:layout_height="wrap_content"
 	        android:layout_marginTop="50dp"
 	        android:textColor="@color/gray" />
+
+    	<Button
+    	    android:id="@+id/button3"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentBottom="true"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_marginBottom="49dp"
+    	    android:text="@string/goButton" />
+
+    	<Spinner
+    	    android:id="@+id/integrals_spinner"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_below="@+id/integrals_tv"
+    	    android:layout_marginTop="18dp" />
+
     </RelativeLayout>
     
 </LinearLayout>

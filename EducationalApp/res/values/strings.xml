@@ -11,6 +11,7 @@
     <string name="limits">LIMITS</string>
     <string name="derivatives">DERIVATIVES</string>
     <string name="integrals">INTEGRALS</string>
+    <string name="quiz_page_title">Quiz</string>
     <string-array name="limits_array">
         <item>Intro to Limits</item>
         <item>One-Sided Limits</item>
@@ -36,5 +37,6 @@
     <color name="purple">#330022</color>
     <color name="gray">#BBBBBB</color>
     <color name="black">#000000</color>
+    <string name="goButton">GO</string>
 
 </resources>
