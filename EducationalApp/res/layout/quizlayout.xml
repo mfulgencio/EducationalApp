@@ -2,14 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
-   <TextView
-      android:id="@+id/quiz_welome"
-      android:text="Quiz"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:textSize="50sp"
-      />   
+    android:orientation="vertical" >   
     <ScrollView 
         android:id="@+id/questions"
         android:layout_width="match_parent"
@@ -24,7 +17,7 @@
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:textSize="20sp" />
-            <RadioGroup 
+            <RadioGroup android:id="@+id/g1"
                android:layout_width="fill_parent"
                android:layout_height="wrap_content"
                android:orientation="vertical">
@@ -51,7 +44,7 @@
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:textSize="20sp" />
-            <RadioGroup 
+            <RadioGroup android:id="@+id/g2"
                android:layout_width="fill_parent"
                android:layout_height="wrap_content"
                android:orientation="vertical">
@@ -78,7 +71,7 @@
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:textSize="20sp" />
-            <RadioGroup 
+            <RadioGroup android:id="@+id/g3"
                android:layout_width="fill_parent"
                android:layout_height="wrap_content"
                android:orientation="vertical">
@@ -105,7 +98,7 @@
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:textSize="20sp" />
-            <RadioGroup 
+            <RadioGroup android:id="@+id/g4"
                android:layout_width="fill_parent"
                android:layout_height="wrap_content"
                android:orientation="vertical">
@@ -132,7 +125,7 @@
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:textSize="20sp" />
-            <RadioGroup 
+            <RadioGroup android:id="@+id/g5"
                android:layout_width="fill_parent"
                android:layout_height="wrap_content"
                android:orientation="vertical">
@@ -159,7 +152,7 @@
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:textSize="20sp" />
-            <RadioGroup 
+            <RadioGroup android:id="@+id/g6"
                android:layout_width="fill_parent"
                android:layout_height="wrap_content"
                android:orientation="vertical">
@@ -186,7 +179,7 @@
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:textSize="20sp" />
-            <RadioGroup 
+            <RadioGroup android:id="@+id/g7"
                android:layout_width="fill_parent"
                android:layout_height="wrap_content"
                android:orientation="vertical">
@@ -213,7 +206,7 @@
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:textSize="20sp" />
-            <RadioGroup 
+            <RadioGroup android:id="@+id/g8"
                android:layout_width="fill_parent"
                android:layout_height="wrap_content"
                android:orientation="vertical">
@@ -240,7 +233,7 @@
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:textSize="20sp" />
-            <RadioGroup 
+            <RadioGroup android:id="@+id/g9"
                android:layout_width="fill_parent"
                android:layout_height="wrap_content"
                android:orientation="vertical">
@@ -267,7 +260,7 @@
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:textSize="20sp" />
-            <RadioGroup 
+            <RadioGroup android:id="@+id/g10"
                android:layout_width="fill_parent"
                android:layout_height="wrap_content"
                android:orientation="vertical">
