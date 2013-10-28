@@ -3,16 +3,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/purple" >
+    android:background="@drawable/app_background" >
 
     <TextView 
-        android:id="@+id/welcome"
-        android:text="@string/welcome_message"
+        android:id="@+id/welcome_line1"
+        android:text="@string/welcome_message_line1"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30sp"
-        android:textColor="@color/gray" />
+        android:textColor="@color/MathPathBlue" />
+    
+    <TextView 
+        android:id="@+id/welcome_line2"
+        android:text="@string/welcome_message_line2"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/MathPathBlue" />
 
     <ScrollView 
         android:id="@+id/subjects"
@@ -43,7 +52,8 @@
 			        android:paddingTop="60dp"
 			        android:paddingBottom="60dp"
 			        android:textSize="40sp"
-			        android:textColor="@color/gray" />
+			        android:textColor="@color/white"
+			        android:background="@drawable/rounded_corner_button" />
 		    
 		    	<Button 
 			        android:id="@+id/info1_button"
@@ -52,7 +62,8 @@
 			        android:layout_width="wrap_content"
 			        android:layout_height="wrap_content"
 			        android:layout_marginTop="50dp"
-			        android:textColor="@color/gray" />
+			        android:textColor="@color/white"
+			        android:background="@drawable/round_button" />
 		        
 		    </LinearLayout>
 		    
@@ -75,7 +86,8 @@
 			        android:paddingTop="60dp"
 			        android:paddingBottom="60dp"
 			        android:textSize="40sp"
-			        android:textColor="@color/gray" />
+			        android:textColor="@color/white"
+			        android:background="@drawable/rounded_corner_button" />
 		    
 		    	<Button 
 			        android:id="@+id/info2_button"
@@ -84,7 +96,8 @@
 			        android:layout_width="wrap_content"
 			        android:layout_height="wrap_content"
 			        android:layout_marginTop="50dp"
-			        android:textColor="@color/gray" />
+			        android:textColor="@color/white"
+			     	android:background="@drawable/round_button" />
 		        
 		    </LinearLayout>
             

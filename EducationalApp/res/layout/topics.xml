@@ -3,7 +3,7 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/lined_paper_background" >
+    android:background="@drawable/app_background" >
     
     <RelativeLayout android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -15,8 +15,7 @@
         	android:textSize="40sp"
         	android:layout_centerHorizontal="true"
         	android:layout_marginTop="90dp"
-        	android:textColor="@color/black"
-        	android:typeface="monospace" />
+        	android:textColor="@color/MathPathBlue" />
 
     	<Button
     	    android:id="@+id/button1"
@@ -25,7 +24,8 @@
     	    android:layout_alignParentBottom="true"
     	    android:layout_centerHorizontal="true"
     	    android:layout_marginBottom="49dp"
-    	    android:text="@string/goButton" />
+    	    android:text="@string/goButton"
+    	    android:background="@drawable/rounded_corner_button" />
 
     	<Spinner
     	    android:id="@+id/limit_spinner"
@@ -47,7 +47,7 @@
         	android:textSize="40sp"
         	android:layout_centerHorizontal="true"
         	android:layout_marginTop="90dp"
-        	android:textColor="@color/black" />
+        	android:textColor="@color/MathPathBlue" />
 
     	<Button
     	    android:id="@+id/button2"
@@ -56,7 +56,8 @@
     	    android:layout_alignParentBottom="true"
     	    android:layout_centerHorizontal="true"
     	    android:layout_marginBottom="49dp"
-    	    android:text="@string/goButton" />
+    	    android:text="@string/goButton"
+    	    android:background="@drawable/rounded_corner_button" />
 
     	<Spinner
     	    android:id="@+id/derivatives_spinner"
@@ -78,16 +79,17 @@
         	android:textSize="40sp"
         	android:layout_centerHorizontal="true"
         	android:layout_marginTop="90dp"
-        	android:textColor="@color/black" />
-    	
-    	<Button 
+        	android:textColor="@color/MathPathBlue" />
+        
+        <Button 
 	        android:id="@+id/quiz_button"
 	        android:text="@string/info"
 	        style="?android:attr/buttonStyleSmall"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_marginTop="50dp"
-	        android:textColor="@color/gray" />
+	        android:textColor="@color/gray"
+	        android:background="@drawable/rounded_corner_button" />
 
     	<Button
     	    android:id="@+id/button3"
@@ -96,7 +98,8 @@
     	    android:layout_alignParentBottom="true"
     	    android:layout_centerHorizontal="true"
     	    android:layout_marginBottom="49dp"
-    	    android:text="@string/goButton" />
+    	    android:text="@string/goButton"
+    	    android:background="@drawable/rounded_corner_button" />
 
     	<Spinner
     	    android:id="@+id/integrals_spinner"
