@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MathPath</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!!!</string>
+    <string name="calculus1">Calculus 1</string>
+    <string name="calculus2">Calculus 2</string>
+    <string name="info">i</string>
+    <string name="welcome_message_line1">Welcome to MathPath!!</string>
+    <string name="welcome_message_line2">Please select a class below:</string>
+    <string name="limits">LIMITS</string>
+    <string name="derivatives">DERIVATIVES</string>
+    <string name="integrals">INTEGRALS</string>
+    <string name="quiz_page_title">Quiz</string>
+    <string name="quiz_button">Quiz</string>
+    <string name="next_video">Next Video</string>
+    <string name="previous_video">Previous Video</string>
+
+    <string-array name="limits_array">
+        <item>Intro to Limits</item>
+        <item>One-Sided Limits</item>
+        <item>Limits at Infinity</item>
+        <item>Continuity</item>
+    </string-array>
+    <string-array name="derivatives_array">
+        <item>Intro to Derivatives</item>
+        <item>Limit Definitions</item>
+        <item>Rules</item>
+        <item>Implicit Differentiation</item>
+        <item>Optimization</item>
+        <item>Relates Rates</item>
+    </string-array>
+    <string-array name="integrals_array">
+        <item>Intro to Integrals</item>
+        <item>Indefinite Integrals</item>
+        <item>Definite Integrals</item>
+        <item>Area Under the Curve</item>
+        <item>U Substitution</item>
+    </string-array>
+
+    <color name="purple">#330022</color>
+    <color name="gray">#BBBBBB</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="button_border">#C0D0D0</color>
+    <color name="MathPathBlue">#3CC7C7</color>
+
+    <string name="goButton">GO</string>
+    <string name="title_activity_videos">Videos</string>
+    
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    
+
+</resources>

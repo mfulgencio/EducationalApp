@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background" >
+    
+    <RelativeLayout android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".33" >
+        <TextView android:id="@+id/limits_tv"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/limits"
+        	android:textSize="40sp"
+        	android:layout_centerHorizontal="true"
+        	android:layout_marginTop="90dp"
+        	android:textColor="@color/MathPathBlue" />
+
+    	<Button
+    	    android:id="@+id/button1"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentBottom="true"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_marginBottom="49dp"
+    	    android:text="@string/goButton"
+    	    android:background="@drawable/rounded_corner_button" />
+
+    	<Spinner
+    	    android:id="@+id/limit_spinner"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_below="@+id/limits_tv"
+    	    android:layout_marginTop="18dp" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".33" >
+        <TextView android:id="@+id/derivaties_tv"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/derivatives"
+        	android:textSize="40sp"
+        	android:layout_centerHorizontal="true"
+        	android:layout_marginTop="90dp"
+        	android:textColor="@color/MathPathBlue" />
+
+    	<Button
+    	    android:id="@+id/button2"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentBottom="true"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_marginBottom="49dp"
+    	    android:text="@string/goButton"
+    	    android:background="@drawable/rounded_corner_button" />
+
+    	<Spinner
+    	    android:id="@+id/derivatives_spinner"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_below="@+id/derivaties_tv"
+    	    android:layout_marginTop="18dp" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".33" >
+        <TextView android:id="@+id/integrals_tv"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/integrals"
+        	android:textSize="40sp"
+        	android:layout_centerHorizontal="true"
+        	android:layout_marginTop="90dp"
+        	android:textColor="@color/MathPathBlue" />
+
+    	<Button
+    	    android:id="@+id/button3"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentBottom="true"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_marginBottom="49dp"
+    	    android:text="@string/goButton"
+    	    android:background="@drawable/rounded_corner_button" />
+
+    	<Spinner
+    	    android:id="@+id/integrals_spinner"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_below="@+id/integrals_tv"
+    	    android:layout_marginTop="18dp" />
+
+    </RelativeLayout>
+    
+</LinearLayout>
