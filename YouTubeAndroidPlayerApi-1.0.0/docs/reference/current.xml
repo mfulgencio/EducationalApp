@@ -1,0 +1,1756 @@
+<api>
+<package name="com.google.android.youtube.player"
+>
+<class name="YouTubeApiServiceUtil"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="isYouTubeApiServiceAvailable"
+ return="com.google.android.youtube.player.YouTubeInitializationResult"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+</class>
+<class name="YouTubeBaseActivity"
+ extends="android.app.Activity"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</class>
+<class name="YouTubeInitializationResult"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getErrorDialog"
+ return="android.app.Dialog"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+<parameter name="requestCode" type="int">
+</parameter>
+</method>
+<method name="getErrorDialog"
+ return="android.app.Dialog"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+<parameter name="requestCode" type="int">
+</parameter>
+<parameter name="cancelListener" type="android.content.DialogInterface.OnCancelListener">
+</parameter>
+</method>
+<method name="isUserRecoverableError"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="valueOf"
+ return="com.google.android.youtube.player.YouTubeInitializationResult"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.google.android.youtube.player.YouTubeInitializationResult[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="YouTubeIntents"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="canResolveOpenPlaylistIntent"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="canResolvePlayPlaylistIntent"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="canResolvePlayVideoIntent"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="canResolvePlayVideoIntentWithOptions"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="canResolveSearchIntent"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="canResolveUploadIntent"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="canResolveUserIntent"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="createOpenPlaylistIntent"
+ return="android.content.Intent"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="playlistId" type="java.lang.String">
+</parameter>
+</method>
+<method name="createPlayPlaylistIntent"
+ return="android.content.Intent"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="playlistId" type="java.lang.String">
+</parameter>
+</method>
+<method name="createPlayVideoIntent"
+ return="android.content.Intent"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="videoId" type="java.lang.String">
+</parameter>
+</method>
+<method name="createPlayVideoIntentWithOptions"
+ return="android.content.Intent"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="videoId" type="java.lang.String">
+</parameter>
+<parameter name="fullscreen" type="boolean">
+</parameter>
+<parameter name="finishOnEnd" type="boolean">
+</parameter>
+</method>
+<method name="createSearchIntent"
+ return="android.content.Intent"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="query" type="java.lang.String">
+</parameter>
+</method>
+<method name="createUploadIntent"
+ return="android.content.Intent"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="videoUri" type="android.net.Uri">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+</method>
+<method name="createUserIntent"
+ return="android.content.Intent"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="username" type="java.lang.String">
+</parameter>
+</method>
+<method name="getInstalledYouTubeVersionCode"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="getInstalledYouTubeVersionName"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="isYouTubeInstalled"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+</class>
+<interface name="YouTubePlayer"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="addFullscreenControlFlag"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="controlFlag" type="int">
+</parameter>
+</method>
+<method name="cuePlaylist"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="playlistId" type="java.lang.String">
+</parameter>
+</method>
+<method name="cuePlaylist"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="playlistId" type="java.lang.String">
+</parameter>
+<parameter name="startIndex" type="int">
+</parameter>
+<parameter name="timeMillis" type="int">
+</parameter>
+</method>
+<method name="cueVideo"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="videoId" type="java.lang.String">
+</parameter>
+</method>
+<method name="cueVideo"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="videoId" type="java.lang.String">
+</parameter>
+<parameter name="timeMillis" type="int">
+</parameter>
+</method>
+<method name="cueVideos"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="videoIds" type="java.util.List&lt;java.lang.String&gt;">
+</parameter>
+</method>
+<method name="cueVideos"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="videoIds" type="java.util.List&lt;java.lang.String&gt;">
+</parameter>
+<parameter name="startIndex" type="int">
+</parameter>
+<parameter name="timeMillis" type="int">
+</parameter>
+</method>
+<method name="getCurrentTimeMillis"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDurationMillis"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getFullscreenControlFlags"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="hasNext"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="hasPrevious"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isPlaying"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="loadPlaylist"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="playlistId" type="java.lang.String">
+</parameter>
+</method>
+<method name="loadPlaylist"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="playlistId" type="java.lang.String">
+</parameter>
+<parameter name="startIndex" type="int">
+</parameter>
+<parameter name="timeMillis" type="int">
+</parameter>
+</method>
+<method name="loadVideo"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="videoId" type="java.lang.String">
+</parameter>
+</method>
+<method name="loadVideo"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="videoId" type="java.lang.String">
+</parameter>
+<parameter name="timeMillis" type="int">
+</parameter>
+</method>
+<method name="loadVideos"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="videoIds" type="java.util.List&lt;java.lang.String&gt;">
+</parameter>
+</method>
+<method name="loadVideos"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="videoIds" type="java.util.List&lt;java.lang.String&gt;">
+</parameter>
+<parameter name="startIndex" type="int">
+</parameter>
+<parameter name="timeMillis" type="int">
+</parameter>
+</method>
+<method name="next"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="pause"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="play"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="previous"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="release"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="seekRelativeMillis"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="milliSeconds" type="int">
+</parameter>
+</method>
+<method name="seekToMillis"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="milliSeconds" type="int">
+</parameter>
+</method>
+<method name="setFullscreen"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="fullscreen" type="boolean">
+</parameter>
+</method>
+<method name="setFullscreenControlFlags"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="controlFlags" type="int">
+</parameter>
+</method>
+<method name="setManageAudioFocus"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="manage" type="boolean">
+</parameter>
+</method>
+<method name="setOnFullscreenListener"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="listener" type="com.google.android.youtube.player.YouTubePlayer.OnFullscreenListener">
+</parameter>
+</method>
+<method name="setPlaybackEventListener"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="listener" type="com.google.android.youtube.player.YouTubePlayer.PlaybackEventListener">
+</parameter>
+</method>
+<method name="setPlayerStateChangeListener"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="listener" type="com.google.android.youtube.player.YouTubePlayer.PlayerStateChangeListener">
+</parameter>
+</method>
+<method name="setPlayerStyle"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="style" type="com.google.android.youtube.player.YouTubePlayer.PlayerStyle">
+</parameter>
+</method>
+<method name="setPlaylistEventListener"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="listener" type="com.google.android.youtube.player.YouTubePlayer.PlaylistEventListener">
+</parameter>
+</method>
+<method name="setShowFullscreenButton"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="show" type="boolean">
+</parameter>
+</method>
+<field name="FULLSCREEN_FLAG_ALWAYS_FULLSCREEN_IN_LANDSCAPE"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="4"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FULLSCREEN_FLAG_CONTROL_ORIENTATION"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="1"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FULLSCREEN_FLAG_CONTROL_SYSTEM_UI"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FULLSCREEN_FLAG_CUSTOM_LAYOUT"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="8"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</interface>
+<class name="YouTubePlayer.ErrorReason"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.google.android.youtube.player.YouTubePlayer.ErrorReason"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.google.android.youtube.player.YouTubePlayer.ErrorReason[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<interface name="YouTubePlayer.OnFullscreenListener"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onFullscreen"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="isFullscreen" type="boolean">
+</parameter>
+</method>
+</interface>
+<interface name="YouTubePlayer.OnInitializedListener"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onInitializationFailure"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="provider" type="com.google.android.youtube.player.YouTubePlayer.Provider">
+</parameter>
+<parameter name="error" type="com.google.android.youtube.player.YouTubeInitializationResult">
+</parameter>
+</method>
+<method name="onInitializationSuccess"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="provider" type="com.google.android.youtube.player.YouTubePlayer.Provider">
+</parameter>
+<parameter name="player" type="com.google.android.youtube.player.YouTubePlayer">
+</parameter>
+<parameter name="wasRestored" type="boolean">
+</parameter>
+</method>
+</interface>
+<interface name="YouTubePlayer.PlaybackEventListener"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onBuffering"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="isBuffering" type="boolean">
+</parameter>
+</method>
+<method name="onPaused"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="onPlaying"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="onSeekTo"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="newPositionMillis" type="int">
+</parameter>
+</method>
+<method name="onStopped"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</interface>
+<interface name="YouTubePlayer.PlayerStateChangeListener"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onAdStarted"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="onError"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="reason" type="com.google.android.youtube.player.YouTubePlayer.ErrorReason">
+</parameter>
+</method>
+<method name="onLoaded"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="videoId" type="java.lang.String">
+</parameter>
+</method>
+<method name="onLoading"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="onVideoEnded"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="onVideoStarted"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</interface>
+<class name="YouTubePlayer.PlayerStyle"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.google.android.youtube.player.YouTubePlayer.PlayerStyle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.google.android.youtube.player.YouTubePlayer.PlayerStyle[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<interface name="YouTubePlayer.PlaylistEventListener"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onNext"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="onPlaylistEnded"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="onPrevious"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</interface>
+<interface name="YouTubePlayer.Provider"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="initialize"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="developerKey" type="java.lang.String">
+</parameter>
+<parameter name="listener" type="com.google.android.youtube.player.YouTubePlayer.OnInitializedListener">
+</parameter>
+</method>
+</interface>
+<class name="YouTubePlayerFragment"
+ extends="android.app.Fragment"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="com.google.android.youtube.player.YouTubePlayer.Provider">
+</implements>
+<constructor name="YouTubePlayerFragment"
+ type="com.google.android.youtube.player.YouTubePlayerFragment"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="initialize"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="developerKey" type="java.lang.String">
+</parameter>
+<parameter name="listener" type="com.google.android.youtube.player.YouTubePlayer.OnInitializedListener">
+</parameter>
+</method>
+<method name="newInstance"
+ return="com.google.android.youtube.player.YouTubePlayerFragment"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="YouTubePlayerSupportFragment"
+ extends="android.support.v4.app.Fragment"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="com.google.android.youtube.player.YouTubePlayer.Provider">
+</implements>
+<constructor name="YouTubePlayerSupportFragment"
+ type="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="initialize"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="developerKey" type="java.lang.String">
+</parameter>
+<parameter name="listener" type="com.google.android.youtube.player.YouTubePlayer.OnInitializedListener">
+</parameter>
+</method>
+<method name="newInstance"
+ return="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="YouTubePlayerView"
+ extends="android.view.ViewGroup"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="com.google.android.youtube.player.YouTubePlayer.Provider">
+</implements>
+<constructor name="YouTubePlayerView"
+ type="com.google.android.youtube.player.YouTubePlayerView"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</constructor>
+<constructor name="YouTubePlayerView"
+ type="com.google.android.youtube.player.YouTubePlayerView"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor name="YouTubePlayerView"
+ type="com.google.android.youtube.player.YouTubePlayerView"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+<parameter name="defStyle" type="int">
+</parameter>
+</constructor>
+<method name="initialize"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="developerKey" type="java.lang.String">
+</parameter>
+<parameter name="onInitializedListener" type="com.google.android.youtube.player.YouTubePlayer.OnInitializedListener">
+</parameter>
+</method>
+</class>
+<class name="YouTubeStandalonePlayer"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="createPlaylistIntent"
+ return="android.content.Intent"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+<parameter name="developerKey" type="java.lang.String">
+</parameter>
+<parameter name="playlistId" type="java.lang.String">
+</parameter>
+</method>
+<method name="createPlaylistIntent"
+ return="android.content.Intent"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+<parameter name="developerKey" type="java.lang.String">
+</parameter>
+<parameter name="playlistId" type="java.lang.String">
+</parameter>
+<parameter name="startIndex" type="int">
+</parameter>
+<parameter name="timeMillis" type="int">
+</parameter>
+<parameter name="autoplay" type="boolean">
+</parameter>
+<parameter name="lightboxMode" type="boolean">
+</parameter>
+</method>
+<method name="createVideoIntent"
+ return="android.content.Intent"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+<parameter name="developerKey" type="java.lang.String">
+</parameter>
+<parameter name="videoId" type="java.lang.String">
+</parameter>
+</method>
+<method name="createVideoIntent"
+ return="android.content.Intent"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+<parameter name="developerKey" type="java.lang.String">
+</parameter>
+<parameter name="videoId" type="java.lang.String">
+</parameter>
+<parameter name="timeMillis" type="int">
+</parameter>
+<parameter name="autoplay" type="boolean">
+</parameter>
+<parameter name="lightboxMode" type="boolean">
+</parameter>
+</method>
+<method name="getReturnedInitializationResult"
+ return="com.google.android.youtube.player.YouTubeInitializationResult"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="data" type="android.content.Intent">
+</parameter>
+</method>
+</class>
+<interface name="YouTubeThumbnailLoader"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="first"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="hasNext"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="hasPrevious"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="next"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="previous"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="release"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setOnThumbnailLoadedListener"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="listener" type="com.google.android.youtube.player.YouTubeThumbnailLoader.OnThumbnailLoadedListener">
+</parameter>
+</method>
+<method name="setPlaylist"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="playlistId" type="java.lang.String">
+</parameter>
+</method>
+<method name="setPlaylist"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="playlistId" type="java.lang.String">
+</parameter>
+<parameter name="skipTo" type="int">
+</parameter>
+</method>
+<method name="setVideo"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="videoId" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<class name="YouTubeThumbnailLoader.ErrorReason"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.google.android.youtube.player.YouTubeThumbnailLoader.ErrorReason"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.google.android.youtube.player.YouTubeThumbnailLoader.ErrorReason[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<interface name="YouTubeThumbnailLoader.OnThumbnailLoadedListener"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onThumbnailError"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="thumbnail" type="com.google.android.youtube.player.YouTubeThumbnailView">
+</parameter>
+<parameter name="reason" type="com.google.android.youtube.player.YouTubeThumbnailLoader.ErrorReason">
+</parameter>
+</method>
+<method name="onThumbnailLoaded"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="thumbnail" type="com.google.android.youtube.player.YouTubeThumbnailView">
+</parameter>
+<parameter name="videoId" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<class name="YouTubeThumbnailView"
+ extends="android.widget.ImageView"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="YouTubeThumbnailView"
+ type="com.google.android.youtube.player.YouTubeThumbnailView"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</constructor>
+<constructor name="YouTubeThumbnailView"
+ type="com.google.android.youtube.player.YouTubeThumbnailView"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor name="YouTubeThumbnailView"
+ type="com.google.android.youtube.player.YouTubeThumbnailView"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+<parameter name="defStyle" type="int">
+</parameter>
+</constructor>
+<method name="initialize"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="developerKey" type="java.lang.String">
+</parameter>
+<parameter name="onInitializedlistener" type="com.google.android.youtube.player.YouTubeThumbnailView.OnInitializedListener">
+</parameter>
+</method>
+</class>
+<interface name="YouTubeThumbnailView.OnInitializedListener"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onInitializationFailure"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="thumbnailView" type="com.google.android.youtube.player.YouTubeThumbnailView">
+</parameter>
+<parameter name="error" type="com.google.android.youtube.player.YouTubeInitializationResult">
+</parameter>
+</method>
+<method name="onInitializationSuccess"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="thumbnailView" type="com.google.android.youtube.player.YouTubeThumbnailView">
+</parameter>
+<parameter name="thumbnailLoader" type="com.google.android.youtube.player.YouTubeThumbnailLoader">
+</parameter>
+</method>
+</interface>
+</package>
+</api>
