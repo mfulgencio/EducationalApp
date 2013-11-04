@@ -48,8 +48,8 @@
 
     <string name="goButton">GO</string>
     <string name="title_activity_videos">Videos</string>
-    
     <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
-    
+    <string name="title_activity_tabs">Tabs</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

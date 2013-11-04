@@ -50,7 +50,7 @@ public class Topics  extends Activity implements OnClickListener {
 	
 	@Override
 	public void onClick(View v) {
-		Intent i = new Intent(this, Videos.class);
+		Intent i = new Intent(this, Tabs.class);
 		
 		this.startActivity(i);
 		
