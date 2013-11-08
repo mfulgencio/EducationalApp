@@ -339,6 +339,7 @@ public class QuizTab extends Fragment {
 	        		alertBuilder.setMessage("Please answer all the questions");
 					AlertDialog results = alertBuilder.create();
 					results.show();
+					ex.printStackTrace();
 	        	}
 	        }
 	    });

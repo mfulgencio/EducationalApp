@@ -319,6 +319,8 @@ public class Quiz extends Activity {
 	        		alertBuilder.setMessage("Please answer all the questions");
 					AlertDialog results = alertBuilder.create();
 					results.show();
+					ex.printStackTrace();
+					Log.d("mathpath","exception");
 	        	}
 	        }
 	    });
