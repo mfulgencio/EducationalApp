@@ -25,14 +25,14 @@ public class Videos extends YouTubeFailureRecoveryActivity {
 	    
 	    quizButton = (android.widget.Button)findViewById(R.id.quiz_button);
 		
-		quizButton.setOnClickListener(new OnClickListener() {           
-			@Override
-			public void onClick(View v) {
-				Intent quiz = new Intent(Videos.this, Quiz.class);
-				
-				startActivity(quiz);
-			}    
-		});
+//		quizButton.setOnClickListener(new OnClickListener() {           
+//			@Override
+////			public void onClick(View v) {
+////				Intent quiz = new Intent(Videos.this, Quiz.class);
+////				
+////				startActivity(quiz);
+////			}    
+//		});
 	}
 	
 	@Override
