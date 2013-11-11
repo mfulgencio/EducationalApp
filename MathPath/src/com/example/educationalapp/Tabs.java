@@ -69,16 +69,11 @@ public class Tabs extends FragmentActivity implements TabListener {
     	videoTab.setText("Videos");
     	videoTab.setTabListener(this);
     	
-    	ActionBar.Tab quizTab = actionBar.newTab();
-    	quizTab.setText("Quiz and Results");
-    	quizTab.setTabListener(this);
-    	
     	ActionBar.Tab erTab = actionBar.newTab();
     	erTab.setText("External Resources");
     	erTab.setTabListener(this);
     	
     	actionBar.addTab(videoTab);
-    	actionBar.addTab(quizTab);
     	actionBar.addTab(erTab);
     }
 
@@ -113,7 +108,7 @@ class MyAdapter extends FragmentStatePagerAdapter {
 		
 		if (arg0 == 0)
 			fragment = new VideosTab();
-		if (arg0 == 2)
+		if (arg0 == 1)
 			fragment = new ERTab();
 		
 		return fragment;
