@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
-    android:orientation="horizontal"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/app_background" >
+    android:background="@drawable/gradient"
+    android:orientation="horizontal">
+   
+    
     
     <RelativeLayout android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight=".33" >
-        <TextView android:id="@+id/limits_tv"
-            android:layout_width="wrap_content"
-        	android:layout_height="wrap_content"
-        	android:text="@string/limits"
-        	android:textSize="40sp"
-        	android:layout_centerHorizontal="true"
-        	android:layout_marginTop="90dp"
-        	android:textColor="@color/MathPathBlue" />
 
     	<Button
     	    android:id="@+id/button1"
@@ -31,23 +25,33 @@
     	    android:id="@+id/limit_spinner"
     	    android:layout_width="wrap_content"
     	    android:layout_height="wrap_content"
-    	    android:layout_alignParentLeft="true"
-    	    android:layout_below="@+id/limits_tv"
-    	    android:layout_marginTop="18dp" />
+    	    android:layout_centerVertical="true"
+    	    android:layout_marginLeft="20sp" />
+
+    	<TextView
+    	    android:id="@+id/limits_tv"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_above="@+id/limit_spinner"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_marginBottom="36dp"
+    	    android:text="@string/limits"
+    	    android:textColor="@color/MathPathBlue"
+    	    android:textSize="40sp" />
 
     </RelativeLayout>
     
     <RelativeLayout android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight=".33" >
-        <TextView android:id="@+id/derivaties_tv"
-            android:layout_width="wrap_content"
-        	android:layout_height="wrap_content"
-        	android:text="@string/derivatives"
-        	android:textSize="40sp"
-        	android:layout_centerHorizontal="true"
-        	android:layout_marginTop="90dp"
-        	android:textColor="@color/MathPathBlue" />
+<!-- 
+    <TextView
+        android:id="@+id/topicstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/topics_description"
+        android:textColor="@color/white"
+        android:textSize="25sp" /> -->
 
     	<Button
     	    android:id="@+id/button2"
@@ -63,23 +67,27 @@
     	    android:id="@+id/derivatives_spinner"
     	    android:layout_width="wrap_content"
     	    android:layout_height="wrap_content"
-    	    android:layout_alignParentLeft="true"
-    	    android:layout_below="@+id/derivaties_tv"
-    	    android:layout_marginTop="18dp" />
+    
+    	    android:layout_centerVertical="true"
+    	    android:layout_marginLeft="20dp"
+    	    android:layout_marginBottom="100dp" />
+
+    	<TextView
+    	    android:id="@+id/derivaties_tv"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_above="@+id/derivatives_spinner"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_marginBottom="36dp"
+    	    android:text="@string/derivatives"
+    	    android:textColor="@color/MathPathBlue"
+    	    android:textSize="40sp" />
 
     </RelativeLayout>
     
     <RelativeLayout android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight=".33" >
-        <TextView android:id="@+id/integrals_tv"
-            android:layout_width="wrap_content"
-        	android:layout_height="wrap_content"
-        	android:text="@string/integrals"
-        	android:textSize="40sp"
-        	android:layout_centerHorizontal="true"
-        	android:layout_marginTop="90dp"
-        	android:textColor="@color/MathPathBlue" />
 
     	<Button
     	    android:id="@+id/button3"
@@ -96,8 +104,19 @@
     	    android:layout_width="wrap_content"
     	    android:layout_height="wrap_content"
     	    android:layout_alignParentLeft="true"
-    	    android:layout_below="@+id/integrals_tv"
-    	    android:layout_marginTop="18dp" />
+    	    android:layout_centerVertical="true"
+    	    android:layout_marginLeft="20dp" />
+
+    	<TextView
+    	    android:id="@+id/integrals_tv"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_above="@+id/integrals_spinner"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_marginBottom="36dp"
+    	    android:text="@string/integrals"
+    	    android:textColor="@color/MathPathBlue"
+    	    android:textSize="40sp" />
 
     </RelativeLayout>
     

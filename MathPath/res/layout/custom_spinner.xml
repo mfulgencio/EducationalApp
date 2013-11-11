@@ -1,11 +1,13 @@
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:text="@+id/TextView01"
     android:id="@+id/TextView01"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:textSize="25sp"
-    android:textColor="#FFFFFFFF"
-    android:height="42dp"
     android:gravity="center_vertical"
-    android:padding = "2dp">
+    android:height="42dp"
+    android:padding="2dp"
+    android:text="@+id/TextView01"
+    android:textColor="@color/MathPathBlue"
+    android:textSize="25sp"
+    android:background="@color/white" >
+
 </TextView>
