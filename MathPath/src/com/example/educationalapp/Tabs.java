@@ -113,8 +113,6 @@ class MyAdapter extends FragmentStatePagerAdapter {
 		
 		if (arg0 == 0)
 			fragment = new VideosTab();
-		if (arg0 == 1)
-			fragment = new QuizTab();
 		if (arg0 == 2)
 			fragment = new ERTab();
 		
@@ -123,7 +121,7 @@ class MyAdapter extends FragmentStatePagerAdapter {
 
 	@Override
 	public int getCount() {
-		return 3;
+		return 2;
 	}
 	
 }
