@@ -23,8 +23,8 @@ public class VideosTab extends Fragment {
 
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		Intent intent = YouTubeIntents.createOpenPlaylistIntent(getActivity(), PLAYLIST_ID);
-        startActivity(intent);
+//		Intent intent = YouTubeIntents.createOpenPlaylistIntent(getActivity(), PLAYLIST_ID);
+//        startActivity(intent);
 		
 		// Inflate the layout for this fragment
 		return inflater.inflate(R.layout.videos_tab_fragment, container, false);
