@@ -2,26 +2,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/app_background" >
+    android:background="@drawable/gradient"
+    android:orientation="vertical" >
 
-    <TextView 
+    <TextView
         android:id="@+id/welcome_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:text="@string/welcome_message_line1"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:textColor="@color/MathPathBlue" />
+        android:textColor="@color/white"
+        android:textSize="30sp" />
     
-    <TextView 
+    <TextView
         android:id="@+id/welcome_line2"
-        android:text="@string/welcome_message_line2"
-        android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:textColor="@color/MathPathBlue" />
+        android:layout_gravity="center_horizontal"
+        android:text="@string/welcome_message_line2"
+        android:textColor="@color/white"
+        android:textColorLink="@color/white"
+        android:textSize="30sp" />
 
     <ScrollView 
         android:id="@+id/subjects"
@@ -42,18 +43,18 @@
 		        android:layout_gravity="center_horizontal" >
 		        
 		        <Button
-			        android:id="@+id/calc1_button"
-			        android:text="@string/calculus1"
-			        style="?android:attr/buttonStyleSmall"
-			        android:layout_width="wrap_content"
-			        android:layout_height="wrap_content"
-			        android:paddingLeft="150dp"
-			        android:paddingRight="150dp"
-			        android:paddingTop="60dp"
-			        android:paddingBottom="60dp"
-			        android:textSize="40sp"
-			        android:textColor="@color/white"
-			        android:background="@drawable/rounded_corner_button" />
+		            android:id="@+id/calc1_button"
+		            style="?android:attr/buttonStyleSmall"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/rounded_corner_button"
+		            android:paddingBottom="50dp"
+		            android:paddingLeft="120dp"
+		            android:paddingRight="120dp"
+		            android:paddingTop="50dp"
+		            android:text="@string/calculus1"
+		            android:textColor="@color/white"
+		            android:textSize="20sp" />
 		    
 		    	<Button 
 			        android:id="@+id/calc1_info_button"
@@ -61,7 +62,7 @@
 			        style="?android:attr/buttonStyleSmall"
 			        android:layout_width="wrap_content"
 			        android:layout_height="wrap_content"
-			        android:layout_marginTop="50dp"
+			        android:layout_marginTop="30dp"
 			        android:textColor="@color/white"
 			        android:background="@drawable/round_button" />
 		        
@@ -81,11 +82,11 @@
 			        style="?android:attr/buttonStyleSmall"
 			        android:layout_width="wrap_content"
 			        android:layout_height="wrap_content"
-			        android:paddingLeft="150dp"
-			        android:paddingRight="150dp"
-			        android:paddingTop="60dp"
-			        android:paddingBottom="60dp"
-			        android:textSize="40sp"
+			        android:paddingLeft="120dp"
+			        android:paddingRight="120dp"
+			        android:paddingTop="50dp"
+			        android:paddingBottom="50dp"
+			        android:textSize="20sp"
 			        android:textColor="@color/white"
 			        android:background="@drawable/rounded_corner_button" />
 		    
@@ -95,7 +96,7 @@
 			        style="?android:attr/buttonStyleSmall"
 			        android:layout_width="wrap_content"
 			        android:layout_height="wrap_content"
-			        android:layout_marginTop="50dp"
+			        android:layout_marginTop="30dp"
 			        android:textColor="@color/white"
 			     	android:background="@drawable/round_button" />
 		        
