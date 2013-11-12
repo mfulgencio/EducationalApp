@@ -1,23 +1,33 @@
 package com.example.educationalapp;
 
+import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-public class Topics  extends Activity implements OnClickListener {
+public class Topics extends Activity {
 	android.widget.Button limitsGoButton;
+	Spinner limits_spinner, derivatives_spinner, integrals_spinner;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.topics);
+		
+		ActionBar bar = getActionBar();
+		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3CC7C7")));
 	
 		//limits spinner
-		Spinner limits_spinner = (Spinner) findViewById(R.id.limit_spinner);
+		limits_spinner = (Spinner) findViewById(R.id.limit_spinner);
 		
 		ArrayAdapter<CharSequence> limits_adapter = ArrayAdapter.createFromResource(this, R.array.limits_array, R.layout.custom_spinner_list);
 		
@@ -25,8 +35,23 @@ public class Topics  extends Activity implements OnClickListener {
 		
 		limits_spinner.setAdapter(limits_adapter);
 		
+		limitsGoButton = (android.widget.Button)findViewById(R.id.button1);
+		
+		limitsGoButton.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(Topics.this, LimitsTabs.class);
+				
+				i.putExtra("tab", limits_spinner.getSelectedItemPosition() + 1);
+				
+				Topics.this.startActivity(i);
+			}
+			
+		});
+		
 		//derivatives spinner
-		Spinner derivatives_spinner = (Spinner) findViewById(R.id.derivatives_spinner);
+		derivatives_spinner = (Spinner) findViewById(R.id.derivatives_spinner);
 		
 		ArrayAdapter<CharSequence> derivatives_adapter = ArrayAdapter.createFromResource(this, R.array.derivatives_array, R.layout.custom_spinner_list);
 		
@@ -35,25 +60,12 @@ public class Topics  extends Activity implements OnClickListener {
 		derivatives_spinner.setAdapter(derivatives_adapter);
 		
 		//integrals spinner
-		Spinner integrals_spinner = (Spinner) findViewById(R.id.integrals_spinner);
+		integrals_spinner = (Spinner) findViewById(R.id.integrals_spinner);
 		
 		ArrayAdapter<CharSequence> integrals_adapter = ArrayAdapter.createFromResource(this, R.array.integrals_array,R.layout.custom_spinner_list);
 		
 		integrals_adapter.setDropDownViewResource(R.layout.custom_spinner);
 		
 		integrals_spinner.setAdapter(integrals_adapter);
-		
-		limitsGoButton = (android.widget.Button)findViewById(R.id.button1);
-		
-		limitsGoButton.setOnClickListener(this);
 	}
-	
-	@Override
-	public void onClick(View v) {
-		Intent i = new Intent(this, Tabs.class);
-		
-		this.startActivity(i);
-		
-	}
-	
 }

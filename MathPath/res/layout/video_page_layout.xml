@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/app_background" >
+    android:background="@drawable/gradient" >
   	
     <RelativeLayout android:layout_width="match_parent"
         android:layout_height="0dip"
