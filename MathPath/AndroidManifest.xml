@@ -42,7 +42,7 @@
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name="com.example.educationalapp.Tabs"
+            android:name="com.example.educationalapp.DerivativeTabs"
             android:label="@string/app_name"
             android:screenOrientation="landscape" >
         </activity>

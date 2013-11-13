@@ -25,7 +25,7 @@ import android.widget.TextView;
 import android.widget.ArrayAdapter;
 import android.support.v4.view.PagerAdapter;
 
-public class Tabs extends FragmentActivity implements TabListener {
+public class DerivativeTabs extends FragmentActivity implements TabListener {
 	ActionBar actionBar;
 	ViewPager viewPager;
 	
@@ -69,12 +69,73 @@ public class Tabs extends FragmentActivity implements TabListener {
     	videoTab.setText("Videos");
     	videoTab.setTabListener(this);
     	
+    	ActionBar.Tab introDerTab = actionBar.newTab();
+    	introDerTab.setText("Intro to Derivatives");
+        introDerTab.setTabListener(this);
+        
+    	ActionBar.Tab limitDefTab = actionBar.newTab();
+    	limitDefTab.setText("Limit Definitions");
+        limitDefTab.setTabListener(this);
+        
+    	ActionBar.Tab rulesTab = actionBar.newTab();
+    	rulesTab.setText("Rules");
+        rulesTab.setTabListener(this);     
+        
+    	ActionBar.Tab implicitDiffTab = actionBar.newTab();
+    	implicitDiffTab.setText("Implicit Differentiation");
+    	implicitDiffTab.setTabListener(this);
+        
+    	ActionBar.Tab optimizationTab = actionBar.newTab();
+    	optimizationTab.setText("Optimization");
+        optimizationTab.setTabListener(this);
+        
+    	ActionBar.Tab relatedRatesTab = actionBar.newTab();
+    	relatedRatesTab.setText("Related Rates");
+        relatedRatesTab.setTabListener(this);
+        /*
+    	ActionBar.Tab introIntegralsTab = actionBar.newTab();
+    	introIntegralsTab.setText("Intro To Integrals");
+    	introIntegralsTab.setTabListener(this);
+        
+    	ActionBar.Tab indefIntegralsTab = actionBar.newTab();
+    	indefIntegralsTab.setText("Indefinite Integrals");
+    	indefIntegralsTab.setTabListener(this);
+        
+    	ActionBar.Tab defIntegralsTab = actionBar.newTab();
+    	defIntegralsTab.setText("Definite Integrals");
+    	defIntegralsTab.setTabListener(this);
+        
+    	ActionBar.Tab relatedRatesTab = actionBar.newTab();
+    	relatedRatesTab.setText("Area Under the Curve");
+        relatedRatesTab.setTabListener(this);
+        
+    	ActionBar.Tab relatedRatesTab = actionBar.newTab();
+    	relatedRatesTab.setText("U Substitution");
+        relatedRatesTab.setTabListener(this);
+     */
+        /*
+    </string-array>
+    <string-array name="integrals_array">
+        <item>Intro to Integrals</item>
+        <item>Indefinite Integrals</item>
+        <item>Definite Integrals</item>
+        <item>Area Under the Curve</item>
+        <item>U Substitution</item>
+         */
+        
     	ActionBar.Tab erTab = actionBar.newTab();
     	erTab.setText("External Resources");
     	erTab.setTabListener(this);
     	
     	actionBar.addTab(videoTab);
+    	actionBar.addTab(introDerTab);
+    	actionBar.addTab(limitDefTab);
+    	actionBar.addTab(rulesTab);
+    	actionBar.addTab(implicitDiffTab);
+    	actionBar.addTab(optimizationTab);
+    	actionBar.addTab(relatedRatesTab);
     	actionBar.addTab(erTab);
+
     }
 
 	@Override
@@ -110,7 +171,19 @@ class MyAdapter extends FragmentStatePagerAdapter {
 			fragment = new VideosTab();
 		if (arg0 == 1)
 			fragment = new ERTab();
-		
+		if (arg0 == 2)
+			fragment = new IntroDerTab();
+        if (arg0 == 3)
+        	fragment = new LimitDefTab();
+        if (arg0 == 4)
+        	fragment = new RulesTab();
+        if (arg0 == 5)
+        	fragment = new ImplicitDiffTab();
+        if (arg0 == 6)
+        	fragment = new OptimizationTab();
+        if (arg0 == 7)
+        	fragment = new RelatedRatesTab();
+
 		return fragment;
 	}
 
