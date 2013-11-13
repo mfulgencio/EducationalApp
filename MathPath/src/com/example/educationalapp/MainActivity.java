@@ -29,6 +29,7 @@ public class MainActivity extends Activity {
 		calc1Button = (Button)findViewById(R.id.calc1_button);
 		calc1InfoButton = (Button)findViewById(R.id.calc1_info_button);
 		
+		
 		calc1Button.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {

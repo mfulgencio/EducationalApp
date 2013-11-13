@@ -68,16 +68,16 @@ public class Topics extends Activity {
 		
 		integrals_spinner.setAdapter(integrals_adapter);
 	}
-<<<<<<< HEAD
-	
-	@Override
-	public void onClick(View v) {
-		Intent i = new Intent(this, DerivativeTabs.class);
-		
-		this.startActivity(i);
-		
-	}
-	
-=======
->>>>>>> 742c461d722ad643ef49884d91818fbb978fa923
+//<<<<<<< HEAD
+//	
+//	@Override
+//	public void onClick(View v) {
+//		Intent i = new Intent(this, DerivativesTabs.class);
+//		
+//		this.startActivity(i);
+//		
+//	}
+//	
+//=======
+//>>>>>>> 742c461d722ad643ef49884d91818fbb978fa923
 }

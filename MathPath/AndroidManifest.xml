@@ -41,13 +41,13 @@
             android:screenOrientation="landscape" >
         </activity>
         <activity
-<<<<<<< HEAD
-            android:name="com.example.educationalapp.DerivativeTabs"
-            android:label="@string/app_name"
-=======
             android:name="com.example.educationalapp.LimitsTabs"
             android:label="Limits"
->>>>>>> 742c461d722ad643ef49884d91818fbb978fa923
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.educationalapp.DerivativesTabs"
+            android:label="Derivatives"
             android:screenOrientation="landscape" >
         </activity>
     </application>

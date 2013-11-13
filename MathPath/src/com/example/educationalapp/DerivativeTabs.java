@@ -32,7 +32,7 @@ public class DerivativeTabs extends FragmentActivity implements TabListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
     	super.onCreate(savedInstanceState);
-    	setContentView(R.layout.tabs_layout);
+    	setContentView(R.layout.derivatives_tabs_layout);
     	
     	viewPager = (ViewPager) findViewById(R.id.pager);
     	viewPager.setAdapter(new MyAdapter(getSupportFragmentManager()));
@@ -157,9 +157,9 @@ public class DerivativeTabs extends FragmentActivity implements TabListener {
 	}
 }
 
-class MyAdapter extends FragmentStatePagerAdapter {
+class MyDerivativesAdapter extends FragmentStatePagerAdapter {
 
-	public MyAdapter(FragmentManager fm) {
+	public MyDerivativesAdapter(FragmentManager fm) {
 		super(fm);
 	}
 
@@ -167,21 +167,18 @@ class MyAdapter extends FragmentStatePagerAdapter {
 	public Fragment getItem(int arg0) {
 		Fragment fragment = null;
 		
+
 		if (arg0 == 0)
-			fragment = new VideosTab();
-		if (arg0 == 1)
-			fragment = new ERTab();
-		if (arg0 == 2)
 			fragment = new IntroDerTab();
-        if (arg0 == 3)
+        if (arg0 == 1)
         	fragment = new LimitDefTab();
-        if (arg0 == 4)
+        if (arg0 == 2)
         	fragment = new RulesTab();
-        if (arg0 == 5)
+        if (arg0 == 3)
         	fragment = new ImplicitDiffTab();
-        if (arg0 == 6)
+        if (arg0 == 4)
         	fragment = new OptimizationTab();
-        if (arg0 == 7)
+        if (arg0 == 5)
         	fragment = new RelatedRatesTab();
 
 		return fragment;
