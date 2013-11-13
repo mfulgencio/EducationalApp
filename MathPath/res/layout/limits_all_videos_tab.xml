@@ -2,14 +2,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/app_background"
-    tools:context=".ERTab" >
+    android:background="@drawable/gradient"
+    tools:context=".LimitsAllVideosTab" >
 
     <!-- TODO: Update blank fragment layout -->
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="THIS IS THE EXTERNAL RESOURCES TAB" />
+        android:text="ALL VIDEOS"
+        android:textSize="40sp"
+        android:textColor="@color/black" />
 
 </FrameLayout>

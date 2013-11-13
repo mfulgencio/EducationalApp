@@ -1,26 +1,25 @@
 package com.example.educationalapp;
 
 import android.os.Bundle;
+import android.view.View;
+
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * A simple {@link android.support.v4.app.Fragment} subclass.
- * 
- */
-public class ERTab extends Fragment {
+public class LimitsAllVideosTab extends Fragment {
 
-	public ERTab() {
+	public LimitsAllVideosTab() {
 		// Required empty public constructor
 	}
 
-	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
+		
 		// Inflate the layout for this fragment
-		return inflater.inflate(R.layout.er_tab_fragment, container, false);
+		return inflater.inflate(R.layout.limits_all_videos_tab, container, false);
+		
+		
 	}
 
 }

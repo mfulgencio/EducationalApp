@@ -3,4 +3,8 @@
     android:id="@+id/pager"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD:MathPath/res/layout/tabs_layout.xml
     tools:context="com.example.educationalapp.DerivativeTabs" />
+=======
+    tools:context="com.example.educationalapp.LimitsTabs" />
+>>>>>>> 742c461d722ad643ef49884d91818fbb978fa923:MathPath/res/layout/limits_tabs_layout.xml

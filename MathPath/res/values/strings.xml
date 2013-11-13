@@ -19,7 +19,7 @@
 
     <string-array name="limits_array">
         <item>Intro to Limits</item>
-        <item>One-Sided Limits</item>
+        <item>Solving Limits</item>
         <item>Limits at Infinity</item>
         <item>Continuity</item>
     </string-array>
@@ -29,7 +29,7 @@
         <item>Rules</item>
         <item>Implicit Differentiation</item>
         <item>Optimization</item>
-        <item>Relates Rates</item>
+        <item>Related Rates</item>
     </string-array>
     <string-array name="integrals_array">
         <item>Intro to Integrals</item>

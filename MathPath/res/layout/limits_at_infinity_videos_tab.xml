@@ -2,14 +2,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/app_background"
-    tools:context=".VideosTab" >
+    android:background="@drawable/gradient"
+    tools:context=".LimitsERTab" >
 
     <!-- TODO: Update blank fragment layout -->
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="THIS IS THE VIDEOS TAB" />
+        android:text="LIMITS AT INFINITY"
+        android:textSize="40sp"
+        android:textColor="@color/black" />
 
 </FrameLayout>
