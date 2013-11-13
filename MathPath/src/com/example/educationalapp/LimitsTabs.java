@@ -35,7 +35,7 @@ public class LimitsTabs extends FragmentActivity implements TabListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
     	super.onCreate(savedInstanceState);
-    	setContentView(R.layout.tabs_layout);
+    	setContentView(R.layout.limits_tabs_layout);
     	
     	Intent i = getIntent();
     	
