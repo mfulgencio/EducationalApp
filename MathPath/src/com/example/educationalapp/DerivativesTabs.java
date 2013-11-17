@@ -6,6 +6,9 @@ import android.app.ActionBar.Tab;
 import android.app.ActionBar.TabListener;
 import android.app.Activity;
 import android.app.FragmentTransaction;
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
@@ -25,7 +28,7 @@ import android.widget.TextView;
 import android.widget.ArrayAdapter;
 import android.support.v4.view.PagerAdapter;
 
-public class DerivativeTabs extends FragmentActivity implements TabListener {
+public class DerivativesTabs extends FragmentActivity implements TabListener {
 	ActionBar actionBar;
 	ViewPager viewPager;
 	
@@ -34,8 +37,14 @@ public class DerivativeTabs extends FragmentActivity implements TabListener {
     	super.onCreate(savedInstanceState);
     	setContentView(R.layout.derivatives_tabs_layout);
     	
+    	Intent i = getIntent();
+    	
+    	ActionBar bar = getActionBar();
+		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3CC7C7")));
+    	
     	viewPager = (ViewPager) findViewById(R.id.pager);
-    	viewPager.setAdapter(new MyAdapter(getSupportFragmentManager()));
+    	viewPager.setAdapter(new MyDerivativesAdapter(getSupportFragmentManager()));
+    	viewPager.setCurrentItem(i.getIntExtra("derivatives tab", 0));
     	viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
 			
 			@Override
@@ -63,7 +72,6 @@ public class DerivativeTabs extends FragmentActivity implements TabListener {
 		});
     	
     	actionBar = getActionBar();
-    	actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
     	
     	ActionBar.Tab videoTab = actionBar.newTab();
     	videoTab.setText("Videos");
@@ -92,50 +100,20 @@ public class DerivativeTabs extends FragmentActivity implements TabListener {
     	ActionBar.Tab relatedRatesTab = actionBar.newTab();
     	relatedRatesTab.setText("Related Rates");
         relatedRatesTab.setTabListener(this);
-        /*
-    	ActionBar.Tab introIntegralsTab = actionBar.newTab();
-    	introIntegralsTab.setText("Intro To Integrals");
-    	introIntegralsTab.setTabListener(this);
-        
-    	ActionBar.Tab indefIntegralsTab = actionBar.newTab();
-    	indefIntegralsTab.setText("Indefinite Integrals");
-    	indefIntegralsTab.setTabListener(this);
-        
-    	ActionBar.Tab defIntegralsTab = actionBar.newTab();
-    	defIntegralsTab.setText("Definite Integrals");
-    	defIntegralsTab.setTabListener(this);
-        
-    	ActionBar.Tab relatedRatesTab = actionBar.newTab();
-    	relatedRatesTab.setText("Area Under the Curve");
-        relatedRatesTab.setTabListener(this);
-        
-    	ActionBar.Tab relatedRatesTab = actionBar.newTab();
-    	relatedRatesTab.setText("U Substitution");
-        relatedRatesTab.setTabListener(this);
-     */
-        /*
-    </string-array>
-    <string-array name="integrals_array">
-        <item>Intro to Integrals</item>
-        <item>Indefinite Integrals</item>
-        <item>Definite Integrals</item>
-        <item>Area Under the Curve</item>
-        <item>U Substitution</item>
-         */
         
     	ActionBar.Tab erTab = actionBar.newTab();
     	erTab.setText("External Resources");
     	erTab.setTabListener(this);
     	
-    	actionBar.addTab(videoTab);
     	actionBar.addTab(introDerTab);
     	actionBar.addTab(limitDefTab);
     	actionBar.addTab(rulesTab);
     	actionBar.addTab(implicitDiffTab);
     	actionBar.addTab(optimizationTab);
     	actionBar.addTab(relatedRatesTab);
-    	actionBar.addTab(erTab);
 
+    	actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+    	actionBar.setSelectedNavigationItem(i.getIntExtra("derivatives tab", 0));
     }
 
 	@Override
@@ -167,7 +145,6 @@ class MyDerivativesAdapter extends FragmentStatePagerAdapter {
 	public Fragment getItem(int arg0) {
 		Fragment fragment = null;
 		
-
 		if (arg0 == 0)
 			fragment = new IntroDerTab();
         if (arg0 == 1)
@@ -186,7 +163,7 @@ class MyDerivativesAdapter extends FragmentStatePagerAdapter {
 
 	@Override
 	public int getCount() {
-		return 2;
+		return 6;
 	}
 	
 }

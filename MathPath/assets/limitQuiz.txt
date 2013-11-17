@@ -4,157 +4,157 @@ a. f(x) = lim as x -> 0 of x
 b. f(x) = lim as h -> 0 of (f(x + h) - f(x)) / h
 c. f(x) = (f(x + h) - f(x)) / h
 d. f(x) = h
-1 
-limit definition of derivative
+Introduction to Limits 
+Intro to Limits
 What is the definition of continuity?
 b. function where at every point f(a) = lim as x -> a of f(x)
 a. function that passes the vertical line test
 b. function where at every point f(a) = lim as x -> a of f(x)
 c. function that you can draw without picking your pencil up
 d. function that has lots of holes and sharp edges
-1
-definition of continuity 
-What is the value of lim as x -> 2 of (x^2 + 4) / (x - 2)
+Limits to define continuity
+Continuity 
+Evaluate lim as x-> 2 of (x^2 + 4) / (x - 2)
 c. 4
 a. 6
 b. 2
 c. 4
 d. DNE
-1
-solving limits
-What is the value of lim as x -> 00 of (x^4 + 2x + 7) / (x^2 + 3x)
+Solving limits (part 1,2,3)
+Solving Limits
+Evaluate lim as x-> 00 of (x^4 + 2x + 7) / (x^2 + 3x)
 a. 00
 a. 00
 b. -00
 c. 0
 d. 7
 1
-solving limits at infinite
-What is the value of lim as t -> 4 of (t - sqrt(3t + 4)) / (4 - t)
+Limits at Infinity
+Evaluate lim as t-> 4 of (t - sqrt(3t + 4)) / (4 - t)
 d. -5/8
 a. 5/8
 b. 1/2
 c. 3
 d. -5/8
-1
-solving limits with square roots
-What is the value of lim as x -> 00 of (sin(x)) / (x)
+Solving limits (part 1,2,3)
+Solving Limits
+Evaluate lim as x-> 00 of (sin(x)) / (x)
 a. 0
 a. 0
 b. 00
 c. -00
 d. 1
-1
-solving limits of trig functions
+Squeeze Theorem
+Limits at Infinity
 Use limit properties to evaluate the following lim x -> 3 of 3x^2 + 5x - 9
 c. 33
 a. 51
 b. 87
 c. 33
 d. 11
-1
-solving limits
+Solving limits (part 1,2,3)
+Solving Limits
 Given V(t) = t^3 - 6t^2 + 35 estimate the instantaneous rate of change at t = 5
 d. 15
 a. 21
 b. 10
 c. 11
 d. 15
-1
-instantaneous rate of change
-What is the value of lim as h -> 0 of ((x - h) - x) / h
+Introduction to Limits
+Intro to Limits
+Evaluate lim as h-> 0 of ((x - h) - x) / h
 a. 1
 a. 1
 b. x
 c. 7
 d. h
-1
-solving limits with variables
-What is the value of lim x -> 0 of sin(5x) / 3x
+Solving limits (part 1,2,3)
+Solving Limits
+Evaluate lim x-> 0 of sin(5x) / 3x
 d. 5/3
 a. DNE 
 b. 1 
 c. 0
 d. 5/3
-1
-solving limits of trig functions
-Question 11
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 12
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 13
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 14
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 15
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 16
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 17
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 18
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 19
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 20
-a.
-a.
-b.
-c.
-d.
-1
-topic
+Solving limits (part 1,2,3)
+Solving Limits 
+Given lim x-> 8 of f(x) = -9 and lim x-> 8 of h(x) = 4 find lim x-> 8 [2f(x)-12h(x)]
+b. -66
+a. 66
+b. -66
+c. DNE
+d. 10
+Solving limits (part 1,2,3)
+Solving Limits
+Evaluate the lim x-> 0 of ln(-x)
+c. DNE
+a. 0
+b. 1
+c. DNE
+d. -1
+Solving limits (part 1,2,3)
+Solving Limits
+Evaluate lim x-> 00 (20x^4 - 7x^3)/(2x + 9x^2 + 5x^4)
+a. 4
+a. 4
+b. 7
+c. -4
+d. 2
+Limits and infinity
+Limits at infinity
+Evaluate lim x-> -00 (8 + x - 4x^2)/(sqrt(6 + x^2 + 7x^4))	
+d. -4/sqrt(7)
+a. 4/7
+b. 2
+c. DNE
+d. -4/sqrt(7)
+Limits and infinity
+Limits at infinity
+Evaluate lim x-> 00 e^(8 + 2x - x^3)
+a. 00
+a. 00
+b. -00
+c. 0
+d. DNE
+Limits and infinity
+Limits at infinity
+Evaluate lim x-> -00 ln(4 - 9t - t^3)
+d. 00
+a. 0
+b. -00
+c. DNE
+d. 00
+Limits and infinity
+Limits at infinity
+Determine where the following function is discontinuous f(x) = (x^2 - 9)/(3x^2 + 2x - 8)
+b. x = 4/3, -2
+a. x = 3, -3
+b. x = 4/3, -2
+c. x = 4
+d. x = 3
+Limits to define continuity
+Continuity
+Determine where the following function is discontinuous g(x) = tan(2x) on the interval 0, 2pi 
+c. pi/4, 3pi/4
+a. 0, pi
+b. continuous everywhere
+c. pi/4, 3pi/4
+d. pi/2, pi
+Limits to define continuity
+Continuity
+Evaluate lim h-> 0 (2(-3+h)^2 - 18)/h 
+a. -12
+a. -12
+b. 12
+c. DNE	
+d. 0
+Solving limits (part 1,2,3)
+Solving Limits
+Evaluate lim z->1 (6 - 3z + 10z^2)/(-2z^4 + 7z^3 + 1)
+d. 13/6 
+a. DNE
+b. 0
+c. 13
+d. 13/6
+Solving limits (part 1,2,3)
+Solving Limits

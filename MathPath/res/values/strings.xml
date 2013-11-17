@@ -46,7 +46,9 @@
     <color name="button_border">#C0D0D0</color>
     <color name="MathPathBlue">#3CC7C7</color>
 
-    <string name="goButton">GO</string>
+    <string name="goButton">Watch Videos</string>
+    <string name="takeQuiz">Take Quiz</string>
+    <string name="submit">Submit</string>
     <string name="title_activity_videos">Videos</string>
     <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
     <string name="title_activity_tabs">Tabs</string>

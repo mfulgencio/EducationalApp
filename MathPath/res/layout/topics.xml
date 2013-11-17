@@ -15,10 +15,24 @@
     	    android:id="@+id/button1"
     	    android:layout_width="wrap_content"
     	    android:layout_height="wrap_content"
+    	    android:layout_marginTop="300dp"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_marginBottom="49dp"
+    	    android:paddingRight="15dp"
+    	    android:paddingLeft="15dp"
+    	    android:text="@string/goButton"
+    	    android:background="@drawable/rounded_corner_button" />
+    	
+    	<Button
+    	    android:id="@+id/limitsQuizButton"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
     	    android:layout_alignParentBottom="true"
     	    android:layout_centerHorizontal="true"
     	    android:layout_marginBottom="49dp"
-    	    android:text="@string/goButton"
+    	    android:paddingRight="30dp"
+    	    android:paddingLeft="30dp"
+    	    android:text="@string/takeQuiz"
     	    android:background="@drawable/rounded_corner_button" />
 
     	<Spinner
@@ -44,23 +58,29 @@
     <RelativeLayout android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight=".33" >
-<!-- 
-    <TextView
-        android:id="@+id/topicstext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/topics_description"
-        android:textColor="@color/white"
-        android:textSize="25sp" /> -->
 
     	<Button
     	    android:id="@+id/button2"
     	    android:layout_width="wrap_content"
     	    android:layout_height="wrap_content"
+    	    android:layout_marginTop="300dp"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_marginBottom="49dp"
+    	    android:paddingRight="15dp"
+    	    android:paddingLeft="15dp"
+    	    android:text="@string/goButton"
+    	    android:background="@drawable/rounded_corner_button" />
+    	
+    	<Button
+    	    android:id="@+id/derivativesQuizButton"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
     	    android:layout_alignParentBottom="true"
     	    android:layout_centerHorizontal="true"
     	    android:layout_marginBottom="49dp"
-    	    android:text="@string/goButton"
+    	    android:paddingRight="30dp"
+    	    android:paddingLeft="30dp"
+    	    android:text="@string/takeQuiz"
     	    android:background="@drawable/rounded_corner_button" />
 
     	<Spinner
@@ -92,12 +112,26 @@
     	    android:id="@+id/button3"
     	    android:layout_width="wrap_content"
     	    android:layout_height="wrap_content"
-    	    android:layout_alignParentBottom="true"
+    	    android:layout_marginTop="300dp"
     	    android:layout_centerHorizontal="true"
     	    android:layout_marginBottom="49dp"
+    	    android:paddingRight="15dp"
+    	    android:paddingLeft="15dp"
     	    android:text="@string/goButton"
     	    android:background="@drawable/rounded_corner_button" />
 
+    	<Button
+    	    android:id="@+id/integralsQuizButton"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentBottom="true"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_marginBottom="49dp"
+    	    android:paddingRight="30dp"
+    	    android:paddingLeft="30dp"
+    	    android:text="@string/takeQuiz"
+    	    android:background="@drawable/rounded_corner_button" />
+    	
     	<Spinner
     	    android:id="@+id/integrals_spinner"
     	    android:layout_width="wrap_content"

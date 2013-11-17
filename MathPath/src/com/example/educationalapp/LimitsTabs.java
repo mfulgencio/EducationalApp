@@ -44,7 +44,7 @@ public class LimitsTabs extends FragmentActivity implements TabListener {
     	
     	viewPager = (ViewPager) findViewById(R.id.pager);
     	viewPager.setAdapter(new MyAdapter(getSupportFragmentManager()));
-    	viewPager.setCurrentItem(i.getIntExtra("tab", 0));
+    	viewPager.setCurrentItem(i.getIntExtra("limits tab", 0));
     	viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
 			
 			@Override
@@ -105,7 +105,7 @@ public class LimitsTabs extends FragmentActivity implements TabListener {
     	actionBar.addTab(erTab);
     	
     	actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-    	actionBar.setSelectedNavigationItem(i.getIntExtra("tab", 0));
+    	actionBar.setSelectedNavigationItem(i.getIntExtra("limits tab", 0));
     }
 
 	@Override

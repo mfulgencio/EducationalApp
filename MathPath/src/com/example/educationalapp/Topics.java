@@ -9,13 +9,12 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 public class Topics extends Activity {
-	android.widget.Button limitsGoButton;
+	android.widget.Button limitsGoButton, derivativesGoButton, integralsGoButton;
+	android.widget.Button limitsQuizButton, derivativesQuizButton, integralsQuizButton;
 	Spinner limits_spinner, derivatives_spinner, integrals_spinner;
 	
 	@Override
@@ -43,7 +42,22 @@ public class Topics extends Activity {
 			public void onClick(View v) {
 				Intent i = new Intent(Topics.this, LimitsTabs.class);
 				
-				i.putExtra("tab", limits_spinner.getSelectedItemPosition() + 1);
+				i.putExtra("limits tab", limits_spinner.getSelectedItemPosition() + 1);
+				
+				Topics.this.startActivity(i);
+			}
+			
+		});
+		
+		limitsQuizButton = (android.widget.Button)findViewById(R.id.limitsQuizButton);
+		
+		limitsQuizButton.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(Topics.this, Quiz.class);
+				
+				i.putExtra("quiz", "limitQuiz.txt");
 				
 				Topics.this.startActivity(i);
 			}
@@ -59,6 +73,36 @@ public class Topics extends Activity {
 		
 		derivatives_spinner.setAdapter(derivatives_adapter);
 		
+		derivativesGoButton = (android.widget.Button)findViewById(R.id.button2);
+		
+		derivativesGoButton.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(Topics.this, DerivativesTabs.class);
+				
+				i.putExtra("derivatives tab", derivatives_spinner.getSelectedItemPosition());
+				
+				Topics.this.startActivity(i);
+			}
+			
+		});
+		
+		derivativesQuizButton = (android.widget.Button)findViewById(R.id.derivativesQuizButton);
+		
+		derivativesQuizButton.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(Topics.this, Quiz.class);
+				
+				i.putExtra("quiz", "derivativesQuiz.txt");
+				
+				Topics.this.startActivity(i);
+			}
+			
+		});
+		
 		//integrals spinner
 		integrals_spinner = (Spinner) findViewById(R.id.integrals_spinner);
 		
@@ -67,17 +111,35 @@ public class Topics extends Activity {
 		integrals_adapter.setDropDownViewResource(R.layout.custom_spinner);
 		
 		integrals_spinner.setAdapter(integrals_adapter);
+		
+//		integralsGoButton = (android.widget.Button)findViewById(R.id.button3);
+//		
+//		integralsGoButton.setOnClickListener(new OnClickListener() {
+//
+//			@Override
+//			public void onClick(View v) {
+//				Intent i = new Intent(Topics.this, IntegralsTabs.class);
+//				
+//				i.putExtra("integrals tab", integrals_spinner.getSelectedItemPosition());
+//				
+//				Topics.this.startActivity(i);
+//			}
+//			
+//		});
+		
+		integralsQuizButton = (android.widget.Button)findViewById(R.id.integralsQuizButton);
+		
+		integralsQuizButton.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(Topics.this, Quiz.class);
+				
+				i.putExtra("quiz", "integralsQuiz.txt");
+				
+				Topics.this.startActivity(i);
+			}
+			
+		});
 	}
-//<<<<<<< HEAD
-//	
-//	@Override
-//	public void onClick(View v) {
-//		Intent i = new Intent(this, DerivativesTabs.class);
-//		
-//		this.startActivity(i);
-//		
-//	}
-//	
-//=======
-//>>>>>>> 742c461d722ad643ef49884d91818fbb978fa923
 }
