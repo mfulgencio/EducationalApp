@@ -54,5 +54,8 @@
     <string name="title_activity_tabs">Tabs</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="topics_description">Please select a topic to start your MathPath</string>
+    <string name="limits_quiz_description">This Quiz is on Limits. Pick your answers and hit submit for immediate feedback. You can take the quiz as many times as you like. Good Luck!</string>
+    <string name="derivatives_quiz_description">This Quiz is on Derivatives. Pick your answers and hit submit for immediate feedback. You can take the quiz as many times as you like. Good Luck!</string>
+    <string name="integrals_quiz_description">This Quiz is on Integrals. Pick your answers and hit submit for immediate feedback. You can take the quiz as many times as you like. Good Luck!</string>
 
 </resources>
