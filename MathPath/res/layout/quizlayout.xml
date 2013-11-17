@@ -3,7 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/gradient" >   
+    android:background="@drawable/gradient" >
+
+    <TextView
+        android:id="@+id/quiz_description"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:textColorLink="@color/white"
+        android:textSize="25sp" />
+   
     <ScrollView 
         android:id="@+id/questions"
         android:layout_width="match_parent"

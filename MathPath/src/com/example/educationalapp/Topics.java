@@ -58,6 +58,7 @@ public class Topics extends Activity {
 				Intent i = new Intent(Topics.this, Quiz.class);
 				
 				i.putExtra("quiz", "limitQuiz.txt");
+				i.putExtra("quiz_description", "This Quiz is on Limits. Pick your answers and hit submit for immediate feedback. You can take the quiz as many times as you like. Good Luck!");
 				
 				Topics.this.startActivity(i);
 			}
@@ -97,6 +98,7 @@ public class Topics extends Activity {
 				Intent i = new Intent(Topics.this, Quiz.class);
 				
 				i.putExtra("quiz", "derivativesQuiz.txt");
+				i.putExtra("quiz_description", "This Quiz is on Derivatives. Pick your answers and hit submit for immediate feedback. You can take the quiz as many times as you like. Good Luck!");
 				
 				Topics.this.startActivity(i);
 			}
@@ -136,6 +138,8 @@ public class Topics extends Activity {
 				Intent i = new Intent(Topics.this, Quiz.class);
 				
 				i.putExtra("quiz", "integralsQuiz.txt");
+				i.putExtra("quiz_description", "This Quiz is on Integrals. Pick your answers and hit submit for immediate feedback. You can take the quiz as many times as you like. Good Luck!");
+
 				
 				Topics.this.startActivity(i);
 			}
