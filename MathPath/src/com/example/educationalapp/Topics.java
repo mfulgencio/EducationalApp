@@ -114,20 +114,20 @@ public class Topics extends Activity {
 		
 		integrals_spinner.setAdapter(integrals_adapter);
 		
-//		integralsGoButton = (android.widget.Button)findViewById(R.id.button3);
-//		
-//		integralsGoButton.setOnClickListener(new OnClickListener() {
-//
-//			@Override
-//			public void onClick(View v) {
-//				Intent i = new Intent(Topics.this, IntegralsTabs.class);
-//				
-//				i.putExtra("integrals tab", integrals_spinner.getSelectedItemPosition());
-//				
-//				Topics.this.startActivity(i);
-//			}
-//			
-//		});
+		integralsGoButton = (android.widget.Button)findViewById(R.id.button3);
+		
+		integralsGoButton.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(Topics.this, IntegralsTabs.class);
+				
+				i.putExtra("integrals tab", integrals_spinner.getSelectedItemPosition());
+				
+				Topics.this.startActivity(i);
+			}
+			
+		});
 		
 		integralsQuizButton = (android.widget.Button)findViewById(R.id.integralsQuizButton);
 		

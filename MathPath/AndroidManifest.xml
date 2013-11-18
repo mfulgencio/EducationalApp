@@ -50,6 +50,11 @@
             android:label="Derivatives"
             android:screenOrientation="landscape" >
         </activity>
+        <activity
+            android:name="com.example.educationalapp.IntegralsTabs"
+            android:label="Integrals"
+            android:screenOrientation="landscape" >
+        </activity>
     </application>
 
 </manifest>
