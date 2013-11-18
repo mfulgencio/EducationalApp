@@ -82,7 +82,7 @@ public class Topics extends Activity {
 			public void onClick(View v) {
 				Intent i = new Intent(Topics.this, DerivativesTabs.class);
 				
-				i.putExtra("derivatives tab", derivatives_spinner.getSelectedItemPosition());
+				i.putExtra("derivatives tab", derivatives_spinner.getSelectedItemPosition() + 1);
 				
 				Topics.this.startActivity(i);
 			}

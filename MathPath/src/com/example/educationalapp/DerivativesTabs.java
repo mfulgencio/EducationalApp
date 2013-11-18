@@ -144,26 +144,30 @@ class MyDerivativesAdapter extends FragmentStatePagerAdapter {
 	@Override
 	public Fragment getItem(int arg0) {
 		Fragment fragment = null;
-		
+
 		if (arg0 == 0)
+			fragment = new DerivativesAllVideosTab();
+		if (arg0 == 1)
 			fragment = new IntroDerTab();
-        if (arg0 == 1)
-        	fragment = new LimitDefTab();
         if (arg0 == 2)
-        	fragment = new RulesTab();
+        	fragment = new LimitDefTab();
         if (arg0 == 3)
-        	fragment = new ImplicitDiffTab();
+        	fragment = new RulesTab();
         if (arg0 == 4)
-        	fragment = new OptimizationTab();
+        	fragment = new ImplicitDiffTab();
         if (arg0 == 5)
+        	fragment = new OptimizationTab();
+        if (arg0 == 6)
         	fragment = new RelatedRatesTab();
+        if (arg0 == 7)
+        	fragment = new DerivativesERTab();
 
 		return fragment;
 	}
 
 	@Override
 	public int getCount() {
-		return 6;
+		return 8;
 	}
 	
 }

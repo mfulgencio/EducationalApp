@@ -144,22 +144,26 @@ class MyIntegralsAdapter extends FragmentStatePagerAdapter {
 		Fragment fragment = null;
 		
 		if (arg0 == 0)
+			fragment = new DerivativesAllVideosTab();
+		if (arg0 == 1)
 			fragment = new IntroIntegralsTab();
-	    if (arg0 == 1)
-	    	fragment = new IndefIntegralsTab();
 	    if (arg0 == 2)
-	    	fragment = new DefIntegralsTab();
+	    	fragment = new IndefIntegralsTab();
 	    if (arg0 == 3)
-	    	fragment = new AreaUnderCurveTab();
+	    	fragment = new DefIntegralsTab();
 	    if (arg0 == 4)
+	    	fragment = new AreaUnderCurveTab();
+	    if (arg0 == 5)
 	    	fragment = new USubstitutionTab();
+	    if (arg0 == 6)
+	    	fragment = new DerivativesERTab();
 	
 			return fragment;
 	}
 
 	@Override
 	public int getCount() {
-		return 5;
+		return 7;
 	}
 	
 }
