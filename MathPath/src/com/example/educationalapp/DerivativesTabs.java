@@ -105,6 +105,7 @@ public class DerivativesTabs extends FragmentActivity implements TabListener {
     	erTab.setText("External Resources");
     	erTab.setTabListener(this);
     	
+    	actionBar.addTab(videoTab);
     	actionBar.addTab(introDerTab);
     	actionBar.addTab(limitDefTab);
     	actionBar.addTab(rulesTab);

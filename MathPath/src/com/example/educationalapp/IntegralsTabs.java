@@ -144,7 +144,7 @@ class MyIntegralsAdapter extends FragmentStatePagerAdapter {
 		Fragment fragment = null;
 		
 		if (arg0 == 0)
-			fragment = new DerivativesAllVideosTab();
+			fragment = new IntegralsAllVideosTab();
 		if (arg0 == 1)
 			fragment = new IntroIntegralsTab();
 	    if (arg0 == 2)
