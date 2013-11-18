@@ -57,7 +57,7 @@ public class Topics extends Activity {
 			public void onClick(View v) {
 				Intent i = new Intent(Topics.this, Quiz.class);
 				
-				i.putExtra("quiz", "limitQuiz.txt");
+				i.putExtra("quiz", "limitsQuiz.txt");
 				i.putExtra("quiz_description", "This Quiz is on Limits. Pick your answers and hit submit for immediate feedback. You can take the quiz as many times as you like. Good Luck!");
 				
 				Topics.this.startActivity(i);
@@ -122,7 +122,7 @@ public class Topics extends Activity {
 			public void onClick(View v) {
 				Intent i = new Intent(Topics.this, IntegralsTabs.class);
 				
-				i.putExtra("integrals tab", integrals_spinner.getSelectedItemPosition());
+				i.putExtra("integrals tab", integrals_spinner.getSelectedItemPosition() + 1);
 				
 				Topics.this.startActivity(i);
 			}

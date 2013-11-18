@@ -1,160 +1,160 @@
-Question 1d
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 2d
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 3d
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 4d
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 5d
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 6d
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 7d
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 8d
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 9d
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 10d
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 11d
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 12d
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 13d
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 14d
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 15d
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 16d
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 17d
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 18d
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 19d
-a.
-a.
-b.
-c.
-d.
-1
-topic
-Question 20d
-a.
-a.
-b.
-c.
-d.
-1
-topic
+What is the limit definition of the derivative?
+a. f(x) = lim x -> h (f(x + h) - f(x)) / h
+a. f(x) = lim x -> h (f(x + h) - f(x)) / h
+b. f(x) = lim x -> 0 x + h
+c. f(x) = lim x -> f(x + h) / h
+d. f(x) = lim x -> f(x + h) + x / h
+Calculus: Derivatives 1
+Intro to Derivatives
+Use the limit definition of the derivative to solve f(x) = x^2
+c. 2x 
+a. x
+b. 2
+c. 2x
+d. 2x + h
+Understanding the Definition of the Derivative
+Limit Definition 
+Use the limit definition of the derivative to solve f(x) = 2x^2 -16x + 35
+b. 4x - 16
+a. 4x
+b. 4x - 16
+c. 2x - 16
+d. 21
+Understanding the Definition of the Derivative
+Limit Definition
+Use the limit definition of the derivative to solve f(x) = sqrt(5z - 8)
+d. 5 / (2 * sqrt(5z - 8))
+a. 5
+b. 5 / z
+c. 
+d. 5 / (2 * sqrt(5z - 8))
+Understanding the Definition of the Derivative
+Limit Definition
+Find the derivative using any method f(t) = 2t^6 + 7t^-6 
+a. 12t^5 - 42t^-7
+a. 12t^5 - 42t^-7
+b. 2t^5 - 7t^-7
+c. 12t^5 + 42t^-7
+d. 12t^5 + 42t^-5
+Solving Derivatives
+Rules
+Find the derivative using any method f(t) = (2t^5 + t^2 - 5)/(t^2)
+b. 6t^2 + 10t^-3
+a. 16t
+b. 6t^2 + 10t^-3
+c. (10t^4 + 2t)/(2t) 
+d. -5
+Quotient Rule
+Rules
+What is the definition of the power rule?
+c. f(x) = cx^n, f'(x) = c(n-1)*x^(n-1) 
+a. f(x) = x, f'(x) = x
+b. f(x) = x^2, f'(x) = 2x
+c. f(x) = cx^n, f'(x) = c(n-1)*x^(n-1)
+d. f(x) = x, f'(x) = 1
+Solving Derivatives
+Rules
+What is the definition of the product rule?
+a. f(x) = h(x)g(x), f'(x) = h(x)g'(x) + h'(x)g(x)
+a. f(x) = h(x)g(x), f'(x) = h(x)g'(x) + h'(x)g(x)
+b. f(x) = h(x)g(x), f'(x) = f'(x)g'(x) 
+c. f(x) = cx, f'(x) = c
+d. f(x) = x, f'(x) = 1
+Product Rule
+Rules
+Find the derivative using any method f(x) = (6x^3 - x)(10 - 20x)
+d. -480x^3 + 180x^2 + 40x -10
+a. 18x^2 - 1 - 20
+b. 20 - 360x^2
+c. -10x - 120x^3
+d. -480x^3 + 180x^2 + 40x -10
+Product Rule
+Rules
+Find the derivative using any method f(x) = (x^2 + x^3)^2
+b. 2(x^2 + x^3) * (2x + 3x^2)
+a. 2(x^2 + x^3)
+b. 2(x^2 + x^3) * (2x + 3x^2)
+c. (2x + 3x^2)
+d. 2*(2x + 3x^2)
+Chain Rule
+Rules
+Find the derivative using any method f(x) = (x + 2)/(x^3 + 4) 
+d. 2(x^3 + 3x^2 - 2)/(x^3 + 4)^2
+a. 2(x^3 + 3x^2)/(x^3)^2
+b. (x^3 + 3x^2 - 2)/(x^3 + 4)
+c. 1/(3x^2)
+d. 2(x^3 + 3x^2 - 2)/(x^3 + 4)^2
+Quotient Rule
+Rules
+Find the derivative using any method f(x) = (3x^2)(2x^4 + 7)
+a. 6x(6x^4 + 7)
+a. 6x(6x^4 + 7)
+b. 6x(8x^3)
+c. 36x^5
+d. 6x + 21
+Product Rule
+Rules
+Differentiate Implicitly xy = 1 
+c. y' = -y/x
+a. y = 1
+b. x = 1
+c. y' = -y/x
+d. y' = 1/x
+Implicit Differentiation
+Implicit Differentiation
+Differentiate Implicitly (x^3*y^5) + 3x = 8y^3 + 1
+b. y' = (3(x^2 * y^5) + 3) / (24y^2 - (5x^3 * y^4))
+a. y' = (x^2 * y^5) /(y^2 - (x^3 * y^4))
+b. y' = (3(x^2 * y^5) + 3) / (24y^2 - (5x^3 * y^4))
+c. y' = 3x^2 * 5y^4 + 2 - 24y^2
+d. y' = 0
+Implicit Differentiation
+Implicit Differentiation
+Differentiate Implicitly x^2 + y^2 = 1
+a. -x/y
+a. -x/y
+b. 2x + 2y 
+c. x + y
+d. 1
+Implicit Differentiation
+Implicit Differentiation
+We need to enclose a field with a fence.\nWe have 500 feet of fencing material and a building is on one side of the field and so won’t need any fencing.\nDetermine the dimensions of the field that will enclose the largest area.
+d. 250 x 125
+a. 125 x 125
+b. 300 X 100
+c. 400 x 50
+d. 250 x 125
+Optimization with Calculus (1,2)
+Optimization
+We want to construct a box with a square base and we only have 10 m^2 of material to use in construction of the box.\nAssuming that all the material is used in the construction process determine the maximum volume that the box can have.
+b. l = 1.2910, w = 1.2910, h = 1.2910
+b. l = 1.2910, w = 1.2910, h = 1.2910
+a. l = 1, w = 1, h = 1
+c. l = 1, w = 1, h = 2
+d. l = 1.567, w = 1.567, h = 1.111
+Optimization with Calculus (1,2)
+Optimization
+A manufacturer needs to make a cylindrical can that will hold 1.5 liters of liquid.\nDetermine the dimensions of the can that will minimize the amount of material used in its construction.
+c. radius = 6.2035, height = 12.407
+a. radius = 6, height = 12
+b. radius = 5, height = 14
+c. radius = 6.2035, height = 12.407
+d. radius = 5.2035, height = 14.407
+Optimization with Calculus (1,2)
+Optimization
+Air is being pumped into a spherical balloon at a rate of 5 cm^3/min.\nDetermine the rate at which the radius of the balloon is increasing when the diameter of the balloon is 20 cm.
+a. 1/80 cm/min
+a. 1/80 cm/min
+b. 1/60 cm/min
+c. 80 cm/min
+d. -1/80 cm/min
+related rates sphere application of derivatives
+Related Rates 
+ A 15 foot ladder is resting against the wall.  The bottom is initially 10 feet away from the wall and is being pushed towards the wall at a rate of 1/4 ft/sec.  How fast is the top of the ladder moving up the wall 12 seconds after we start pushing?
+c. 0.1319 ft/sec
+a. 1.1319 ft/sec
+b. -0.1319 ft/sec
+c. 0.1319 ft/sec 
+d. 10000 ft/sec
+Ladder rate-of-change problem
+Related Rates 

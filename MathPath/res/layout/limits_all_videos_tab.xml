@@ -5,7 +5,7 @@
     android:background="@drawable/gradient"
     tools:context=".LimitsAllVideosTab" >
 
-  	<com.google.android.youtube.player.YouTubePlayerView
+  	<com.google.android.youtube.player.YouTubePlayerFragment
     	android:id="@+id/player"
       	android:layout_width="match_parent"
       	android:layout_height="wrap_content"/>
