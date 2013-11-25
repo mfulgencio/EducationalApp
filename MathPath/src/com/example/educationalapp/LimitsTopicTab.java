@@ -61,12 +61,12 @@ public class LimitsTopicTab extends Fragment {
 
 					@Override
 					public void onClick(View v) {
-						Intent i = new Intent(context, Quiz.class);
+						Intent i = new Intent(getActivity(), Quiz.class);
 						
 						i.putExtra("quiz", "limitsQuiz.txt");
 						i.putExtra("quiz_description", "This Quiz is on Limits. Pick your answers and hit submit for immediate feedback. You can take the quiz as many times as you like. Good Luck!");
 						
-						context.startActivity(i);
+						getActivity().startActivity(i);
 					}
 					
 				});

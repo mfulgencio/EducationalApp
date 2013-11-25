@@ -63,12 +63,12 @@ public class DerivativesTopicTab extends Fragment {
 
 					@Override
 					public void onClick(View v) {
-						Intent i = new Intent(context, Quiz.class);
+						Intent i = new Intent(getActivity(), Quiz.class);
 						
 						i.putExtra("quiz", "derivativesQuiz.txt");
 						i.putExtra("quiz_description", "This Quiz is on Derivatives. Pick your answers and hit submit for immediate feedback. You can take the quiz as many times as you like. Good Luck!");
 						
-						context.startActivity(i);
+						getActivity().startActivity(i);
 					}
 					
 				});
