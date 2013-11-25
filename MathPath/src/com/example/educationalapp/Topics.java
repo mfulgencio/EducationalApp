@@ -74,7 +74,7 @@ public class Topics extends Activity {
 		
 		derivatives_spinner.setAdapter(derivatives_adapter);
 		
-		derivativesGoButton = (android.widget.Button)findViewById(R.id.button2);
+//		derivativesGoButton = (android.widget.Button)findViewById(R.id.button2);
 		
 		derivativesGoButton.setOnClickListener(new OnClickListener() {
 
@@ -89,7 +89,7 @@ public class Topics extends Activity {
 			
 		});
 		
-		derivativesQuizButton = (android.widget.Button)findViewById(R.id.derivativesQuizButton);
+//		derivativesQuizButton = (android.widget.Button)findViewById(R.id.derivativesQuizButton);
 		
 		derivativesQuizButton.setOnClickListener(new OnClickListener() {
 
@@ -114,7 +114,7 @@ public class Topics extends Activity {
 		
 		integrals_spinner.setAdapter(integrals_adapter);
 		
-		integralsGoButton = (android.widget.Button)findViewById(R.id.button3);
+//		integralsGoButton = (android.widget.Button)findViewById(R.id.button3);
 		
 		integralsGoButton.setOnClickListener(new OnClickListener() {
 
@@ -129,7 +129,7 @@ public class Topics extends Activity {
 			
 		});
 		
-		integralsQuizButton = (android.widget.Button)findViewById(R.id.integralsQuizButton);
+//		integralsQuizButton = (android.widget.Button)findViewById(R.id.integralsQuizButton);
 		
 		integralsQuizButton.setOnClickListener(new OnClickListener() {
 

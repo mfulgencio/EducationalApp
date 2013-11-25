@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
 		calc1Button.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(MainActivity.this, Topics.class);
+				Intent i = new Intent(MainActivity.this, TopicsTabs.class);
 			
 				startActivity(i);
 			}

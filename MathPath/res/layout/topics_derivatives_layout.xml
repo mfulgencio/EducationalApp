@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".TopicsTab" >
+    	
+    	<Button
+    	    android:id="@+id/derivativesQuizButton"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    		android:layout_marginTop="369dp"
+    		android:layout_marginLeft="400dp"
+    	    android:layout_marginBottom="49dp"
+    	    android:paddingRight="30dp"
+    	    android:paddingLeft="30dp"
+    	    android:text="@string/takeQuiz"
+    	    android:background="@drawable/rounded_corner_button" />
+
+    	<TextView
+    	    android:id="@+id/derivatives_tv"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginBottom="36dp"
+    	    android:layout_marginTop="120dp"
+    	    android:layout_marginLeft="350dp"
+    	    android:text="@string/derivatives"
+    	    android:textColor="@color/MathPathBlue"
+    	    android:textSize="40sp" />
+
+    	<Spinner
+    	    android:id="@+id/derivatives_spinner"
+    	    android:layout_width="429dp"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginLeft="260sp"
+    	    android:layout_marginTop="200sp" />
+
+    	<Button
+    	    android:id="@+id/button2"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginBottom="49dp"
+    	    android:layout_marginLeft="400dp"
+    	    android:layout_marginTop="300dp"
+    	    android:background="@drawable/rounded_corner_button"
+    	    android:paddingLeft="15dp"
+    	    android:paddingRight="15dp"
+    	    android:text="@string/goButton" />
+    	
+  </FrameLayout>
