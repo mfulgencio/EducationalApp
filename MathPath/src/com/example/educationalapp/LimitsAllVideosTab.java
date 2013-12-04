@@ -1,46 +1,40 @@
 package com.example.educationalapp;
 
-import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
-import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
-
+import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
+import com.google.android.youtube.player.YouTubePlayer.OnInitializedListener;
+import com.google.android.youtube.player.YouTubePlayer.PlaybackEventListener;
+import com.google.android.youtube.player.YouTubePlayer.PlayerStateChangeListener;
+import com.google.android.youtube.player.YouTubePlayer.Provider;
 import com.google.android.youtube.player.YouTubePlayerSupportFragment;
-import com.google.android.youtube.player.YouTubePlayerView;
 
-import android.content.pm.ActivityInfo;
-import android.content.res.Configuration;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.CompoundButton;
-import android.widget.LinearLayout;
-import android.widget.LinearLayout.LayoutParams;
 
-public class LimitsAllVideosTab extends Fragment implements
-	View.OnClickListener,
-	CompoundButton.OnCheckedChangeListener,
-	YouTubePlayer.OnFullscreenListener {
+public class LimitsAllVideosTab extends Fragment implements YouTubePlayer.OnInitializedListener {
 
 	public LimitsAllVideosTab() {
 		// Required empty public constructor
 	}
-
-	private static final int PORTRAIT_ORIENTATION = Build.VERSION.SDK_INT < 9
-		      ? ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
-		      : ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT;
-
-	private LinearLayout baseLayout;
-	private YouTubePlayerView playerView;
-	private YouTubePlayer player;
-	private Button fullscreenButton;
-	private View otherViews;
+	 
+	private YouTubePlayer youTubePlayer, youTubePlayer2;
+	private YouTubePlayerSupportFragment youTubePlayerFragment, youTubePlayerFragment2;
+	 
+	private static final int RQS_ErrorDialog = 1;
+	 
+	private MyPlayerStateChangeListener myPlayerStateChangeListener;
+	private MyPlaybackEventListener myPlaybackEventListener;
 	
-	private boolean fullscreen;
+	private MyPlayerStateChangeListener2 myPlayerStateChangeListener2;
+	private MyPlaybackEventListener2 myPlaybackEventListener2;
+	 
+	String log = "", log2 = "";
 	
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
@@ -48,80 +42,248 @@ public class LimitsAllVideosTab extends Fragment implements
 		// Inflate the layout for this fragment
 		View view = inflater.inflate(R.layout.limits_all_videos_tab, container, false);
 		
-		playerView = (YouTubePlayerView) view.findViewById(R.id.player);
-	    fullscreenButton = (Button) view.findViewById(R.id.fullscreen_button);
-	    otherViews = view.findViewById(R.id.other_views);
+		youTubePlayerFragment = new YouTubePlayerSupportFragment();
+		youTubePlayerFragment2 = new YouTubePlayerSupportFragment();
+		
+		LimitsAllVideosTabVidDescs frag = new LimitsAllVideosTabVidDescs();
+		
+		FragmentManager fm = getFragmentManager();
+		
+		FragmentTransaction ft = fm.beginTransaction();
+		
+		ft.add(R.id.limits_all_first, youTubePlayerFragment);	
+		ft.add(R.id.limits_all_second, youTubePlayerFragment2);
+		
+		ft.add(R.id.limits_all_vid_descs, frag);
+		
+		ft.commit();
+		
+        youTubePlayerFragment.initialize(DeveloperKey.DEVELOPER_KEY, this);
+        
+        youTubePlayerFragment2.initialize(DeveloperKey.DEVELOPER_KEY, new OnInitializedListener() {
 
+			@Override
+			public void onInitializationFailure(Provider provider,
+					YouTubeInitializationResult result) {
+				if (result.isUserRecoverableError()) {
+					result.getErrorDialog(getActivity(), RQS_ErrorDialog).show(); 
+				} else {
+//					Toast.makeText(getActivity(), 
+//					  "YouTubePlayer.onInitializationFailure(): " + result.toString(), 
+//					  Toast.LENGTH_LONG).show(); 
+				}
+			}
+
+			@Override
+			public void onInitializationSuccess(Provider provider,
+					YouTubePlayer player, boolean wasRestored) {
+				youTubePlayer2 = player;
+				  
+//				Toast.makeText(getActivity(), 
+//				  "YouTubePlayer.onInitializationSuccess()", 
+//				  Toast.LENGTH_LONG).show();
+				  
+				youTubePlayer2.setPlayerStateChangeListener(myPlayerStateChangeListener2);
+				youTubePlayer2.setPlaybackEventListener(myPlaybackEventListener2);
+				  
+				if (!wasRestored) {
+					player.cueVideo("gp5efC2n0iM");
+				}
+			}
+        	
+        });
+
+        myPlayerStateChangeListener = new MyPlayerStateChangeListener();
+        myPlaybackEventListener = new MyPlaybackEventListener();
+        
+        myPlayerStateChangeListener2 = new MyPlayerStateChangeListener2();
+        myPlaybackEventListener2 = new MyPlaybackEventListener2();
+        
 	    return view;
 	}
-	
-	public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer player,
-			boolean wasRestored) {
-		this.player = player;
-		setControlsEnabled();
-		// Specify that we want to handle fullscreen behavior ourselves.
-		player.addFullscreenControlFlag(YouTubePlayer.FULLSCREEN_FLAG_CUSTOM_LAYOUT);
-		player.setOnFullscreenListener(this);
+
+	@Override
+	public void onInitializationFailure(Provider provider,
+	  YouTubeInitializationResult result) {
+	  
+		if (result.isUserRecoverableError()) {
+			result.getErrorDialog(getActivity(), RQS_ErrorDialog).show(); 
+		} else {
+//	   		Toast.makeText(getActivity(), 
+//	     		"YouTubePlayer.onInitializationFailure(): " + result.toString(), 
+//	     		Toast.LENGTH_LONG).show(); 
+	  }
+	}
+
+	@Override
+	public void onInitializationSuccess(Provider provider, YouTubePlayer player,
+	  boolean wasRestored) {
+	  
+		youTubePlayer = player;
+		  
+	//	Toast.makeText(getActivity(), 
+	//	   "YouTubePlayer.onInitializationSuccess()", 
+	//	   Toast.LENGTH_LONG).show();
+		  
+		youTubePlayer.setPlayerStateChangeListener(myPlayerStateChangeListener);
+		youTubePlayer.setPlaybackEventListener(myPlaybackEventListener);
+	  
 		if (!wasRestored) {
-			player.cueVideo("avP5d16wEp0");
+			player.cueVideo("riXcZT2ICjA");
+	    }
+
+	}
+	 
+	private final class MyPlayerStateChangeListener implements PlayerStateChangeListener {
+
+		private void updateLog(String prompt){
+			log +=  "MyPlayerStateChangeListener" + "\n" + 
+					prompt + "\n\n=====";
+			//	    textVideoLog.setText(log);
+		};
+
+		@Override
+		public void onAdStarted() {
+			updateLog("onAdStarted()");
 		}
+
+		@Override
+		public void onError(
+				com.google.android.youtube.player.YouTubePlayer.ErrorReason arg0) {
+			updateLog("onError(): " + arg0.toString());
+		}
+
+		@Override
+		public void onLoaded(String arg0) {
+			updateLog("onLoaded(): " + arg0);
+		}
+
+		@Override
+		public void onLoading() {
+			updateLog("onLoading()");
+		}
+
+		@Override
+		public void onVideoEnded() {
+			updateLog("onVideoEnded()");
+		}
+
+		@Override
+		public void onVideoStarted() {
+			updateLog("onVideoStarted()");
+		}
+
 	}
 
-	protected YouTubePlayer.Provider getYouTubePlayerProvider() {
-		return playerView;
-	}
+	private final class MyPlaybackEventListener implements PlaybackEventListener {
 
-	@Override
-	public void onClick(View v) {
-		player.setFullscreen(!fullscreen);
+		private void updateLog(String prompt){
+			log +=  "MyPlaybackEventListener" + "\n-" + 
+					prompt + "\n\n=====";
+			//	   textVideoLog.setText(log);
+		};
+
+		@Override
+		public void onBuffering(boolean arg0) {
+			updateLog("onBuffering(): " + String.valueOf(arg0));
+		}
+
+		@Override
+		public void onPaused() {
+			updateLog("onPaused()");
+		}
+
+		@Override
+		public void onPlaying() {
+			updateLog("onPlaying()");
+		}
+
+		@Override
+		public void onSeekTo(int arg0) {
+			updateLog("onSeekTo(): " + String.valueOf(arg0));
+		}
+
+		@Override
+		public void onStopped() {
+			updateLog("onStopped()");
+		}
+
 	}
 	
-	private void doLayout() {
-		LinearLayout.LayoutParams playerParams =
-		        (LinearLayout.LayoutParams) playerView.getLayoutParams();
-		if (fullscreen) {
-		// When in fullscreen, the visibility of all other views than the player should be set to
-		// GONE and the player should be laid out across the whole screen.
-		playerParams.width = LayoutParams.MATCH_PARENT;
-		playerParams.height = LayoutParams.MATCH_PARENT;
-	
-		otherViews.setVisibility(View.GONE);
-	} else {
-		// This layout is up to you - this is just a simple example (vertically stacked boxes in
-	  	// portrait, horizontally stacked in landscape).
-	    otherViews.setVisibility(View.VISIBLE);
-	    ViewGroup.LayoutParams otherViewsParams = otherViews.getLayoutParams();
-	    if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
-	    	playerParams.width = otherViewsParams.width = 0;
-	    	playerParams.height = WRAP_CONTENT;
-	    	otherViewsParams.height = MATCH_PARENT;
-	        playerParams.weight = 1;
-	        baseLayout.setOrientation(LinearLayout.HORIZONTAL);
-	    } else {
-	        playerParams.width = otherViewsParams.width = MATCH_PARENT;
-	        playerParams.height = WRAP_CONTENT;
-	        playerParams.weight = 0;
-	        otherViewsParams.height = 0;
-	        baseLayout.setOrientation(LinearLayout.VERTICAL);
-	    }
-	    setControlsEnabled();
-	    }
-	}
-	
-	private void setControlsEnabled() {
-		fullscreenButton.setEnabled(player != null);
+	private final class MyPlayerStateChangeListener2 implements PlayerStateChangeListener {
+
+		private void updateLog(String prompt){
+			log2 +=  "MyPlayerStateChangeListener" + "\n" + 
+					prompt + "\n\n=====";
+			//	    textVideoLog.setText(log);
+		};
+
+		@Override
+		public void onAdStarted() {
+			updateLog("onAdStarted()");
+		}
+
+		@Override
+		public void onError(
+				com.google.android.youtube.player.YouTubePlayer.ErrorReason arg0) {
+			updateLog("onError(): " + arg0.toString());
+		}
+
+		@Override
+		public void onLoaded(String arg0) {
+			updateLog("onLoaded(): " + arg0);
+		}
+
+		@Override
+		public void onLoading() {
+			updateLog("onLoading()");
+		}
+
+		@Override
+		public void onVideoEnded() {
+			updateLog("onVideoEnded()");
+		}
+
+		@Override
+		public void onVideoStarted() {
+			updateLog("onVideoStarted()");
+		}
+
 	}
 
-	@Override
-	public void onFullscreen(boolean isFullscreen) {
-		fullscreen = isFullscreen;
-		doLayout();
-	}
+	private final class MyPlaybackEventListener2 implements PlaybackEventListener {
 
-	@Override
-	public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-		// TODO Auto-generated method stub
-		
+		private void updateLog(String prompt){
+			log2 +=  "MyPlaybackEventListener" + "\n-" + 
+					prompt + "\n\n=====";
+			//	   textVideoLog.setText(log);
+		};
+
+		@Override
+		public void onBuffering(boolean arg0) {
+			updateLog("onBuffering(): " + String.valueOf(arg0));
+		}
+
+		@Override
+		public void onPaused() {
+			updateLog("onPaused()");
+		}
+
+		@Override
+		public void onPlaying() {
+			updateLog("onPlaying()");
+		}
+
+		@Override
+		public void onSeekTo(int arg0) {
+			updateLog("onSeekTo(): " + String.valueOf(arg0));
+		}
+
+		@Override
+		public void onStopped() {
+			updateLog("onStopped()");
+		}
+
 	}
 
 }

@@ -127,7 +127,7 @@ public class LimitsTabs extends FragmentActivity implements TabListener {
 	}
 }
 
-class MyAdapter extends FragmentStatePagerAdapter {
+class MyAdapter extends FragmentPagerAdapter {
 
 	public MyAdapter(FragmentManager fm) {
 		super(fm);
@@ -157,5 +157,5 @@ class MyAdapter extends FragmentStatePagerAdapter {
 	public int getCount() {
 		return 6;
 	}
-	
+
 }

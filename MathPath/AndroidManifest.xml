@@ -25,11 +25,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-       <!--  <activity
+        <!--
+        <activity
             android:name="com.example.educationalapp.Topics"
             android:label="@string/app_name"
             android:screenOrientation="landscape" >
-        </activity> -->
+        </activity>
+        -->
         <activity
             android:name="com.example.educationalapp.Quiz"
             android:label="@string/quiz_page_title"
@@ -59,6 +61,18 @@
             android:name="com.example.educationalapp.TopicsTabs"
             android:label="Topics"
             android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.educationalapp.LimitsAllVideosTabVidDescs"
+            android:label="@string/title_activity_vid_desc" >
+        </activity>
+        <activity
+            android:name="com.example.educationalapp.LimitsIntroVideosTabVidDescs"
+            android:label="@string/title_activity_limits_intro_videos_tab_vid_descs" >
+        </activity>
+        <activity
+            android:name="com.example.educationalapp.LimitsSolvingVideosTabVidDescs"
+            android:label="@string/title_activity_limits_solving_videos_tab_vid_descs" >
         </activity>
     </application>
 

@@ -1,17 +1,39 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/gradient"
-    tools:context=".LimitsERTab" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+ 	xmlns:tools="http://schemas.android.com/tools"
+ 	android:layout_width="match_parent"
+ 	android:layout_height="match_parent" >
+ 
+   	<LinearLayout android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+         
+        <LinearLayout android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+             
+            <FrameLayout
+            	android:id="@+id/limits_intro_first"
+              	android:layout_width="600dp"
+              	android:layout_height="match_parent"
+              	android:background="@drawable/gradient"
+              	tools:context=".LimitsIntroVideosTab" />
+          
+	        <FrameLayout 
+	            android:id="@+id/limits_intro_second" 
+	            android:layout_width="600dp"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/gradient"
+	            tools:context=".LimitsIntroVideosTab" />
+             
+		</LinearLayout>
 
-    <!-- TODO: Update blank fragment layout -->
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="INTRO TO LIMITS"
-        android:textSize="40sp"
-        android:textColor="@color/black" />
-
-</FrameLayout>
+   		<FrameLayout 
+		    android:id="@+id/limits_intro_vid_descs"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:background="@drawable/gradient"
+		    tools:context=".LimitsIntroVideosTab" />
+         
+    </LinearLayout>
+ 
+</ScrollView>

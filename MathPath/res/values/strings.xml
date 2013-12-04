@@ -56,5 +56,8 @@
     <string name="topics_description">Please select a topic to start your MathPath</string>
     <string name="enter_fullscreen">Enter Fullscreen</string>
     <string name="video_description">This is a demo which shows how to handle fullscreen behaviour. This activity has differents layouts for portrait, landscape and fullscreen. The user can enter fullscreen either by using the player controller or programmatically by the programmer (here using a button). If your activity does not have a landscape layout, you can choose to automatically enter fullscreen when the device is rotated to landscape orientation.</string>
+    <string name="title_activity_vid_desc">VidDesc</string>
+    <string name="title_activity_limits_intro_videos_tab_vid_descs">LimitsIntroVideosTabVidDescs</string>
+    <string name="title_activity_limits_solving_videos_tab_vid_descs">LimitsSolvingVideosTabVidDescs</string>
 
 </resources>
