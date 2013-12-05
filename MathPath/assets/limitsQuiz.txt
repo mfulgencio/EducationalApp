@@ -13,7 +13,7 @@ b. function where at every point f(a) = lim as x -> a of f(x)
 c. function that you can draw without picking your pencil up
 d. function that has lots of holes and sharp edges
 Limits to define continuity
-Continuity 
+Continuity
 Evaluate lim as x-> 2 of (x^2 + 4) / (x - 2)
 c. 4
 a. 6
@@ -77,7 +77,7 @@ b. 1
 c. 0
 d. 5/3
 Solving limits (part 1,2,3)
-Solving Limits 
+Solving Limits
 Given lim x-> 8 of f(x) = -9 and lim x-> 8 of h(x) = 4 find lim x-> 8 [2f(x)-12h(x)]
 b. -66
 a. 66
@@ -101,7 +101,7 @@ b. 7
 c. -4
 d. 2
 Limits and infinity
-Limits at infinity
+Limits at Infinity
 Evaluate lim x-> -00 (8 + x - 4x^2)/(sqrt(6 + x^2 + 7x^4))	
 d. -4/sqrt(7)
 a. 4/7
@@ -109,7 +109,7 @@ b. 2
 c. DNE
 d. -4/sqrt(7)
 Limits and infinity
-Limits at infinity
+Limits at Infinity
 Evaluate lim x-> 00 e^(8 + 2x - x^3)
 a. 00
 a. 00
@@ -117,7 +117,7 @@ b. -00
 c. 0
 d. DNE
 Limits and infinity
-Limits at infinity
+Limits at Infinity
 Evaluate lim x-> -00 ln(4 - 9t - t^3)
 d. 00
 a. 0
@@ -125,7 +125,7 @@ b. -00
 c. DNE
 d. 00
 Limits and infinity
-Limits at infinity
+Limits at Infinity
 Determine where the following function is discontinuous f(x) = (x^2 - 9)/(3x^2 + 2x - 8)
 b. x = 4/3, -2
 a. x = 3, -3

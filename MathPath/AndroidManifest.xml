@@ -74,6 +74,10 @@
             android:name="com.example.educationalapp.LimitsSolvingVideosTabVidDescs"
             android:label="@string/title_activity_limits_solving_videos_tab_vid_descs" >
         </activity>
+         <activity
+            android:name="com.example.educationalapp.Final"
+            android:label="Final" >
+        </activity>
     </application>
 
 </manifest>

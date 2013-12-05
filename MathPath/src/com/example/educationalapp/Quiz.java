@@ -15,10 +15,15 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 
+
 public class Quiz extends Activity {
+	MissedLimits mL;
+	MissedDerivatives mD;
+	MissedIntegrals mI;
 
 	private class Question
 	{
@@ -50,8 +55,14 @@ public class Quiz extends Activity {
 		TextView tv = (TextView)findViewById(R.id.quiz_description);
 	    
 		Intent i = getIntent();
+		
 
 		fileName = i.getStringExtra("quiz");
+		
+		mL = new MissedLimits((Context)this);
+		mI = new MissedIntegrals((Context)this);
+		mD = new MissedDerivatives((Context)this);
+
 		tv.setText(i.getStringExtra("quiz_description"));
 		
 		ActionBar bar = getActionBar();
@@ -233,23 +244,54 @@ public class Quiz extends Activity {
 	        	      }
 	        	   }
 	        	}
-	        	AlertDialog.Builder alertBuilder = new AlertDialog.Builder(context);
+	        	
+	        	if (fileName.equals("limitsQuiz.txt"))
+	        		mL.clean();
+	        	else if (fileName.equals("derivativesQuiz.txt"))
+	        	    mD.clean();
+	        	else
+	        		mI.clean();
+	        	
+	        	AlertDialog.Builder alertBuilder = new AlertDialog.Builder(context, AlertDialog.THEME_HOLO_LIGHT);
 	        	alertBuilder.setTitle("Quiz Results");
 	        	String resultsMessage = "";
 	        	if(incorrect.size() == 0)
 	        	{
-	        	   resultsMessage = "You got 100%";	
+	        	   resultsMessage = "Congratulations! You got 100%";	
 	        	}
 	        	else
-	        	{
-	        	   resultsMessage = "You missed the following questions...\n\n";
+	        	{	
+	        	   resultsMessage = "You answered " + (10 - incorrect.size()) + "/" + "10 questions correctly" + "\n\n" + "You missed the following questions: \n\n";
+	        	   
+	        	   
 	        	   for(int i = 0; i < incorrect.size(); i++)
 	        	   {
-	        	      resultsMessage += incorrect.get(i).question + "\n" +
-	        	                        "You put " + incorrect.get(i).response + "\n" +
-	        	                        "The correct answer is "  + incorrect.get(i).answer + "\n" +
-	        	                        "You should review video " + incorrect.get(i).video + " for topic " + incorrect.get(i).topic + "\n\n";
+	        	      resultsMessage += "-----------------------------------------------------------------------------------------------\n"
+	        	    		  			+ "QUESTION: " + incorrect.get(i).question + "\n\n" +
+	        	                        "YOU ANSWERED: " + incorrect.get(i).response + "\n\n" +
+	        	                        "CORRECT ANSWER: "  + incorrect.get(i).answer + "\n\n" +
+	        	                        "RECOMMENDATION: The topic of " + incorrect.get(i).topic + " was discussed in the video '" + incorrect.get(i).video + "'. You may want to review this video.\n\n";
+	        	      if (fileName.equals("limitsQuiz.txt")) {
+	        	    	  mL.add(mL.new MissedQuestion(incorrect.get(i).video, incorrect.get(i).topic));
+	        	    	//  Log.d("MathPath", "Limits; adding " + incorrect.get(i).topic);
+	        	      }
+	        	      else if (fileName.equals("derivativesQuiz.txt")) {
+	        	    	  mD.add(mD.new MissedQuestion(incorrect.get(i).video, incorrect.get(i).topic));
+	        	    	//  Log.d("MathPath", "Derivatives; adding " + incorrect.get(i).topic);
+	        	      }
+	      
+	        	      else if (fileName.equals("integralsQuiz.txt")){
+	        	    	  mI.add(mI.new MissedQuestion(incorrect.get(i).video, incorrect.get(i).topic));
+	        	    	//  Log.d("MathPath", "Integrals; adding " + incorrect.get(i).topic);
+	        	      }
 	        	   }
+	        	   if (fileName.equals("limitsQuiz.txt")) 
+	        		   mL.analyze();
+	        	   else if (fileName.equals("derivativesQuiz.txt"))
+	        		   mD.analyze();
+	        	   else if (fileName.equals("integralsQuiz.txt"))
+	        		   mI.analyze();
+	        	   
 	        	   // save the missed topic in the MissedTopics class here it is the wrong arraylist
 	        	}
 	        	alertBuilder.setMessage(resultsMessage);
@@ -260,6 +302,7 @@ public class Quiz extends Activity {
 	        		alertBuilder.setMessage("Please answer all the questions then press submit again");
 					AlertDialog results = alertBuilder.create();
 					results.show();
+					ex.printStackTrace();
 	        	}
 	        }
 	    });

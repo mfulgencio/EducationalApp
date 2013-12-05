@@ -83,11 +83,16 @@ public class TopicsTabs extends FragmentActivity implements TabListener {
     	ActionBar.Tab integralsTab = actionBar.newTab();
     	integralsTab.setText("Integrals");
     	integralsTab.setTabListener(this);
+    	
+    	ActionBar.Tab finalTab = actionBar.newTab();
+    	finalTab.setText("Final");
+    	finalTab.setTabListener(this);
    
     	
     	actionBar.addTab(limitsTab);
     	actionBar.addTab(derivativesTab);
     	actionBar.addTab(integralsTab);
+    	actionBar.addTab(finalTab);
     	
     	actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
     }
@@ -127,13 +132,14 @@ class MyTopicsAdapter extends FragmentStatePagerAdapter {
 			fragment = new DerivativesTopicTab();
 		if (arg0 == 2) 
 			fragment = new IntegralsTopicTab();
-		
+		if (arg0 == 3)
+			fragment = new FinalTab();
 		return fragment;
 	}
 
 	@Override
 	public int getCount() {
-		return 3;
+		return 4;
 	}
 	
 }

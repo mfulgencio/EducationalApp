@@ -164,6 +164,7 @@ class MyDerivativesAdapter extends FragmentStatePagerAdapter {
         if (arg0 == 7)
         	fragment = new DerivativesERTab();
 
+
 		return fragment;
 	}
 

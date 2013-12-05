@@ -42,7 +42,7 @@ public class MainActivity extends Activity {
 		calc1InfoButton.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				AlertDialog.Builder alertBuilder = new AlertDialog.Builder(context);
+				AlertDialog.Builder alertBuilder = new AlertDialog.Builder(context, AlertDialog.THEME_HOLO_LIGHT);
 	        	alertBuilder.setTitle("Calculus 1 Topics");
 	        	alertBuilder.setMessage(
 	        			"Calculus: The branch of mathematics studying the rate of change of quantities (which can be interpreted as slopes of curves) and the length, area, and volume of objects.\n\n" +

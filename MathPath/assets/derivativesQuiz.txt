@@ -13,7 +13,7 @@ b. 2
 c. 2x
 d. 2x + h
 Understanding the Definition of the Derivative
-Limit Definition 
+Limit Definitions
 Use the limit definition of the derivative to solve f(x) = 2x^2 -16x + 35
 b. 4x - 16
 a. 4x
@@ -21,7 +21,7 @@ b. 4x - 16
 c. 2x - 16
 d. 21
 Understanding the Definition of the Derivative
-Limit Definition
+Limit Definitions
 Use the limit definition of the derivative to solve f(x) = sqrt(5z - 8)
 d. 5 / (2 * sqrt(5z - 8))
 a. 5
@@ -29,7 +29,7 @@ b. 5 / z
 c. 
 d. 5 / (2 * sqrt(5z - 8))
 Understanding the Definition of the Derivative
-Limit Definition
+Limit Definitions
 Find the derivative using any method f(t) = 2t^6 + 7t^-6 
 a. 12t^5 - 42t^-7
 a. 12t^5 - 42t^-7
@@ -118,7 +118,7 @@ c. x + y
 d. 1
 Implicit Differentiation
 Implicit Differentiation
-We need to enclose a field with a fence.\nWe have 500 feet of fencing material and a building is on one side of the field and so won’t need any fencing.\nDetermine the dimensions of the field that will enclose the largest area.
+We need to enclose a field with a fence. We have 500 feet of fencing material and a building is on one side of the field and so he won't need any fencing. Determine the dimensions of the field that will enclose the largest area.
 d. 250 x 125
 a. 125 x 125
 b. 300 X 100
@@ -126,7 +126,7 @@ c. 400 x 50
 d. 250 x 125
 Optimization with Calculus (1,2)
 Optimization
-We want to construct a box with a square base and we only have 10 m^2 of material to use in construction of the box.\nAssuming that all the material is used in the construction process determine the maximum volume that the box can have.
+We want to construct a box with a square base and we only have 10 m^2 of material to use in construction of the box. Assuming that all the material is used in the construction process determine the maximum volume that the box can have.
 b. l = 1.2910, w = 1.2910, h = 1.2910
 b. l = 1.2910, w = 1.2910, h = 1.2910
 a. l = 1, w = 1, h = 1
@@ -134,7 +134,7 @@ c. l = 1, w = 1, h = 2
 d. l = 1.567, w = 1.567, h = 1.111
 Optimization with Calculus (1,2)
 Optimization
-A manufacturer needs to make a cylindrical can that will hold 1.5 liters of liquid.\nDetermine the dimensions of the can that will minimize the amount of material used in its construction.
+A manufacturer needs to make a cylindrical can that will hold 1.5 liters of liquid. Determine the dimensions of the can that will minimize the amount of material used in its construction.
 c. radius = 6.2035, height = 12.407
 a. radius = 6, height = 12
 b. radius = 5, height = 14
@@ -142,19 +142,19 @@ c. radius = 6.2035, height = 12.407
 d. radius = 5.2035, height = 14.407
 Optimization with Calculus (1,2)
 Optimization
-Air is being pumped into a spherical balloon at a rate of 5 cm^3/min.\nDetermine the rate at which the radius of the balloon is increasing when the diameter of the balloon is 20 cm.
+Air is being pumped into a spherical balloon at a rate of 5 cm^3/min. Determine the rate at which the radius of the balloon is increasing when the diameter of the balloon is 20 cm.
 a. 1/80 cm/min
 a. 1/80 cm/min
 b. 1/60 cm/min
 c. 80 cm/min
 d. -1/80 cm/min
 related rates sphere application of derivatives
-Related Rates 
- A 15 foot ladder is resting against the wall.  The bottom is initially 10 feet away from the wall and is being pushed towards the wall at a rate of 1/4 ft/sec.  How fast is the top of the ladder moving up the wall 12 seconds after we start pushing?
+Related Rates
+ A 15 foot ladder is resting against the wall. The bottom is initially 10 feet away from the wall and is being pushed towards the wall at a rate of 1/4 ft/sec. How fast is the top of the ladder moving up the wall 12 seconds after we start pushing?
 c. 0.1319 ft/sec
 a. 1.1319 ft/sec
 b. -0.1319 ft/sec
 c. 0.1319 ft/sec 
 d. 10000 ft/sec
 Ladder rate-of-change problem
-Related Rates 
+Related Rates
