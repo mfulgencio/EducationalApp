@@ -10,8 +10,68 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="EXTERNAL RESOURCES"
-        android:textSize="40sp"
+        android:text="@string/er"
+        android:textSize="25sp"
         android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="521dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="49dp"
+        android:layout_marginTop="35dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:autoLink="web"
+        android:text="@string/resource_1"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="521dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="90dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:autoLink="web"
+        android:text="@string/resource_2"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:layout_width="521dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="120dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:autoLink="web"
+        android:text="@string/resource_3"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:layout_width="521dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="145dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:autoLink="web"
+        android:text="@string/resource_4"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="521dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="175dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:autoLink="web"
+        android:text="@string/resource_5"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
 </FrameLayout>

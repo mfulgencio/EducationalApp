@@ -112,6 +112,7 @@ public class DerivativesTabs extends FragmentActivity implements TabListener {
     	actionBar.addTab(implicitDiffTab);
     	actionBar.addTab(optimizationTab);
     	actionBar.addTab(relatedRatesTab);
+    	actionBar.addTab(erTab);
 
     	actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
     	actionBar.setSelectedNavigationItem(i.getIntExtra("derivatives tab", 0));

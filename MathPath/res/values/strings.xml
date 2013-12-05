@@ -16,6 +16,13 @@
     <string name="quiz_button">Quiz</string>
     <string name="next_video">Next Video</string>
     <string name="previous_video">Previous Video</string>
+    <string name="er">External Resources</string>
+    <string name="resource_1">http://ocw.mit.edu/resources/res-18-001-calculus-online-textbook-spring-2005/textbook/</string>
+    <string name="resource_2">http://www.math.wisc.edu/~keisler/calc.html</string>
+    <string name="resource_3">http://tutorial.math.lamar.edu/pdf/CalcI/CalcI_Complete.pdf</string>
+    <string name="resource_4">http://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx</string>
+    <string name="resource_5">http://www.karlscalculus.org/</string>
+    
 
     <string-array name="limits_array">
         <item>Intro to Limits</item>
