@@ -4,18 +4,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/gradient" >
-    
+
     <Button
-    	    android:id="@+id/finalButton"
-    	    android:layout_width="wrap_content"
-    	    android:layout_height="wrap_content"
-    		android:layout_marginTop="369dp"
-    		android:layout_marginLeft="400dp"
-    	    android:layout_marginBottom="49dp"
-    	    android:paddingRight="30dp"
-    	    android:paddingLeft="30dp"
-    	    android:text="Take Final"
-    	    android:background="@drawable/rounded_corner_button" />
-    
+        android:id="@+id/finalButton"
+        android:layout_width="664dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="150dp"
+        android:background="@drawable/rounded_corner_button"
+        android:paddingBottom="50dp"
+        android:paddingTop="50dp"
+        android:text="Take Final" />
 
 </LinearLayout>

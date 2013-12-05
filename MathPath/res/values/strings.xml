@@ -49,7 +49,7 @@
     <color name="gray">#BBBBBB</color>
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
-    <color name="button_border">#C0D0D0</color>
+    <color name="button_border">#5AB9ED</color>
     <color name="MathPathBlue">#3CC7C7</color>
 
     <string name="goButton">Watch Videos</string>

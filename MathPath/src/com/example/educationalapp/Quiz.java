@@ -255,6 +255,7 @@ public class Quiz extends Activity {
 	        	AlertDialog.Builder alertBuilder = new AlertDialog.Builder(context, AlertDialog.THEME_HOLO_LIGHT);
 	        	alertBuilder.setTitle("Quiz Results");
 	        	String resultsMessage = "";
+	        	
 	        	if(incorrect.size() == 0)
 	        	{
 	        	   resultsMessage = "Congratulations! You got 100%";	
@@ -262,7 +263,7 @@ public class Quiz extends Activity {
 	        	else
 	        	{	
 	        	   resultsMessage = "You answered " + (10 - incorrect.size()) + "/" + "10 questions correctly" + "\n\n" + "You missed the following questions: \n\n";
-	        	   
+	        	  
 	        	   
 	        	   for(int i = 0; i < incorrect.size(); i++)
 	        	   {

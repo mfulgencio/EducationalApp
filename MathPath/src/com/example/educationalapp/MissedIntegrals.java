@@ -90,7 +90,9 @@ public class MissedIntegrals {
 		int right = 10 - (introToIntegrals + indefiniteIntegrals + definiteIntegrals  + areaUnderTheCurve  + 
 				uSubstitution);
 		
-		String resultsString = "YOUR DATA FROM YOUR MOST RECENT ATTEMPT ON INTEGRALS:\nGRADE: " + right*10 + "%\n\n" + 
+		String resultsString = "" + right + "\n";
+		
+	   resultsString += "YOUR DATA FROM YOUR MOST RECENT ATTEMPT ON INTEGRALS:\nGRADE: " + right*10 + "%\n\n" + 
 				"Of the questions you answered wrong: \n\n" 
 				+ (int)percentWrongIntroToIntegrals + "% were on the topic '" + topics[0] + "'\n"
 				+ (int)percentWrongIndefiniteIntegrals + "% were on the topic '" + topics[1] + "'\n"
