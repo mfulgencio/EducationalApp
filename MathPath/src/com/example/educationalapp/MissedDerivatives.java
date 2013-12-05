@@ -103,7 +103,8 @@ public class MissedDerivatives {
 				+ (int)percentWrongRules + "% were on the topic 'Rules'\n"
 				+ (int)percentWrongImplicitDifferentation + "% were on the topic 'Implcitit Differentiation'\n"
 				+ (int)percentWrongOptimization + "% were on the topic 'Optimization'\n"
-				+ (int)percentWrongRelatedRates + "% were on the topic 'Related Rates'\n\n";
+				+ (int)percentWrongRelatedRates + "% were on the topic 'Related Rates'\n\n"
+				+ "RECOMMENDATION:\n";
 		
 		for (int i = 0; i < scores.length; i++) {
 			if (scores[i] >= 60.0)

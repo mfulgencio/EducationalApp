@@ -93,7 +93,8 @@ public class MissedIntegrals {
 				+ (int)percentWrongIndefiniteIntegrals + "% were on the topic'" + topics[1] + "'\n"
 				+ (int)percentWrongDefiniteIntegrals + "% were on the topic'" + topics[2] + "'\n"
 				+ (int)percentWrongAreaUnderTheCurve + "% were on the topic'" + topics[3] + "'\n"
-				+ (int)percentWrongUSubstitution + "% were on the topic'" + topics[4] + "'\n";
+				+ (int)percentWrongUSubstitution + "% were on the topic'" + topics[4] + "'\n"
+				+ "RECOMMENDATION:\n";
 				
 				for (int i = 0; i < scores.length; i++) {
 			if (scores[i] >= 60.0)

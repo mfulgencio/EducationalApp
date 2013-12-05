@@ -85,7 +85,7 @@ public class MissedLimits{
 		+ (int)percentWrongSolvingLimits + "% were on the topic 'Solving Limits'\n"
 		+ (int)percentWrongLimitsAtInfinity + "% were on the topic 'Limits at Infinity'\n"
 		+ (int)percentWrongContinuity + "% were on the topic 'Continuity'\n\n"
-		+ "RECOMMENDATION:\n\n";
+		+ "RECOMMENDATION:\n";
 		
 		for (int i = 0; i < scores.length; i++) {
 			if (scores[i] >= 60.0)
