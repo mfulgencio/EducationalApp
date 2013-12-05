@@ -87,13 +87,16 @@ public class MissedIntegrals {
 		topics[3] = "Area Under the Curve";
 		topics[4] = "U Substitution";
 		
-		String resultsString = "YOUR DATA FROM YOUR MOST RECENT ATTEMPT ON INTEGRALS: \n\n" + 
+		int right = 10 - (introToIntegrals + indefiniteIntegrals + definiteIntegrals  + areaUnderTheCurve  + 
+				uSubstitution);
+		
+		String resultsString = "YOUR DATA FROM YOUR MOST RECENT ATTEMPT ON INTEGRALS:\nGRADE: " + right*10 + "%\n\n" + 
 				"Of the questions you answered wrong: \n\n" 
 				+ (int)percentWrongIntroToIntegrals + "% were on the topic '" + topics[0] + "'\n"
 				+ (int)percentWrongIndefiniteIntegrals + "% were on the topic '" + topics[1] + "'\n"
 				+ (int)percentWrongDefiniteIntegrals + "% were on the topic '" + topics[2] + "'\n"
 				+ (int)percentWrongAreaUnderTheCurve + "% were on the topic '" + topics[3] + "'\n"
-				+ (int)percentWrongUSubstitution + "% were on the topic '" + topics[4] + "'\n"
+				+ (int)percentWrongUSubstitution + "% were on the topic '" + topics[4] + "'\n\n"
 				+ "RECOMMENDATION:\n";
 				
 				for (int i = 0; i < scores.length; i++) {
@@ -104,7 +107,7 @@ public class MissedIntegrals {
 			if (scores[i] <= 29.9 && scores[i] >= 10.0)
 				resultsString += "\nA small weak point seems to be " + topics[i] +". You may benefit from reviewing the videos on this topic.\n";
 		}
-		resultsString += "--------------------------------------------------------------------------------------------------";
+	//	resultsString += "--------------------------------------------------------------------------------------------------";
 
 
 				FileOutputStream fos;

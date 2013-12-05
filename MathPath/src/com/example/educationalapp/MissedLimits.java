@@ -58,6 +58,9 @@ public class MissedLimits{
 //				Log.d("MathPath", "Something else:" + missed.get(i).topic);
 		}
 		
+		int right = 10 - (solvingLimits + introToLimits + limitsAtInfinity + continuity);
+
+		
 		percentWrongIntroToLimits = (introToLimits/size)*100.0;
 		Log.d("MathPath", "Intro" + introToLimits + "/" + size + " = " + percentWrongIntroToLimits);
 		percentWrongSolvingLimits = (solvingLimits/size)*100.0;
@@ -78,8 +81,8 @@ public class MissedLimits{
 		topics[1] = "Solving Limits";
 		topics[2] = "Limits at Infinity";
 		topics[3] = "Continuity";
-		
-		String resultsString = "YOUR DATA FROM YOUR MOST RECENT ATTEMPT ON LIMITS: \n\n" + 
+
+		String resultsString = "YOUR DATA FROM YOUR MOST RECENT ATTEMPT ON LIMITS:\nGRADE: " + right*10 + "%\n\n" + 
 		"Of the questions you answered wrong: \n\n" 
 		+ (int)percentWrongIntroToLimits + "% were on the topic 'Intro to Limits'\n"
 		+ (int)percentWrongSolvingLimits + "% were on the topic 'Solving Limits'\n"
