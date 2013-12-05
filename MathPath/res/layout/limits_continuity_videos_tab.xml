@@ -1,17 +1,40 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/gradient"
-    tools:context=".LimitsERTab" >
-
-    <!-- TODO: Update blank fragment layout -->
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="CONTINUITY"
-        android:textSize="40sp"
-        android:textColor="@color/black" />
+	xmlns:tools="http://schemas.android.com/tools"
+ 	android:id="@+id/limits_continuity_videos"
+   	android:layout_width="match_parent"
+   	android:layout_height="match_parent"
+   	android:background="@drawable/gradient"
+   	tools:context=".LimitsContinuityVideosTab" >
+   	
+    <LinearLayout android:orientation="vertical"
+      	android:layout_width="500dp"
+       	android:layout_height="match_parent"
+       	android:layout_gravity="center_horizontal" >
+        
+       	<Button android:id="@+id/limits_continuity_first_vid_button"
+	        android:text="Limits to Define Continuity"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="50dp"
+	        android:paddingRight="120dp"
+	        android:paddingBottom="50dp"
+	        android:paddingLeft="120dp"
+	        android:layout_marginTop="20dp"
+	        android:layout_gravity="center_horizontal"
+	        android:background="@drawable/rounded_corner_button" />
+	    
+    	<Button android:id="@+id/limits_continuity_second_vid_button"
+	        android:text="One-sided Limits from Graphs"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="50dp"
+	        android:paddingRight="100dp"
+	        android:paddingBottom="50dp"
+	        android:paddingLeft="100dp"
+	        android:layout_marginTop="20dp"
+	        android:layout_gravity="center_horizontal"
+	        android:background="@drawable/rounded_corner_button" />
+	        
+    </LinearLayout>
 
 </FrameLayout>

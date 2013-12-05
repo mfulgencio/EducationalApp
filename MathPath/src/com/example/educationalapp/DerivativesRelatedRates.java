@@ -13,9 +13,9 @@ import android.widget.Button;
  * A simple {@link android.support.v4.app.Fragment} subclass.
  * 
  */
-public class LimitsContinuityVideosTab extends Fragment {
+public class DerivativesRelatedRates extends Fragment {
 
-	public LimitsContinuityVideosTab() {
+	public DerivativesRelatedRates() {
 		// Required empty public constructor
 	}
 
@@ -23,10 +23,11 @@ public class LimitsContinuityVideosTab extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		// Inflate the layout for this fragment
-		View view = inflater.inflate(R.layout.limits_continuity_videos_tab, container, false);
+		View view = inflater.inflate(R.layout.derivatives_related_rates_tab, container, false);
 
-		Button firstVid = (Button) view.findViewById(R.id.limits_continuity_first_vid_button);
-		Button secondVid = (Button) view.findViewById(R.id.limits_continuity_second_vid_button);
+		Button firstVid = (Button) view.findViewById(R.id.derivatives_related_rates_first_vid_button);
+		Button secondVid = (Button) view.findViewById(R.id.derivatives_related_rates_second_vid_button);
+		Button thirdVid = (Button) view.findViewById(R.id.derivatives_related_rates_third_vid_button);
 		
 		firstVid.setOnClickListener(new OnClickListener() {
 
@@ -34,8 +35,8 @@ public class LimitsContinuityVideosTab extends Fragment {
 			public void onClick(View v) {
 				Intent i = new Intent(getActivity(), Videos.class);
 				
-				i.putExtra("videoId", "kdEQGfeC0SE");
-				i.putExtra("videoTitle", "Limits | Limits to Define Continuity");
+				i.putExtra("videoId", "Vi5KBiXg0Co");
+				i.putExtra("videoTitle", "Derivatives | Related Rates");
 				
 				getActivity().startActivity(i);
 			}
@@ -48,8 +49,22 @@ public class LimitsContinuityVideosTab extends Fragment {
 			public void onClick(View v) {
 				Intent i = new Intent(getActivity(), Videos.class);
 				
-				i.putExtra("videoId", "nOnd3SiYZqM");
-				i.putExtra("videoTitle", "Limits | One-sided Limits from Graphs");
+				i.putExtra("videoId", "hD3U65CcZ0Q");
+				i.putExtra("videoTitle", "Derivatives | Ladder Rate-of-Change Problem");
+				
+				getActivity().startActivity(i);
+			}
+			
+		});
+		
+		thirdVid.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(getActivity(), Videos.class);
+				
+				i.putExtra("videoId", "6hrJGtf6z5w");
+				i.putExtra("videoTitle", "Derivatives | Sphere Application of Derivatives");
 				
 				getActivity().startActivity(i);
 			}

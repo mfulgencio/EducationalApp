@@ -150,17 +150,17 @@ class MyDerivativesAdapter extends FragmentStatePagerAdapter {
 		if (arg0 == 0)
 			fragment = new DerivativesAllVideosTab();
 		if (arg0 == 1)
-			fragment = new IntroDerTab();
+			fragment = new DerivativesIntroTab();
         if (arg0 == 2)
-        	fragment = new LimitDefTab();
+        	fragment = new DerivativesLimitDefTab();
         if (arg0 == 3)
-        	fragment = new RulesTab();
+        	fragment = new DerivativesRulesTab();
         if (arg0 == 4)
-        	fragment = new ImplicitDiffTab();
+        	fragment = new DerivativesImplicitDiffTab();
         if (arg0 == 5)
-        	fragment = new OptimizationTab();
+        	fragment = new DerivativesOptimizationTab();
         if (arg0 == 6)
-        	fragment = new RelatedRatesTab();
+        	fragment = new DerivativesRelatedRates();
         if (arg0 == 7)
         	fragment = new DerivativesERTab();
 

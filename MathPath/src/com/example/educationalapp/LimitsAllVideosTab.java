@@ -1,289 +1,179 @@
 package com.example.educationalapp;
 
-import com.google.android.youtube.player.YouTubeInitializationResult;
-import com.google.android.youtube.player.YouTubePlayer;
-import com.google.android.youtube.player.YouTubePlayer.OnInitializedListener;
-import com.google.android.youtube.player.YouTubePlayer.PlaybackEventListener;
-import com.google.android.youtube.player.YouTubePlayer.PlayerStateChangeListener;
-import com.google.android.youtube.player.YouTubePlayer.Provider;
-import com.google.android.youtube.player.YouTubePlayerSupportFragment;
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
-public class LimitsAllVideosTab extends Fragment implements YouTubePlayer.OnInitializedListener {
+public class LimitsAllVideosTab extends Fragment {
 
 	public LimitsAllVideosTab() {
 		// Required empty public constructor
 	}
 	 
-	private YouTubePlayer youTubePlayer, youTubePlayer2;
-	private YouTubePlayerSupportFragment youTubePlayerFragment, youTubePlayerFragment2;
-	 
-	private static final int RQS_ErrorDialog = 1;
-	 
-	private MyPlayerStateChangeListener myPlayerStateChangeListener;
-	private MyPlaybackEventListener myPlaybackEventListener;
-	
-	private MyPlayerStateChangeListener2 myPlayerStateChangeListener2;
-	private MyPlaybackEventListener2 myPlaybackEventListener2;
-	 
-	String log = "", log2 = "";
-	
+	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		
 		// Inflate the layout for this fragment
 		View view = inflater.inflate(R.layout.limits_all_videos_tab, container, false);
+
+		Button firstVid = (Button) view.findViewById(R.id.limits_all_first_vid_button);
+		Button secondVid = (Button) view.findViewById(R.id.limits_all_second_vid_button);
+		Button thirdVid = (Button) view.findViewById(R.id.limits_all_third_vid_button);
+		Button fourthVid = (Button) view.findViewById(R.id.limits_all_fourth_vid_button);
+		Button fifthVid = (Button) view.findViewById(R.id.limits_all_fifth_vid_button);
+		Button sixthVid = (Button) view.findViewById(R.id.limits_all_sixth_vid_button);
+		Button seventhVid = (Button) view.findViewById(R.id.limits_all_seventh_vid_button);
+		Button eighthVid = (Button) view.findViewById(R.id.limits_all_eighth_vid_button);
+		Button ninthVid = (Button) view.findViewById(R.id.limits_all_ninth_vid_button);
+		Button tenthVid = (Button) view.findViewById(R.id.limits_all_tenth_vid_button);
 		
-		youTubePlayerFragment = new YouTubePlayerSupportFragment();
-		youTubePlayerFragment2 = new YouTubePlayerSupportFragment();
-		
-		LimitsAllVideosTabVidDescs frag = new LimitsAllVideosTabVidDescs();
-		
-		FragmentManager fm = getFragmentManager();
-		
-		FragmentTransaction ft = fm.beginTransaction();
-		
-		ft.add(R.id.limits_all_first, youTubePlayerFragment);	
-		ft.add(R.id.limits_all_second, youTubePlayerFragment2);
-		
-		ft.add(R.id.limits_all_vid_descs, frag);
-		
-		ft.commit();
-		
-        youTubePlayerFragment.initialize(DeveloperKey.DEVELOPER_KEY, this);
-        
-        youTubePlayerFragment2.initialize(DeveloperKey.DEVELOPER_KEY, new OnInitializedListener() {
+		firstVid.setOnClickListener(new OnClickListener() {
 
 			@Override
-			public void onInitializationFailure(Provider provider,
-					YouTubeInitializationResult result) {
-				if (result.isUserRecoverableError()) {
-					result.getErrorDialog(getActivity(), RQS_ErrorDialog).show(); 
-				} else {
-//					Toast.makeText(getActivity(), 
-//					  "YouTubePlayer.onInitializationFailure(): " + result.toString(), 
-//					  Toast.LENGTH_LONG).show(); 
-				}
+			public void onClick(View v) {
+				Intent i = new Intent(getActivity(), Videos.class);
+				
+				i.putExtra("videoId", "W0VWO4asgmk");
+				i.putExtra("videoTitle", "Limits | Introduction to Limits");
+				
+				getActivity().startActivity(i);
 			}
+			
+		});
+		
+		secondVid.setOnClickListener(new OnClickListener() {
 
 			@Override
-			public void onInitializationSuccess(Provider provider,
-					YouTubePlayer player, boolean wasRestored) {
-				youTubePlayer2 = player;
-				  
-//				Toast.makeText(getActivity(), 
-//				  "YouTubePlayer.onInitializationSuccess()", 
-//				  Toast.LENGTH_LONG).show();
-				  
-				youTubePlayer2.setPlayerStateChangeListener(myPlayerStateChangeListener2);
-				youTubePlayer2.setPlaybackEventListener(myPlaybackEventListener2);
-				  
-				if (!wasRestored) {
-					player.cueVideo("gp5efC2n0iM");
-				}
+			public void onClick(View v) {
+				Intent i = new Intent(getActivity(), Videos.class);
+				
+				i.putExtra("videoId", "gp5efC2n0iM");
+				i.putExtra("videoTitle", "Limits | 1.1 Introduction to Limits");
+				
+				getActivity().startActivity(i);
 			}
-        	
-        });
+			
+		});
+		
+		thirdVid.setOnClickListener(new OnClickListener() {
 
-        myPlayerStateChangeListener = new MyPlayerStateChangeListener();
-        myPlaybackEventListener = new MyPlaybackEventListener();
-        
-        myPlayerStateChangeListener2 = new MyPlayerStateChangeListener2();
-        myPlaybackEventListener2 = new MyPlaybackEventListener2();
-        
-	    return view;
-	}
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(getActivity(), Videos.class);
+				
+				i.putExtra("videoId", "GGQngIp0YGI");
+				i.putExtra("videoTitle", "Limits | Limit Examples (part 1)");
+				
+				getActivity().startActivity(i);
+			}
+			
+		});
+		
+		fourthVid.setOnClickListener(new OnClickListener() {
 
-	@Override
-	public void onInitializationFailure(Provider provider,
-	  YouTubeInitializationResult result) {
-	  
-		if (result.isUserRecoverableError()) {
-			result.getErrorDialog(getActivity(), RQS_ErrorDialog).show(); 
-		} else {
-//	   		Toast.makeText(getActivity(), 
-//	     		"YouTubePlayer.onInitializationFailure(): " + result.toString(), 
-//	     		Toast.LENGTH_LONG).show(); 
-	  }
-	}
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(getActivity(), Videos.class);
+				
+				i.putExtra("videoId", "YRw8udexH4o");
+				i.putExtra("videoTitle", "Limits | Limit Examples (part 2)");
+				
+				getActivity().startActivity(i);
+			}
+			
+		});
+		
+		fifthVid.setOnClickListener(new OnClickListener() {
 
-	@Override
-	public void onInitializationSuccess(Provider provider, YouTubePlayer player,
-	  boolean wasRestored) {
-	  
-		youTubePlayer = player;
-		  
-	//	Toast.makeText(getActivity(), 
-	//	   "YouTubePlayer.onInitializationSuccess()", 
-	//	   Toast.LENGTH_LONG).show();
-		  
-		youTubePlayer.setPlayerStateChangeListener(myPlayerStateChangeListener);
-		youTubePlayer.setPlaybackEventListener(myPlaybackEventListener);
-	  
-		if (!wasRestored) {
-			player.cueVideo("riXcZT2ICjA");
-	    }
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(getActivity(), Videos.class);
+				
+				i.putExtra("videoId", "gWSDDopD9sk");
+				i.putExtra("videoTitle", "Limits | Limit Examples (part 3)");
+				
+				getActivity().startActivity(i);
+			}
+			
+		});
+		
+		sixthVid.setOnClickListener(new OnClickListener() {
 
-	}
-	 
-	private final class MyPlayerStateChangeListener implements PlayerStateChangeListener {
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(getActivity(), Videos.class);
+				
+				i.putExtra("videoId", "igJdDN-DPgA");
+				i.putExtra("videoTitle", "Limits | Squeeze Theorem");
+				
+				getActivity().startActivity(i);
+			}
+			
+		});
+		
+		seventhVid.setOnClickListener(new OnClickListener() {
 
-		private void updateLog(String prompt){
-			log +=  "MyPlayerStateChangeListener" + "\n" + 
-					prompt + "\n\n=====";
-			//	    textVideoLog.setText(log);
-		};
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(getActivity(), Videos.class);
+				
+				i.putExtra("videoId", "a2Ia_ZlUCaQ");
+				i.putExtra("videoTitle", "Limits | Limits at Infinity");
+				
+				getActivity().startActivity(i);
+			}
+			
+		});
+		
+		eighthVid.setOnClickListener(new OnClickListener() {
 
-		@Override
-		public void onAdStarted() {
-			updateLog("onAdStarted()");
-		}
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(getActivity(), Videos.class);
+				
+				i.putExtra("videoId", "KcqO1fX9b_I");
+				i.putExtra("videoTitle", "Limits | More Limits at Infinity");
+				
+				getActivity().startActivity(i);
+			}
+			
+		});
+		
+		ninthVid.setOnClickListener(new OnClickListener() {
 
-		@Override
-		public void onError(
-				com.google.android.youtube.player.YouTubePlayer.ErrorReason arg0) {
-			updateLog("onError(): " + arg0.toString());
-		}
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(getActivity(), Videos.class);
+				
+				i.putExtra("videoId", "kdEQGfeC0SE");
+				i.putExtra("videoTitle", "Limits | Limits to Define Continuity");
+				
+				getActivity().startActivity(i);
+			}
+			
+		});
+		
+		tenthVid.setOnClickListener(new OnClickListener() {
 
-		@Override
-		public void onLoaded(String arg0) {
-			updateLog("onLoaded(): " + arg0);
-		}
-
-		@Override
-		public void onLoading() {
-			updateLog("onLoading()");
-		}
-
-		@Override
-		public void onVideoEnded() {
-			updateLog("onVideoEnded()");
-		}
-
-		@Override
-		public void onVideoStarted() {
-			updateLog("onVideoStarted()");
-		}
-
-	}
-
-	private final class MyPlaybackEventListener implements PlaybackEventListener {
-
-		private void updateLog(String prompt){
-			log +=  "MyPlaybackEventListener" + "\n-" + 
-					prompt + "\n\n=====";
-			//	   textVideoLog.setText(log);
-		};
-
-		@Override
-		public void onBuffering(boolean arg0) {
-			updateLog("onBuffering(): " + String.valueOf(arg0));
-		}
-
-		@Override
-		public void onPaused() {
-			updateLog("onPaused()");
-		}
-
-		@Override
-		public void onPlaying() {
-			updateLog("onPlaying()");
-		}
-
-		@Override
-		public void onSeekTo(int arg0) {
-			updateLog("onSeekTo(): " + String.valueOf(arg0));
-		}
-
-		@Override
-		public void onStopped() {
-			updateLog("onStopped()");
-		}
-
-	}
-	
-	private final class MyPlayerStateChangeListener2 implements PlayerStateChangeListener {
-
-		private void updateLog(String prompt){
-			log2 +=  "MyPlayerStateChangeListener" + "\n" + 
-					prompt + "\n\n=====";
-			//	    textVideoLog.setText(log);
-		};
-
-		@Override
-		public void onAdStarted() {
-			updateLog("onAdStarted()");
-		}
-
-		@Override
-		public void onError(
-				com.google.android.youtube.player.YouTubePlayer.ErrorReason arg0) {
-			updateLog("onError(): " + arg0.toString());
-		}
-
-		@Override
-		public void onLoaded(String arg0) {
-			updateLog("onLoaded(): " + arg0);
-		}
-
-		@Override
-		public void onLoading() {
-			updateLog("onLoading()");
-		}
-
-		@Override
-		public void onVideoEnded() {
-			updateLog("onVideoEnded()");
-		}
-
-		@Override
-		public void onVideoStarted() {
-			updateLog("onVideoStarted()");
-		}
-
-	}
-
-	private final class MyPlaybackEventListener2 implements PlaybackEventListener {
-
-		private void updateLog(String prompt){
-			log2 +=  "MyPlaybackEventListener" + "\n-" + 
-					prompt + "\n\n=====";
-			//	   textVideoLog.setText(log);
-		};
-
-		@Override
-		public void onBuffering(boolean arg0) {
-			updateLog("onBuffering(): " + String.valueOf(arg0));
-		}
-
-		@Override
-		public void onPaused() {
-			updateLog("onPaused()");
-		}
-
-		@Override
-		public void onPlaying() {
-			updateLog("onPlaying()");
-		}
-
-		@Override
-		public void onSeekTo(int arg0) {
-			updateLog("onSeekTo(): " + String.valueOf(arg0));
-		}
-
-		@Override
-		public void onStopped() {
-			updateLog("onStopped()");
-		}
-
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(getActivity(), Videos.class);
+				
+				i.putExtra("videoId", "nOnd3SiYZqM");
+				i.putExtra("videoTitle", "Limits | One-sided Limits from Graphs");
+				
+				getActivity().startActivity(i);
+			}
+			
+		});
+		
+		return view;
 	}
 
 }

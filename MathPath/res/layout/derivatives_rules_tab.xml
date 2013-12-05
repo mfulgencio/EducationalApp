@@ -9,8 +9,8 @@
      	android:layout_height="match_parent"
      	android:layout_gravity="center_horizontal" >
 	        
-       	<Button android:id="@+id/limits_solving_first_vid_button"
-	        android:text="Limit Examples (part 1)"
+       	<Button android:id="@+id/derivatives_rules_first_vid_button"
+	        android:text="Solving Derivatives"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:paddingTop="50dp"
@@ -18,8 +18,8 @@
 	        android:layout_marginTop="20dp"
 	        android:background="@drawable/rounded_corner_button" />
     
-    	<Button android:id="@+id/limits_solving_second_vid_button"
-	        android:text="Limit Examples (part 2)"
+    	<Button android:id="@+id/derivatives_rules_second_vid_button"
+	        android:text="The Chain Rule"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:paddingTop="50dp"
@@ -27,8 +27,8 @@
 	        android:layout_marginTop="20dp"
 	        android:background="@drawable/rounded_corner_button" />
     	
-    	<Button android:id="@+id/limits_solving_third_vid_button"
-	        android:text="Limit Examples (part 3)"
+    	<Button android:id="@+id/derivatives_rules_third_vid_button"
+	        android:text="Product Rule"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:paddingTop="50dp"
@@ -36,8 +36,8 @@
 	        android:layout_marginTop="20dp"
 	        android:background="@drawable/rounded_corner_button" />
     	
-    	<Button android:id="@+id/limits_solving_fourth_vid_button"
-	        android:text="Squeeze Theorem"
+    	<Button android:id="@+id/derivatives_rules_fourth_vid_button"
+	        android:text="Quotient Rule"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:paddingTop="50dp"

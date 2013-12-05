@@ -8,41 +8,41 @@
     	android:layout_width="500dp"
      	android:layout_height="match_parent"
      	android:layout_gravity="center_horizontal" >
-	        
-       	<Button android:id="@+id/limits_solving_first_vid_button"
-	        android:text="Limit Examples (part 1)"
+    	
+    	<Button android:id="@+id/integrals_u_substitution_eleventh_vid_button"
+	        android:text="U-Substitution"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:paddingTop="50dp"
+	        android:paddingRight="100dp"
 	        android:paddingBottom="50dp"
+	        android:paddingLeft="100dp"
 	        android:layout_marginTop="20dp"
-	        android:background="@drawable/rounded_corner_button" />
-    
-    	<Button android:id="@+id/limits_solving_second_vid_button"
-	        android:text="Limit Examples (part 2)"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:paddingTop="50dp"
-	        android:paddingBottom="50dp"
-	        android:layout_marginTop="20dp"
+	        android:layout_gravity="center_horizontal"
 	        android:background="@drawable/rounded_corner_button" />
     	
-    	<Button android:id="@+id/limits_solving_third_vid_button"
-	        android:text="Limit Examples (part 3)"
+    	<Button android:id="@+id/integrals_u_substitution_twelvth_vid_button"
+	        android:text="U-Substitution"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:paddingTop="50dp"
+	        android:paddingRight="100dp"
 	        android:paddingBottom="50dp"
+	        android:paddingLeft="100dp"
 	        android:layout_marginTop="20dp"
+	        android:layout_gravity="center_horizontal"
 	        android:background="@drawable/rounded_corner_button" />
     	
-    	<Button android:id="@+id/limits_solving_fourth_vid_button"
-	        android:text="Squeeze Theorem"
+    	<Button android:id="@+id/integrals_u_substitution_thirteenth_vid_button"
+	        android:text="Integration Using U-Substitution"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:paddingTop="50dp"
+	        android:paddingRight="100dp"
 	        android:paddingBottom="50dp"
+	        android:paddingLeft="100dp"
 	        android:layout_marginTop="20dp"
+	        android:layout_gravity="center_horizontal"
 	        android:background="@drawable/rounded_corner_button" />
 	        
     </LinearLayout>

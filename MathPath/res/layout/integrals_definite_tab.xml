@@ -8,41 +8,41 @@
     	android:layout_width="500dp"
      	android:layout_height="match_parent"
      	android:layout_gravity="center_horizontal" >
-	        
-       	<Button android:id="@+id/limits_solving_first_vid_button"
-	        android:text="Limit Examples (part 1)"
+    	
+    	<Button android:id="@+id/integrals_definite_seventh_vid_button"
+	        android:text="Introduction to Definite Integrals"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:paddingTop="50dp"
+	        android:paddingRight="120dp"
 	        android:paddingBottom="50dp"
+	        android:paddingLeft="120dp"
 	        android:layout_marginTop="20dp"
+	        android:layout_gravity="center_horizontal"
 	        android:background="@drawable/rounded_corner_button" />
-    
-    	<Button android:id="@+id/limits_solving_second_vid_button"
-	        android:text="Limit Examples (part 2)"
+	    
+    	<Button android:id="@+id/integrals_definite_eighth_vid_button"
+	        android:text="Definite Integrals (part II)"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:paddingTop="50dp"
+	        android:paddingRight="100dp"
 	        android:paddingBottom="50dp"
+	        android:paddingLeft="100dp"
 	        android:layout_marginTop="20dp"
+	        android:layout_gravity="center_horizontal"
 	        android:background="@drawable/rounded_corner_button" />
     	
-    	<Button android:id="@+id/limits_solving_third_vid_button"
-	        android:text="Limit Examples (part 3)"
+    	<Button android:id="@+id/integrals_definite_ninth_vid_button"
+	        android:text="Definite Integrals (part III): Area Under a Curve"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:paddingTop="50dp"
+	        android:paddingRight="120dp"
 	        android:paddingBottom="50dp"
+	        android:paddingLeft="120dp"
 	        android:layout_marginTop="20dp"
-	        android:background="@drawable/rounded_corner_button" />
-    	
-    	<Button android:id="@+id/limits_solving_fourth_vid_button"
-	        android:text="Squeeze Theorem"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:paddingTop="50dp"
-	        android:paddingBottom="50dp"
-	        android:layout_marginTop="20dp"
+	        android:layout_gravity="center_horizontal"
 	        android:background="@drawable/rounded_corner_button" />
 	        
     </LinearLayout>

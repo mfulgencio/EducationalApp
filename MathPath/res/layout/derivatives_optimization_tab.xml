@@ -1,18 +1,18 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
- 	android:id="@+id/limits_intro_videos"
+ 	android:id="@+id/derivatives_optimization_videos"
    	android:layout_width="match_parent"
    	android:layout_height="match_parent"
    	android:background="@drawable/gradient"
-   	tools:context=".LimitsIntroVideosTab" >
+   	tools:context=".DerivativesOptimizationTab" >
    	
     <LinearLayout android:orientation="vertical"
       	android:layout_width="500dp"
        	android:layout_height="match_parent"
        	android:layout_gravity="center_horizontal" >
         
-       	<Button android:id="@+id/limits_intro_first_vid_button"
-	        android:text="Introduction to Limits"
+       	<Button android:id="@+id/derivatives_optimization_first_vid_button"
+	        android:text="Optimization - Calculus"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:paddingTop="50dp"
@@ -23,8 +23,20 @@
 	        android:layout_gravity="center_horizontal"
 	        android:background="@drawable/rounded_corner_button" />
 	    
-    	<Button android:id="@+id/limits_intro_second_vid_button"
-	        android:text="1.1 Introduction to Limits"
+    	<Button android:id="@+id/derivatives_optimization_second_vid_button"
+	        android:text="Optimization with Calculus 1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="50dp"
+	        android:paddingRight="100dp"
+	        android:paddingBottom="50dp"
+	        android:paddingLeft="100dp"
+	        android:layout_marginTop="20dp"
+	        android:layout_gravity="center_horizontal"
+	        android:background="@drawable/rounded_corner_button" />
+    	
+    	<Button android:id="@+id/derivatives_optimization_third_vid_button"
+	        android:text="Optimization with Calculus 2"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:paddingTop="50dp"

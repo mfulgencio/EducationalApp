@@ -4,47 +4,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/gradient" >
-  	
-    <RelativeLayout android:layout_width="match_parent"
-        android:layout_height="0dip"
-        android:layout_weight=".9" >
-        <com.google.android.youtube.player.YouTubePlayerView
+    
+    <com.google.android.youtube.player.YouTubePlayerView
       		android:id="@+id/youtube_view"
      		android:layout_width="match_parent"
       		android:layout_height="match_parent"/>
-    </RelativeLayout>
-
-    <RelativeLayout android:layout_width="match_parent"
-        android:layout_height="0dip"
-        android:layout_weight=".1" >
-              	
-        <Button
-	   	    android:id="@+id/previous_video_button"
-	   	    android:layout_width="150dp"
-	   	    android:layout_height="wrap_content"
-	   	    android:layout_centerVertical="true"
-	   	    android:layout_alignParentLeft="true"
-	   	    android:text="@string/previous_video"
-	   	    android:background="@drawable/rounded_corner_button" />
-        
-        <Button
-    	    android:id="@+id/quiz_button"
-    	    android:layout_width="wrap_content"
-    	    android:layout_height="wrap_content"
-    	    android:layout_centerVertical="true"
-    	    android:layout_centerHorizontal="true"
-    	    android:layout_marginBottom="49dp"
-    	    android:text="@string/quiz_button"
-    	    android:background="@drawable/rounded_corner_button" />
-        
-        <Button
-	   	    android:id="@+id/next_video_button"
-	   	    android:layout_width="125dp"
-	   	    android:layout_height="wrap_content"
-	   	    android:layout_centerVertical="true"
-	   	    android:layout_alignParentRight="true"
-	   	    android:text="@string/next_video"
-	   	    android:background="@drawable/rounded_corner_button" />
-    </RelativeLayout>
 
 </LinearLayout>

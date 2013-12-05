@@ -146,15 +146,15 @@ class MyIntegralsAdapter extends FragmentStatePagerAdapter {
 		if (arg0 == 0)
 			fragment = new IntegralsAllVideosTab();
 		if (arg0 == 1)
-			fragment = new IntroIntegralsTab();
+			fragment = new IntegralsIntroTab();
 	    if (arg0 == 2)
-	    	fragment = new IndefIntegralsTab();
+	    	fragment = new IntegralsIndefiniteTab();
 	    if (arg0 == 3)
-	    	fragment = new DefIntegralsTab();
+	    	fragment = new IntegralsDefiniteTab();
 	    if (arg0 == 4)
-	    	fragment = new AreaUnderCurveTab();
+	    	fragment = new IntegralsRiemannSumsTab();
 	    if (arg0 == 5)
-	    	fragment = new USubstitutionTab();
+	    	fragment = new IntegralsUSubstitutionTab();
 	    if (arg0 == 6)
 	    	fragment = new DerivativesERTab();
 	
