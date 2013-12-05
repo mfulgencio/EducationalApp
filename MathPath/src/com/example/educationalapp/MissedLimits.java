@@ -79,7 +79,7 @@ public class MissedLimits{
 		topics[2] = "Limits at Infinity";
 		topics[3] = "Continuity";
 		
-		String resultsString = "YOUR DATA FROM YOURE MOST RECENT ATTEMPT ON LIMITS: \n\n" + 
+		String resultsString = "YOUR DATA FROM YOUR MOST RECENT ATTEMPT ON LIMITS: \n\n" + 
 		"Of the questions you answered wrong: \n\n" 
 		+ (int)percentWrongIntroToLimits + "% were on the topic 'Intro to Limits'\n"
 		+ (int)percentWrongSolvingLimits + "% were on the topic 'Solving Limits'\n"

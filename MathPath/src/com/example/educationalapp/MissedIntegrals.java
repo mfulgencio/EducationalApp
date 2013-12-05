@@ -87,13 +87,13 @@ public class MissedIntegrals {
 		topics[3] = "Area Under the Curve";
 		topics[4] = "U Substitution";
 		
-		String resultsString = "YOUR DATA FROM YOURE MOST RECENT ATTEMPT ON INTEGRALS: \n\n" + 
+		String resultsString = "YOUR DATA FROM YOUR MOST RECENT ATTEMPT ON INTEGRALS: \n\n" + 
 				"Of the questions you answered wrong: \n\n" 
-				+ (int)percentWrongIntroToIntegrals + "% were on the topic'" + topics[0] + "'\n"
-				+ (int)percentWrongIndefiniteIntegrals + "% were on the topic'" + topics[1] + "'\n"
-				+ (int)percentWrongDefiniteIntegrals + "% were on the topic'" + topics[2] + "'\n"
-				+ (int)percentWrongAreaUnderTheCurve + "% were on the topic'" + topics[3] + "'\n"
-				+ (int)percentWrongUSubstitution + "% were on the topic'" + topics[4] + "'\n"
+				+ (int)percentWrongIntroToIntegrals + "% were on the topic '" + topics[0] + "'\n"
+				+ (int)percentWrongIndefiniteIntegrals + "% were on the topic '" + topics[1] + "'\n"
+				+ (int)percentWrongDefiniteIntegrals + "% were on the topic '" + topics[2] + "'\n"
+				+ (int)percentWrongAreaUnderTheCurve + "% were on the topic '" + topics[3] + "'\n"
+				+ (int)percentWrongUSubstitution + "% were on the topic '" + topics[4] + "'\n"
 				+ "RECOMMENDATION:\n";
 				
 				for (int i = 0; i < scores.length; i++) {

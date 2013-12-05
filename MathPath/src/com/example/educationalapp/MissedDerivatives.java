@@ -96,7 +96,7 @@ public class MissedDerivatives {
 		topics[4] = "Optimization";
 		topics[5] = "Related Rates";
 		
-		String resultsString = "YOUR DATA FROM YOURE MOST RECENT ATTEMPT ON DERIVATIVES: \n\n" + 
+		String resultsString = "YOUR DATA FROM YOUR MOST RECENT ATTEMPT ON DERIVATIVES: \n\n" + 
 				"Of the questions you answered wrong: \n\n" 
 				+ (int)percentWrongIntroToDerivatives + "% were on the topic 'Intro to Derivatives'\n"
 				+ (int)percentWrongLimitDefinitions + "% were on the topic 'Limit Definitions'\n"
