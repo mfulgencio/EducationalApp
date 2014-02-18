@@ -127,11 +127,11 @@ class MyTopicsAdapter extends FragmentStatePagerAdapter {
 		Fragment fragment = null;
 		
 		if (arg0 == 0)
-			fragment = new LimitsTopicTab();
+			fragment = new LimitsAllVideosTab();
 		if (arg0 == 1)
-			fragment = new DerivativesTopicTab();
+			fragment = new DerivativesAllVideosTab();
 		if (arg0 == 2) 
-			fragment = new IntegralsTopicTab();
+			fragment = new IntegralsAllVideosTab();
 		if (arg0 == 3)
 			fragment = new FinalTab();
 		return fragment;
