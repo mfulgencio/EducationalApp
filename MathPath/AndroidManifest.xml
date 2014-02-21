@@ -17,8 +17,7 @@
         android:theme="@android:style/Theme.Holo" >
         <activity
             android:name="com.example.educationalapp.MainActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="landscape" >
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,33 +33,27 @@
         -->
         <activity
             android:name="com.example.educationalapp.Quiz"
-            android:label="@string/quiz_page_title"
-            android:screenOrientation="landscape" >
+            android:label="@string/quiz_page_title" >
         </activity>
         <activity
             android:name="com.example.educationalapp.Videos"
-            android:label="@string/title_activity_videos"
-            android:screenOrientation="landscape" >
+            android:label="@string/title_activity_videos" >
         </activity>
         <activity
             android:name="com.example.educationalapp.LimitsTabs"
-            android:label="Limits"
-            android:screenOrientation="landscape" >
+            android:label="Limits" >
         </activity>
         <activity
             android:name="com.example.educationalapp.DerivativesTabs"
-            android:label="Derivatives"
-            android:screenOrientation="landscape" >
+            android:label="Derivatives" >
         </activity>
         <activity
             android:name="com.example.educationalapp.IntegralsTabs"
-            android:label="Integrals"
-            android:screenOrientation="landscape" >
+            android:label="Integrals" >
         </activity>
         <activity
             android:name="com.example.educationalapp.TopicsTabs"
-            android:label="Topics"
-            android:screenOrientation="landscape" >
+            android:label="Topics" >
         </activity>
         <activity
             android:name="com.example.educationalapp.LimitsAllVideosTabVidDescs"

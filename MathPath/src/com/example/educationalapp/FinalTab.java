@@ -100,7 +100,7 @@ public class FinalTab extends Fragment {
 								Intent i = new Intent(getActivity(), Final.class);
 								
 								//i.putExtra("final", "limitsQuiz.txt");
-								i.putExtra("final_description", "This is the final exam. Pick your answers and hit submit for immediate feedback.\n You can take the final as many times as you like. Good luck!");								
+								i.putExtra("final_description", "This is the final exam. Pick your answers and hit submit for immediate feedback.\nYou can take the final as many times as you like. Good luck!");								
 								getActivity().startActivity(i);
 								
 							}

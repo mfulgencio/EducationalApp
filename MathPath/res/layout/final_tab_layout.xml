@@ -1,19 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:layout_height="wrap_content"
     android:background="@drawable/gradient" >
-
-    <Button
-        android:id="@+id/finalButton"
-        android:layout_width="664dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="150dp"
-        android:background="@drawable/rounded_corner_button"
-        android:paddingBottom="50dp"
-        android:paddingTop="50dp"
-        android:text="Take Final" />
-
-</LinearLayout>
+        
+    <LinearLayout android:orientation="vertical"
+    	android:layout_width="500dp"
+     	android:layout_height="match_parent"
+     	android:layout_gravity="center_horizontal" >
+     	
+        <Button android:id="@+id/finalButton"
+	        android:text="Take Final"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="50dp"
+	        android:paddingRight="120dp"
+	        android:paddingBottom="50dp"
+	        android:paddingLeft="120dp"
+	        android:layout_marginTop="20dp"
+	        android:layout_gravity="center_horizontal"
+	        android:background="@drawable/rounded_corner_button" />
+	        
+    </LinearLayout>
+        
+</ScrollView>

@@ -19,6 +19,8 @@ import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -31,6 +33,7 @@ import android.support.v4.view.PagerAdapter;
 public class TopicsTabs extends FragmentActivity implements TabListener {
 	ActionBar actionBar;
 	ViewPager viewPager;
+	int tabNum = 0;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +53,7 @@ public class TopicsTabs extends FragmentActivity implements TabListener {
 			public void onPageSelected(int arg0) {
 				//Log.d("MathPath", "onPageSelected at position " + arg0);
 				actionBar.setSelectedNavigationItem(arg0);
+				tabNum = arg0;
 			}
 			
 			@Override
@@ -96,6 +100,43 @@ public class TopicsTabs extends FragmentActivity implements TabListener {
     	
     	actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
     }
+    
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu items for use in the action bar
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.topics_tabs_action_bar, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+    
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle presses on the action bar items
+    	Intent i = new Intent(this, Quiz.class);
+    	
+        switch (item.getItemId()) {
+            case R.id.action_quiz:
+            	if (tabNum == 0) {
+            		i.putExtra("quiz", "limitsQuiz.txt");
+					i.putExtra("quiz_description", "This Quiz is on Limits. Pick your answers and hit submit for immediate feedback. You can take the quiz as many times as you like. Good Luck!");
+				
+					this.startActivity(i);
+            	} else if (tabNum == 1) {
+            		i.putExtra("quiz", "derivativesQuiz.txt");
+					i.putExtra("quiz_description", "This Quiz is on Derivatives. Pick your answers and hit submit for immediate feedback. You can take the quiz as many times as you like. Good Luck!");
+					
+					this.startActivity(i);
+            	} else if (tabNum == 2) {
+            		i.putExtra("quiz", "integralsQuiz.txt");
+    				i.putExtra("quiz_description", "This Quiz is on Integrals. Pick your answers and hit submit for immediate feedback. You can take the quiz as many times as you like. Good Luck!");
+    				
+    				this.startActivity(i);
+            	}
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 
 	@Override
 	public void onTabReselected(Tab tab, FragmentTransaction ft) {
@@ -107,6 +148,7 @@ public class TopicsTabs extends FragmentActivity implements TabListener {
 	public void onTabSelected(Tab tab, FragmentTransaction ft) {
 		//Log.d("MathPath", "onTabSelected at position " + tab.getPosition() + " name " + tab.getText());
 		viewPager.setCurrentItem(tab.getPosition());
+		tabNum = tab.getPosition();
 	}
 
 	@Override

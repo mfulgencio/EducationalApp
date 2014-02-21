@@ -9,6 +9,16 @@
      	android:layout_height="match_parent"
      	android:layout_gravity="center_horizontal" >
      	
+        <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="25sp"
+        android:text="INTRO TO DERIVATIVES"
+        android:layout_gravity="center_horizontal" /> 
+        
         <Button android:id="@+id/limits_all_first_vid_button"
 	        android:text="Introduction to Limits"
 	        android:layout_width="match_parent"
@@ -32,6 +42,16 @@
 	        android:layout_marginTop="20dp"
 	        android:layout_gravity="center_horizontal"
 	        android:background="@drawable/rounded_corner_button" />
+    	
+    	<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="25sp"
+        android:text="SOLVING LIMITS"
+        android:layout_gravity="center_horizontal" /> 
 	        
        	<Button android:id="@+id/limits_all_third_vid_button"
 	        android:text="Limit Examples (part 1)"
@@ -69,6 +89,16 @@
 	        android:layout_marginTop="20dp"
 	        android:background="@drawable/rounded_corner_button" />
     	
+    	<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="25sp"
+        android:text="LIMITS AT INFINITY"
+        android:layout_gravity="center_horizontal" /> 
+    	
     	<Button android:id="@+id/limits_all_seventh_vid_button"
 	        android:text="Limits at Infinity"
 	        android:layout_width="match_parent"
@@ -92,6 +122,16 @@
 	        android:layout_marginTop="20dp"
 	        android:layout_gravity="center_horizontal"
 	        android:background="@drawable/rounded_corner_button" />
+    	
+    	<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="25sp"
+        android:text="CONTINUITY"
+        android:layout_gravity="center_horizontal" /> 
     	
     	<Button android:id="@+id/limits_all_ninth_vid_button"
 	        android:text="Limits to Define Continuity"

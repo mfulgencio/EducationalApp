@@ -9,6 +9,16 @@
      	android:layout_height="match_parent"
      	android:layout_gravity="center_horizontal" >
      	
+        <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="25sp"
+        android:text="INTRO TO DERIVATIVES"
+        android:layout_gravity="center_horizontal" /> 
+        
         <Button android:id="@+id/derivatives_all_first_vid_button"
 	        android:text="Derivatives 1"
 	        android:layout_width="match_parent"
@@ -20,6 +30,16 @@
 	        android:layout_marginTop="20dp"
 	        android:layout_gravity="center_horizontal"
 	        android:background="@drawable/rounded_corner_button" />
+        
+        <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="25sp"
+        android:text="LIMIT DEFINITIONS"
+        android:layout_gravity="center_horizontal" /> 
 	    
     	<Button android:id="@+id/derivatives_all_second_vid_button"
 	        android:text="Understanding the Definition of the Derivative"
@@ -33,6 +53,16 @@
 	        android:layout_gravity="center_horizontal"
 	        android:background="@drawable/rounded_corner_button" />
 	        
+    	<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="25sp"
+        android:text="RULES"
+        android:layout_gravity="center_horizontal" /> 
+    	
        	<Button android:id="@+id/derivatives_all_third_vid_button"
 	        android:text="Solving Derivatives"
 	        android:layout_width="match_parent"
@@ -69,6 +99,16 @@
 	        android:layout_marginTop="20dp"
 	        android:background="@drawable/rounded_corner_button" />
     	
+    	<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="25sp"
+        android:text="IMPLICIT DIFFERENTIATION"
+        android:layout_gravity="center_horizontal" /> 
+    	
     	<Button android:id="@+id/derivatives_all_seventh_vid_button"
 	        android:text="Implicit Differentiation"
 	        android:layout_width="match_parent"
@@ -81,6 +121,16 @@
 	        android:layout_gravity="center_horizontal"
 	        android:background="@drawable/rounded_corner_button" />
 	    
+    	<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="25sp"
+        android:text="OPTIMIZATION"
+        android:layout_gravity="center_horizontal" /> 
+    	
     	<Button android:id="@+id/derivatives_all_eighth_vid_button"
 	        android:text="Optimization"
 	        android:layout_width="match_parent"
@@ -116,6 +166,16 @@
 	        android:layout_marginTop="20dp"
 	        android:layout_gravity="center_horizontal"
 	        android:background="@drawable/rounded_corner_button" />
+    	
+    	<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="25sp"
+        android:text="RELATED RATES"
+        android:layout_gravity="center_horizontal" /> 
     	
     	<Button android:id="@+id/derivatives_all_eleventh_vid_button"
 	        android:text="Related Rates"
