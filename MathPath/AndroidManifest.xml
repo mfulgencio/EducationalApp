@@ -53,7 +53,8 @@
         </activity>
         <activity
             android:name="com.example.educationalapp.TopicsTabs"
-            android:label="Topics" >
+            android:logo="@drawable/mathpathlogo"
+            android:label="" >
         </activity>
         <activity
             android:name="com.example.educationalapp.LimitsAllVideosTabVidDescs"

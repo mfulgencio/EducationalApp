@@ -2,27 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
     android:orientation="vertical" >
-
-    <TextView
-        android:id="@+id/welcome_line1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/welcome_message_line1"
-        android:textColor="@color/white"
-        android:textSize="30sp" />
-    
-    <TextView
-        android:id="@+id/welcome_line2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/welcome_message_line2"
-        android:textColor="@color/white"
-        android:textColorLink="@color/white"
-        android:textSize="30sp" />
 
     <ScrollView 
         android:id="@+id/subjects"
@@ -47,11 +27,9 @@
 		            style="?android:attr/buttonStyleSmall"
 		            android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
-		            android:background="@drawable/rounded_corner_button"
-		            android:paddingBottom="50dp"
-		            android:paddingLeft="120dp"
-		            android:paddingRight="120dp"
-		            android:paddingTop="50dp"
+		            android:background="@drawable/button"
+		            android:layout_marginLeft="20dp"
+		            android:layout_marginRight="20dp"
 		            android:text="@string/calculus1"
 		            android:textColor="@color/white"
 		            android:textSize="20sp" />
@@ -62,7 +40,7 @@
 			        style="?android:attr/buttonStyleSmall"
 			        android:layout_width="wrap_content"
 			        android:layout_height="wrap_content"
-			        android:layout_marginTop="30dp"
+			        android:layout_marginTop="10dp"
 			        android:textColor="@color/white"
 			        android:background="@drawable/round_button" />
 		        
@@ -82,13 +60,11 @@
 			        style="?android:attr/buttonStyleSmall"
 			        android:layout_width="wrap_content"
 			        android:layout_height="wrap_content"
-			        android:paddingLeft="120dp"
-			        android:paddingRight="120dp"
-			        android:paddingTop="50dp"
-			        android:paddingBottom="50dp"
+			        android:layout_marginLeft="20dp"
+		            android:layout_marginRight="20dp"
 			        android:textSize="20sp"
 			        android:textColor="@color/white"
-			        android:background="@drawable/rounded_corner_button" />
+			        android:background="@drawable/button" />
 		    
 		    	<Button 
 			        android:id="@+id/calc2_info_button"

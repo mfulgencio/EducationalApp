@@ -20,7 +20,7 @@
     	    android:paddingRight="15dp"
     	    android:paddingLeft="15dp"
     	    android:text="@string/goButton"
-    	    android:background="@drawable/rounded_corner_button" />
+    	    android:background="@drawable/button" />
     	
     	<Button
     	    android:id="@+id/limitsQuizButton"
