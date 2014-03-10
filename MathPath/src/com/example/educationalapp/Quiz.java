@@ -52,18 +52,14 @@ public class Quiz extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.quizlayout);
-		TextView tv = (TextView)findViewById(R.id.quiz_description);
-	    
-		Intent i = getIntent();
 		
+		Intent i = getIntent();
 
 		fileName = i.getStringExtra("quiz");
 		
 		mL = new MissedLimits((Context)this);
 		mI = new MissedIntegrals((Context)this);
 		mD = new MissedDerivatives((Context)this);
-
-		tv.setText(i.getStringExtra("quiz_description"));
 		
 		ActionBar bar = getActionBar();
 		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3CC7C7")));

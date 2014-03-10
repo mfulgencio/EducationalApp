@@ -118,17 +118,14 @@ public class TopicsTabs extends FragmentActivity implements TabListener {
             case R.id.action_quiz:
             	if (tabNum == 0) {
             		i.putExtra("quiz", "limitsQuiz.txt");
-					i.putExtra("quiz_description", "This Quiz is on Limits. Pick your answers and hit submit for immediate feedback. You can take the quiz as many times as you like. Good Luck!");
-				
+            		
 					this.startActivity(i);
             	} else if (tabNum == 1) {
             		i.putExtra("quiz", "derivativesQuiz.txt");
-					i.putExtra("quiz_description", "This Quiz is on Derivatives. Pick your answers and hit submit for immediate feedback. You can take the quiz as many times as you like. Good Luck!");
 					
 					this.startActivity(i);
             	} else if (tabNum == 2) {
             		i.putExtra("quiz", "integralsQuiz.txt");
-    				i.putExtra("quiz_description", "This Quiz is on Integrals. Pick your answers and hit submit for immediate feedback. You can take the quiz as many times as you like. Good Luck!");
     				
     				this.startActivity(i);
             	}
