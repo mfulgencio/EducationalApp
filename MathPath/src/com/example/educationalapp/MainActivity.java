@@ -31,6 +31,12 @@ public class MainActivity extends Activity  {
 		ActionBar bar = getActionBar();
 		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#008fd5")));
 		
+		 bar.setHomeButtonEnabled(false);
+		 bar.setDisplayHomeAsUpEnabled(false);
+		 bar.setDisplayShowHomeEnabled(false);
+		 bar.setDisplayShowTitleEnabled(false);
+		
+		
 		calc1Button = (Button)findViewById(R.id.calc1_button);
 		calc1InfoButton = (Button)findViewById(R.id.calc1_info_button);
 		videosButton = (Button)findViewById(R.id.videos_button);
