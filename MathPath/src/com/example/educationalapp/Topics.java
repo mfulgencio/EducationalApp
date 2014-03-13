@@ -23,7 +23,7 @@ public class Topics extends Activity {
 		setContentView(R.layout.topics);
 		
 		ActionBar bar = getActionBar();
-		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3CC7C7")));
+		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#008fd5")));
 	
 		//limits spinner
 		limits_spinner = (Spinner) findViewById(R.id.limit_spinner);

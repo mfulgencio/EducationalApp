@@ -50,8 +50,9 @@
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     <color name="button_border">#5AB9ED</color>
-    <color name="MathPathBlue">#3CC7C7</color>
-
+    <color name="MathPathBlue">#008fd5</color>
+	<color name="blue">#008fd5</color>
+    
     <string name="goButton">Watch Videos</string>
     <string name="takeQuiz">Take Quiz</string>
     <string name="submit">Submit</string>
@@ -65,5 +66,8 @@
     <string name="title_activity_vid_desc">VidDesc</string>
     <string name="title_activity_limits_intro_videos_tab_vid_descs">LimitsIntroVideosTabVidDescs</string>
     <string name="title_activity_limits_solving_videos_tab_vid_descs">LimitsSolvingVideosTabVidDescs</string>
-
+    <string name="Videos">Videos</string>
+    <string name="Courses">Courses</string>
+    <string name="Quizzes">Quizzes</string>
+    
 </resources>

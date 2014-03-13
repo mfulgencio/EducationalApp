@@ -4,6 +4,7 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.app.ActionBar;
 import android.content.Intent;
 import android.graphics.Color;
@@ -20,8 +21,9 @@ public class Videos extends YouTubeFailureRecoveryActivity {
 	    i = getIntent();
 	    
 	    ActionBar bar = getActionBar();
-		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3CC7C7")));
+		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#008fd5")));
 		bar.setTitle(i.getStringExtra("videoTitle"));
+		bar.setDisplayHomeAsUpEnabled(true);
 	
 	    YouTubePlayerView youTubeView = (YouTubePlayerView) findViewById(R.id.youtube_view);
 	    youTubeView.initialize(DeveloperKey.DEVELOPER_KEY, this);
@@ -39,4 +41,14 @@ public class Videos extends YouTubeFailureRecoveryActivity {
 	protected YouTubePlayer.Provider getYouTubePlayerProvider() {
 		return (YouTubePlayerView) findViewById(R.id.youtube_view);
 	}
+	
+	@Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+        case android.R.id.home:
+            this.finish();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

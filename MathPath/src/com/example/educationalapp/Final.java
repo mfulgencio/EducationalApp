@@ -52,7 +52,8 @@ public class Final extends Activity {
 		Intent i = getIntent();
 		
 		ActionBar bar = getActionBar();
-		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3CC7C7")));
+		
+		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#008fd5")));
 		bar.setDisplayHomeAsUpEnabled(true);
 		
 		//setup the dialog about what they should review from their previous missed quizzes

@@ -34,6 +34,8 @@ public class TopicsTabs extends FragmentActivity implements TabListener {
 	ActionBar actionBar;
 	ViewPager viewPager;
 	int tabNum = 0;
+	Button coursesButton;
+	Button quizzesButton;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,8 +44,32 @@ public class TopicsTabs extends FragmentActivity implements TabListener {
     
     	
     	ActionBar bar = getActionBar();
-		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3CC7C7")));
-    	
+		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#008fd5")));
+   /*
+		coursesButton = (Button)findViewById(R.id.courses_button);
+		quizzesButton = (Button)findViewById(R.id.quizzes_button);
+
+		coursesButton.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(TopicsTabs.this, MainActivity.class);
+				startActivity(i);
+			}
+		});
+
+		quizzesButton.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(TopicsTabs.this, Quiz.class);
+				
+				i.putExtra("quiz", "integralsQuiz.txt");
+				i.putExtra("quiz_description", "This Quiz is on Integrals. Pick your answers and hit submit for immediate feedback. You can take the quiz as many times as you like. Good Luck!");
+				
+				startActivity(i);
+			}
+		});
+		
+	*/	
     	viewPager = (ViewPager) findViewById(R.id.pager);
     	viewPager.setAdapter(new MyTopicsAdapter(getSupportFragmentManager()));
     	//viewPager.setCurrentItem(i.getIntExtra("limits tab", 0));

@@ -12,6 +12,8 @@ import android.widget.Button;
 
 public class DerivativesAllVideosTab extends Fragment {
 
+	Button coursesButton;
+	Button quizzesButton;
 	public DerivativesAllVideosTab() {
 		// Required empty public constructor
 	}
@@ -19,8 +21,34 @@ public class DerivativesAllVideosTab extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		// Inflate the layout for this fragment
 		View view = inflater.inflate(R.layout.derivatives_all_videos_tab, container, false);
+
+		coursesButton = (Button)view.findViewById(R.id.courses_button);
+		quizzesButton = (Button)view.findViewById(R.id.quizzes_button);
+		
+		coursesButton.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(getActivity(), MainActivity.class);
+				startActivity(i);
+			}
+		});
+
+		quizzesButton.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(getActivity(), Quiz.class);
+				
+				i.putExtra("quiz", "derivativesQuiz.txt");
+				i.putExtra("quiz_description", "This Quiz is on Derivatives. Pick your answers and hit submit for immediate feedback. You can take the quiz as many times as you like. Good Luck!");
+				
+				getActivity().startActivity(i);
+			}
+		});
+		
+		
+		
+		// Inflate the layout for this fragment
 
 		Button firstVid = (Button) view.findViewById(R.id.derivatives_all_first_vid_button);
 		Button secondVid = (Button) view.findViewById(R.id.derivatives_all_second_vid_button);
