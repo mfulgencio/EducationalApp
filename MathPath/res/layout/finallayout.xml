@@ -2,19 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/gradient" > 
-    
-      <TextView
-        android:id="@+id/final_description"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="5dp"
-        android:ems="10"
-        android:textColor="@color/white"
-        android:textColorLink="@color/white"
-        android:textSize="25sp" /> 
+    android:orientation="vertical" > 
+   
     <ScrollView 
         android:id="@+id/fquestions"
         android:layout_width="match_parent"
@@ -23,670 +12,1212 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
-            <TextView
-               android:id="@+id/fquiz_question1"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g1"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq1a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq1a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq1a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq1a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-            <TextView
-               android:id="@+id/fquiz_question2"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g2"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq2a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq2a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq2a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq2a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-            <TextView
-               android:id="@+id/fquiz_question3"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g3"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq3a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq3a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq3a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq3a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-            <TextView
-               android:id="@+id/fquiz_question4"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g4"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq4a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq4a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq4a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq4a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-            <TextView
-               android:id="@+id/fquiz_question5"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g5"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq5a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq5a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq5a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq5a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-            <TextView
-               android:id="@+id/fquiz_question6"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g6"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq6a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq6a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq6a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq6a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-            <TextView
-               android:id="@+id/fquiz_question7"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g7"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq7a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq7a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq7a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq7a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-            <TextView
-               android:id="@+id/fquiz_question8"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g8"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq8a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq8a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq8a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq8a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-            <TextView
-               android:id="@+id/fquiz_question9"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g9"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq9a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq9a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq9a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq9a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-            <TextView
-               android:id="@+id/fquiz_question10"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g10"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq10a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq10a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq10a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq10a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-            <TextView
-               android:id="@+id/fquiz_question11"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g11"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq11a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq11a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq11a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq11a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-            <TextView
-               android:id="@+id/fquiz_question12"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g12"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq12a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq12a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq12a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq12a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-            <TextView
-               android:id="@+id/fquiz_question13"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g13"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq13a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq13a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq13a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq13a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-            <TextView
-               android:id="@+id/fquiz_question14"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g14"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq14a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq14a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq14a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq14a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-            <TextView
-               android:id="@+id/fquiz_question15"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g15"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq15a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq15a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq15a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq15a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-            <TextView
-               android:id="@+id/fquiz_question16"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g16"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq16a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq16a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq16a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq16a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-            <TextView
-               android:id="@+id/fquiz_question17"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g17"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq17a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq17a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq17a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq17a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-            <TextView
-               android:id="@+id/fquiz_question18"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g18"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq18a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq18a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq18a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq18a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-            <TextView
-               android:id="@+id/fquiz_question19"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g19"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq19a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq19a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq19a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq19a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-            <TextView
-               android:id="@+id/fquiz_question20"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g20"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq20a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq20a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq20a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq20a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-            <TextView
-               android:id="@+id/fquiz_question21"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g21"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq21a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq21a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq21a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq21a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-            <TextView
-               android:id="@+id/fquiz_question22"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g22"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq22a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq22a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq22a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq22a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-             <TextView
-               android:id="@+id/fquiz_question23"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g23"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq23a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq23a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq23a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq23a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-             <TextView
-               android:id="@+id/fquiz_question24"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g24"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq24a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq24a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq24a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq24a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-             <TextView
-               android:id="@+id/fquiz_question25"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g25"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq25a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq25a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq25a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq25a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-             <TextView
-               android:id="@+id/fquiz_question26"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g26"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq26a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq26a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq26a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq26a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-             <TextView
-               android:id="@+id/fquiz_question27"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g27"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq27a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq27a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq27a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq27a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-             <TextView
-               android:id="@+id/fquiz_question28"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g28"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq28a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq28a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq28a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq28a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-             <TextView
-               android:id="@+id/fquiz_question29"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g29"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq29a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq29a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq29a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq29a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
-             <TextView
-               android:id="@+id/fquiz_question30"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:textSize="20sp" />
-            <RadioGroup android:id="@+id/g30"
-               android:layout_width="fill_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
-                 <RadioButton android:id="@+id/fq30a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq30a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq30a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                 <RadioButton android:id="@+id/fq30a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
+            
+            <LinearLayout
+                android:id="@+id/fq1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >
+            
+	            <TextView
+	               android:id="@+id/fquiz_question1"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g1"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq1a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq1a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq1a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq1a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	        </LinearLayout>    
+	            
+            <LinearLayout
+                android:id="@+id/fq2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >
+            
+	            <TextView
+	               android:id="@+id/fquiz_question2"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g2"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq2a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq2a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq2a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq2a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	        </LinearLayout>    
+	            
+            <LinearLayout
+                android:id="@+id/fq3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >
+            
+	            <TextView
+	               android:id="@+id/fquiz_question3"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g3"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq3a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq3a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq3a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq3a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	        </LinearLayout>
+	        
+            <LinearLayout
+                android:id="@+id/fq4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >
+	            
+	            <TextView
+	               android:id="@+id/fquiz_question4"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g4"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq4a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq4a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq4a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq4a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	         
+	        </LinearLayout>
+	        
+            <LinearLayout
+                android:id="@+id/fq5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >
+	            
+	            <TextView
+	               android:id="@+id/fquiz_question5"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g5"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq5a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq5a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq5a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq5a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	        </LinearLayout>
+	        
+            <LinearLayout
+                android:id="@+id/fq6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >
+	            
+	            <TextView
+	               android:id="@+id/fquiz_question6"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g6"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq6a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq6a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq6a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq6a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	        </LinearLayout>
+	        
+            <LinearLayout
+                android:id="@+id/fq7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >
+	            
+	            <TextView
+	               android:id="@+id/fquiz_question7"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g7"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq7a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq7a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq7a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq7a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+            
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/fq8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >
+            
+	            <TextView
+	               android:id="@+id/fquiz_question8"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g8"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq8a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq8a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq8a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq8a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	        </LinearLayout>
+	        
+            <LinearLayout
+                android:id="@+id/fq9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >
+	            
+	            <TextView
+	               android:id="@+id/fquiz_question9"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g9"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq9a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq9a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq9a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq9a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	        </LinearLayout>
+	        
+            <LinearLayout
+                android:id="@+id/fq10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >
+	            
+	            <TextView
+	               android:id="@+id/fquiz_question10"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g10"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq10a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq10a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq10a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq10a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	        </LinearLayout>
+	        
+            <LinearLayout
+                android:id="@+id/fq11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >
+	            
+	            <TextView
+	               android:id="@+id/fquiz_question11"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g11"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq11a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq11a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq11a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq11a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	        </LinearLayout>
+	        
+            <LinearLayout
+                android:id="@+id/fq12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >
+	            
+	            <TextView
+	               android:id="@+id/fquiz_question12"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g12"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq12a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq12a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq12a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq12a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	        </LinearLayout>    
+	            
+            <LinearLayout
+                android:id="@+id/fq13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >
+            
+	            <TextView
+	               android:id="@+id/fquiz_question13"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g13"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq13a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq13a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq13a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq13a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	        </LinearLayout>     
+	        
+            <LinearLayout
+                android:id="@+id/fq14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >
+            
+	            <TextView
+	               android:id="@+id/fquiz_question14"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g14"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq14a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq14a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq14a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq14a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	        </LinearLayout>    
+	            
+	        <LinearLayout
+                android:id="@+id/fq15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >    
+	            
+	            <TextView
+	               android:id="@+id/fquiz_question15"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g15"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq15a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq15a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq15a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq15a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	        </LinearLayout>
+	            
+	        <LinearLayout
+                android:id="@+id/fq16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >    
+	            
+	            <TextView
+	               android:id="@+id/fquiz_question16"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g16"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq16a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq16a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq16a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq16a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	        </LinearLayout>    
+	            
+	        <LinearLayout
+                android:id="@+id/fq17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >    
+	            
+	            <TextView
+	               android:id="@+id/fquiz_question17"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g17"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq17a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq17a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq17a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq17a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	        </LinearLayout>
+	        
+	        <LinearLayout
+                android:id="@+id/fq18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >
+	            
+	            <TextView
+	               android:id="@+id/fquiz_question18"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g18"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq18a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq18a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq18a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq18a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	        </LinearLayout>
+	        
+	        <LinearLayout
+                android:id="@+id/fq19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >
+	            
+	            <TextView
+	               android:id="@+id/fquiz_question19"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g19"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq19a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq19a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq19a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq19a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	        </LinearLayout>    
+	            
+	        <LinearLayout
+                android:id="@+id/fq20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >    
+	            
+	            <TextView
+	               android:id="@+id/fquiz_question20"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g20"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq20a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq20a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq20a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq20a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	        </LinearLayout>
+	        
+	        <LinearLayout
+                android:id="@+id/fq21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >
+	            
+	            <TextView
+	               android:id="@+id/fquiz_question21"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g21"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq21a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq21a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq21a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq21a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	        </LinearLayout>  
+	            
+	        <LinearLayout
+                android:id="@+id/fq22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >    
+	        
+	            <TextView
+	               android:id="@+id/fquiz_question22"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g22"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq22a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq22a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq22a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq22a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+            
+            </LinearLayout>
+            
+	        <LinearLayout
+                android:id="@+id/fq23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >
+            
+	             <TextView
+	               android:id="@+id/fquiz_question23"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g23"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq23a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq23a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq23a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq23a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	         </LinearLayout>
+	         
+	        <LinearLayout
+                android:id="@+id/fq24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >
+	            
+	             <TextView
+	               android:id="@+id/fquiz_question24"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g24"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq24a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq24a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq24a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq24a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	         </LinearLayout>   
+	            
+	         <LinearLayout
+                android:id="@+id/fq25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >   
+	            
+	             <TextView
+	               android:id="@+id/fquiz_question25"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g25"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq25a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq25a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq25a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq25a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	         </LinearLayout>
+	        
+	         <LinearLayout
+                android:id="@+id/fq26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >
+	            
+	             <TextView
+	               android:id="@+id/fquiz_question26"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g26"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq26a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq26a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq26a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq26a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	         </LinearLayout>
+	         
+	         <LinearLayout
+                android:id="@+id/fq27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >
+	            
+	             <TextView
+	               android:id="@+id/fquiz_question27"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g27"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq27a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq27a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq27a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq27a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	         </LinearLayout>   
+	            
+	         <LinearLayout
+                android:id="@+id/fq28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >   
+	            
+	             <TextView
+	               android:id="@+id/fquiz_question28"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g28"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq28a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq28a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq28a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq28a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	         </LinearLayout>   
+	            
+	         <LinearLayout
+                android:id="@+id/fq29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >
+	         
+	             <TextView
+	               android:id="@+id/fquiz_question29"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g29"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq29a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq29a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq29a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq29a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	         </LinearLayout>   
+	            
+	         <LinearLayout
+                android:id="@+id/fq30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/button"
+                android:orientation="vertical" >   
+	            
+	             <TextView
+	               android:id="@+id/fquiz_question30"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="20sp" />
+	            <RadioGroup android:id="@+id/g30"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="vertical">
+	                 <RadioButton android:id="@+id/fq30a1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq30a2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq30a3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	                 <RadioButton android:id="@+id/fq30a4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"/>
+	            </RadioGroup>
+	            
+	      </LinearLayout>      
+	            
           <Button android:id="@+id/submit"
              android:layout_width="match_parent"
              android:layout_height="wrap_content" 
-             android:text="@string/submit"/>
+             android:text="@string/submit"
+             android:background="@drawable/button" />
           </LinearLayout>        
      </ScrollView>
 </LinearLayout>

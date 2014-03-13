@@ -80,14 +80,14 @@ public class MainActivity extends Activity {
         ActionBar ab = getActionBar();
         ab.setDisplayShowCustomEnabled(true);
         ab.setDisplayShowTitleEnabled(false);
-        ab.setIcon(R.drawable.icon);
+ //       ab.setIcon(R.drawable.icon);
         LayoutInflater inflator = (LayoutInflater) this
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View v = inflator.inflate(R.layout.action_bar_layout, null);
 
         ab.setCustomView(v);
 
-            ab.setDisplayHomeAsUpEnabled(true);
+//      ab.setDisplayHomeAsUpEnabled(true);
     }
 	
 //	@Override

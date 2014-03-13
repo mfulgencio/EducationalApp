@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 
@@ -48,13 +49,11 @@ public class Final extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.finallayout);
 		
-		TextView tv = (TextView)findViewById(R.id.final_description);
 		Intent i = getIntent();
-		
-		tv.setText(i.getStringExtra("final_description"));
 		
 		ActionBar bar = getActionBar();
 		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3CC7C7")));
+		bar.setDisplayHomeAsUpEnabled(true);
 		
 		//setup the dialog about what they should review from their previous missed quizzes
 		
@@ -310,15 +309,26 @@ public class Final extends Activity {
 		  System.err.print(i + ",");
 	      Question q = madeList.get(i);
 	      listOfQuestions.get(i).setText(q.question);
-	      listOfQuestions.get(i).setTextColor(getResources().getColor(R.color.black));
+	      listOfQuestions.get(i).setTextColor(getResources().getColor(R.color.white));
 
 	      for(int j = i*NUM_ANSWERS, k = 0; k < NUM_ANSWERS;k++, j++)
 	      {
 	    	  listOfButtons.get(j).setText(q.possibles[k]);
-	    	  listOfButtons.get(j).setTextColor(getResources().getColor(R.color.black));
+	    	  listOfButtons.get(j).setTextColor(getResources().getColor(R.color.white));
 	      }
 	   }
 	}
+	
+	@Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+        case android.R.id.home:
+            this.finish();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+	
 	private String readFile(String fileName)
 	{
 		String text = fileName; //your text file name in the assets folder
