@@ -5,8 +5,8 @@
     
     <ImageView 
         android:id="@+id/MathPathLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
         android:src="@drawable/mathpathlogo"
         android:layout_centerInParent="true"
         android:contentDescription="" />
