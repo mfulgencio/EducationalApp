@@ -49,8 +49,8 @@ public class MainActivity extends Activity  {
 			public void onClick(View v) {
 				Intent i = new Intent(MainActivity.this, Quiz.class);
 				
-				i.putExtra("quiz", "integralsQuiz.txt");
-				i.putExtra("quiz_description", "This Quiz is on Integrals. Pick your answers and hit submit for immediate feedback. You can take the quiz as many times as you like. Good Luck!");
+				i.putExtra("quiz", "limitsQuiz.txt");
+				i.putExtra("quiz_description", "This Quiz is on Limits. Pick your answers and hit submit for immediate feedback. You can take the quiz as many times as you like. Good Luck!");
 				
 				startActivity(i);
 			}

@@ -15,13 +15,41 @@ public class IntegralsAllVideosTab extends Fragment {
 	public IntegralsAllVideosTab() {
 		// Required empty public constructor
 	}
-
+	
+	Button coursesButton;
+	Button quizzesButton;
+	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		// Inflate the layout for this fragment
 		View view = inflater.inflate(R.layout.integrals_all_videos_tab, container, false);
 
+		coursesButton = (Button)view.findViewById(R.id.courses_button);
+		quizzesButton = (Button)view.findViewById(R.id.quizzes_button);
+		
+		coursesButton.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(getActivity(), MainActivity.class);
+				startActivity(i);
+			}
+		});
+
+		quizzesButton.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(getActivity(), Quiz.class);
+				
+				i.putExtra("quiz", "integralsQuiz.txt");
+				i.putExtra("quiz_description", "This Quiz is on Integrals. Pick your answers and hit submit for immediate feedback. You can take the quiz as many times as you like. Good Luck!");
+				
+				getActivity().startActivity(i);
+			}
+		});
+		
+		
+		
 		Button firstVid = (Button) view.findViewById(R.id.integrals_all_first_vid_button);
 		Button secondVid = (Button) view.findViewById(R.id.integrals_all_second_vid_button);
 		Button thirdVid = (Button) view.findViewById(R.id.integrals_all_third_vid_button);
