@@ -1,7 +1,13 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" >
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+	android:layout_weight="1">
         
     <LinearLayout android:orientation="vertical"
     	android:layout_width="500dp"
@@ -147,3 +153,52 @@
     </LinearLayout>
         
 </ScrollView>
+    <LinearLayout
+        		android:id="@+id/menu"
+		        android:orientation="horizontal"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/white">
+        
+        <Button
+			        android:id="@+id/courses_button"
+			        android:text="@string/Courses"
+			        android:layout_width="wrap_content"
+			        android:layout_height="50dp"
+			        android:textSize="20dp"
+			        android:textColor="#ffffff"
+			        android:background="@color/blue"
+			        android:layout_weight="1"
+			        android:shadowColor="#000000"
+			        android:shadowDx="0"
+			        android:shadowDy="2"
+			        android:shadowRadius="2" />
+		<Button
+			        android:id="@+id/videos_button"
+			        android:text="@string/Videos"
+			        android:layout_width="wrap_content"
+			        android:layout_height="50dp"
+			        android:textSize="20dp"
+			        android:textColor="#0e2945"
+			        android:background="@color/blue"
+			        android:layout_weight="1"
+			        android:shadowColor="#b4d6e7"
+			        android:shadowDx="0"
+			        android:shadowDy="2"
+			        android:shadowRadius="2" />
+		<Button
+			        android:id="@+id/quizzes_button"
+			        android:text="@string/Quizzes"
+			        android:layout_width="wrap_content"
+			        android:layout_height="50dp"
+			        android:textSize="20dp"
+			        android:textColor="@color/white"
+			        android:background="@color/blue"
+			        android:layout_weight="1"
+			        android:shadowColor="#000000"
+			        android:shadowDx="0"
+			        android:shadowDy="2"
+			        android:shadowRadius="2" />
+        
+    </LinearLayout>
+</LinearLayout>

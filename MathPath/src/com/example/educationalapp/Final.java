@@ -54,7 +54,7 @@ public class Final extends Activity {
 		tv.setText(i.getStringExtra("final_description"));
 		
 		ActionBar bar = getActionBar();
-		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3CC7C7")));
+		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#008fd5")));
 		
 		//setup the dialog about what they should review from their previous missed quizzes
 		

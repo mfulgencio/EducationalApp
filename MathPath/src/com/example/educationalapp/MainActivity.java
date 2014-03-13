@@ -14,9 +14,11 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity  {
 	Button calc1Button;
 	Button calc1InfoButton;
+	Button videosButton;
+	Button quizzesButton;
 	private final Context context = this;
 	
 	@Override
@@ -27,12 +29,33 @@ public class MainActivity extends Activity {
 		setupActionBar();
 		
 		ActionBar bar = getActionBar();
-		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3CC7C7")));
+		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#008fd5")));
 		
 		calc1Button = (Button)findViewById(R.id.calc1_button);
 		calc1InfoButton = (Button)findViewById(R.id.calc1_info_button);
-		
-		
+		videosButton = (Button)findViewById(R.id.videos_button);
+		quizzesButton = (Button)findViewById(R.id.quizzes_button);
+
+		videosButton.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(MainActivity.this, TopicsTabs.class);
+				startActivity(i);
+			}
+		});
+
+		quizzesButton.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(MainActivity.this, Quiz.class);
+				
+				i.putExtra("quiz", "integralsQuiz.txt");
+				i.putExtra("quiz_description", "This Quiz is on Integrals. Pick your answers and hit submit for immediate feedback. You can take the quiz as many times as you like. Good Luck!");
+				
+				startActivity(i);
+			}
+		});
+
 		calc1Button.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {

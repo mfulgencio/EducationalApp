@@ -40,7 +40,7 @@ public class DerivativesTabs extends FragmentActivity implements TabListener {
     	Intent i = getIntent();
     	
     	ActionBar bar = getActionBar();
-		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3CC7C7")));
+		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#008fd5")));
     	
     	viewPager = (ViewPager) findViewById(R.id.pager);
     	viewPager.setAdapter(new MyDerivativesAdapter(getSupportFragmentManager()));
